@@ -6,7 +6,7 @@ import json
 
 
 # Make the flask application
-app = Flask(__name__, template_folder="./resources/templates/")
+app = Flask(__name__, template_folder="./resources/templates/", static_folder="./resources/static")
 
 
 
