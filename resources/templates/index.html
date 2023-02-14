@@ -1,15 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ page_title }} - Maximilian</title>
+	<title>{{ page_title }} - Maximilian</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='./styles/style.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="{{ url_for('static', filename='script.js') }}" defer></script>
+	<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    
-    <h1>Hello, World!</h1>
+	
+	<!-- Header with code writing effect -->
+	<header>
+		<div class="middle">
+			<h1 id="code"></h1>
+		</div>
+	</header>
+
+	<!-- Actual website content -->
+	<main>
+
+		<!-- Introduction thing -->  
+		<section class="content">
+			<div class="middle">
+				<p>Hi, my name is Max. I like to code, play games, and I watch a lot of YouTube💀</p>
+			</div>
+		</section>
+		
+		<!-- spacer -->
+		<div class="space-25"></div>
+
+		<!-- Links -->
+		<section class="content">
+			<div class="gallery">
+				<a href="https://discordapp.com/users/320672010332274690" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+				<a href="https://github.com/MaximilianMcC" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+				<a href="https://maxtheminerboy.net/" target="_blank"><i class="fa-solid fa-globe"></i> Other Website</a>
+				<a href="https://www.youtube.com/c/MTMByt" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+			</div>
+		</section>
+		
+		<!-- spacer -->
+		<div class="space-100"></div>
+
+		<!-- Information --> 
+		<section>
+			<h1 class="middle">Some Information About Me</h1>
+
+			<div class="gallery">
+				
+				<div class="info-card">
+					<h2>Favorite Language</h2>
+					<h1>C#</h1>
+				</div>
+				
+				<div class="info-card">
+					<h2>Birthday</h2>
+					<h1>17<sup>th</sup> November, 2006</h1>
+				</div>
+
+				<div class="info-card">
+					<h2>Most used emojis</h2>
+					<h1>💀🤓🤯😭😳🥳🥱</h1>
+				</div>
+
+				<div class="info-card">
+					<h2>Colorblindness</h2>
+					<h1>Protanopia</h1>
+				</div>
+
+				<div class="info-card">
+					<h2>Most played game</h2>
+					<h1>Minecraft Java</h1>
+				</div>
+
+				<div class="info-card">
+					<h2>Current School</h2>
+					<h1>Long Bay College</h1>
+				</div>
+
+				<div class="info-card">
+					<h2>Current School Year</h2>
+					<h1>Year 11</h1>
+				</div>
+
+				<div class="info-card">
+					<h2>Average WPM</h2>
+					<h1>85</h1>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- spacer -->
+		<div class="space-100"></div>
+
+		
+        <!-- TODO: Put content here -->
+
+
+		<!-- spacer -->  
+		<div class="space-100"></div>
+
+
+        <!-- TODO: Put content here -->
+
+
+
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<div class="middle">
+			<h1>maximilian.co.nz</h1>
+			<p>&copy; 2022, Maximilian Oscar Jack McCarthy 🤓</p>
+		</div>
+	</footer>
 
 </body>
 </html>

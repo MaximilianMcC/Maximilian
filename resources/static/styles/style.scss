@@ -1,0 +1,111 @@
+// Colors
+$accent-color: #1B1B2F;
+$secondary-background-color: #121317;
+$second-accent-color: #ffa500;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: #0b0b0e;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	height: 30%;
+	background-color: $accent-color;
+}
+
+main {
+	font-size: 1.5em;
+	margin: 3% 10%;
+}
+
+footer {
+	height: 20%;
+	background-color: $accent-color;
+	margin-top: 400px;
+}
+
+.content {
+	background-color: $secondary-background-color;
+	border-radius: 10px;
+	padding: 50px;
+}
+
+.info-card {
+	background-color: $secondary-background-color;
+	border-radius: 10px;
+	padding: 25px 100px;
+	margin: 10px;
+	text-align: center;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	flex: auto;
+	border-bottom: 10px solid $second-accent-color;
+
+	h2 {
+		font-size: 0.8em;
+		color: grey;
+	}
+}
+
+#code {
+	font-family: 'Fira Code', monospace;
+	flex-direction: row;
+	font-size: 4em;
+	color: deepskyblue;
+	--ti-cursor-color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+
+	&:hover {
+		color: #ffdfdf;
+	}
+}
+
+
+// Make an image a circle
+.pfp {
+	border-radius: 100%;
+}
+
+// Spacing
+.space {
+	&-25 {margin-bottom: 25px;}
+	&-50 {margin-bottom: 50px;}
+	&-100 {margin-bottom: 100px;}
+	&-500 {margin-bottom: 500px;}
+}
+
+// Gallery of stuff going across
+.gallery {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+// Twemoji stuff
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}
+
+// Place everything in the middle
+.middle {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #0b0b0e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 30%;
+  background-color: #1B1B2F;
+}
+
+main {
+  font-size: 1.5em;
+  margin: 3% 10%;
+}
+
+footer {
+  height: 20%;
+  background-color: #1B1B2F;
+  margin-top: 400px;
+}
+
+.content {
+  background-color: #121317;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.info-card {
+  background-color: #121317;
+  border-radius: 10px;
+  padding: 25px 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  flex: auto;
+  border-bottom: 10px solid #ffa500;
+}
+.info-card h2 {
+  font-size: 0.8em;
+  color: grey;
+}
+
+#code {
+  font-family: "Fira Code", monospace;
+  flex-direction: row;
+  font-size: 4em;
+  color: deepskyblue;
+  --ti-cursor-color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffdfdf;
+}
+
+.pfp {
+  border-radius: 100%;
+}
+
+.space-25 {
+  margin-bottom: 25px;
+}
+.space-50 {
+  margin-bottom: 50px;
+}
+.space-100 {
+  margin-bottom: 100px;
+}
+.space-500 {
+  margin-bottom: 500px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
+
+.middle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
