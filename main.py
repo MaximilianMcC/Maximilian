@@ -6,7 +6,7 @@ import json
 
 
 # Make the flask application
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./resources/templates/")
 
 
 
@@ -14,7 +14,7 @@ app = Flask(__name__)
 # Website root
 @app.route("/")
 def root():
-    return "Hello, World!"
+    return render_template("index.html", page_title="Home")
 
 
 
