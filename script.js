@@ -2,10 +2,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-	// Give people who open devtools some info
-	console.log("I used https://www.typeitjs.com/ to make the typing animation btw");
+	console.log("I used https://www.typeitjs.com/ to make the typing animation if you're wondering btw");
 
-	// Add Twemoji
+
+
+	
+	// Add Twemoji emojis
 	twemoji.parse(document.body);
 
 	// Run the typing effect
