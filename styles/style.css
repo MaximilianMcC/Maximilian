@@ -34,6 +34,7 @@ footer {
 }
 
 .info-card {
+  position: relative;
   background-color: #121317;
   border-radius: 10px;
   padding: 25px 100px;
@@ -44,9 +45,16 @@ footer {
   flex: auto;
   border-bottom: 10px solid #ffa500;
 }
+.info-card.small {
+  max-width: 23%;
+  padding: 25px 30px;
+}
 .info-card h2 {
   font-size: 0.8em;
   color: grey;
+}
+.info-card img {
+  width: 50%;
 }
 
 #code {
@@ -69,17 +77,23 @@ a:hover {
   border-radius: 100%;
 }
 
+hr {
+  height: 3px;
+  border: none;
+  background-color: #1B1B2F;
+}
+
 .space-25 {
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .space-50 {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 .space-100 {
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 .space-500 {
-  margin-bottom: 500px;
+  margin: 500px 0;
 }
 
 .gallery {
