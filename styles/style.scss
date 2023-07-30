@@ -1,0 +1,56 @@
+// Color variables
+$accent-color: #1B1B2F;
+$background-color: #0b0b0e;
+$secondary-background-color: #121317;
+$second-accent-color: #ffa500;
+
+// Default styles
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// Website
+body {
+	height: 100vh;
+
+	background-color: $background-color;
+	color: white;
+
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
+
+// Main header
+header {
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: $accent-color;
+}
+
+
+
+
+
+
+
+
+// Code
+code {	
+	font-family: 'Fira code', 'consolas', monospace;
+	color: #9cdcfe;
+	--ti-cursor-color: #cccccc;
+	font-size: 2em;
+
+	// Syntax highlighting based off vscode
+	span.grey { color: #808080; }
+	span.keyword { color: #569cd6; }
+	span.content { color: #cccccc; }
+	span.method { color: #dcdcaa; }
+	span.string { color: #ce9178; }
+
+}

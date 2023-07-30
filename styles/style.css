@@ -1,1 +1,43 @@
-/*# sourceMappingURL=style.css.map */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #0b0b0e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+header {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B1B2F;
+}
+
+code {
+  font-family: "Fira code", "consolas", monospace;
+  color: #9cdcfe;
+  --ti-cursor-color: #cccccc;
+  font-size: 2em;
+}
+code span.grey {
+  color: #808080;
+}
+code span.keyword {
+  color: #569cd6;
+}
+code span.content {
+  color: #cccccc;
+}
+code span.method {
+  color: #dcdcaa;
+}
+code span.string {
+  color: #ce9178;
+}/*# sourceMappingURL=style.css.map */
