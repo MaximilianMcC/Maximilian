@@ -1,7 +1,4 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
 	console.log("I used https://www.typeitjs.com/ to make the typing animation if you're wondering btw");
 
 
@@ -12,9 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Run the typing effect
 	headerCode();
-
-
 });
+
+
+
 
 // Make a writing code effect
 function headerCode() {
