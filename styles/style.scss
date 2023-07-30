@@ -5,6 +5,8 @@ $secondary-background-color: #121317;
 $second-accent-color: #ffa500;
 $text-color: #dedede;
 
+//TODO: Use rem
+
 // Default styles
 *, *::before, *::after {
 	margin: 0;
@@ -74,6 +76,23 @@ main {
 	}
 }
 
+// Footer
+footer {
+	height: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	background-color: $accent-color;
+	font-size: 0.5em;
+	color: $text-color;
+}
+
+
+
+
+
 
 
 
@@ -96,4 +115,12 @@ code {
 // Centred text
 .centre {
 	text-align: center;
+}
+
+// Twemoji stuff
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
 }

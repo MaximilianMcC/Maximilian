@@ -44,6 +44,17 @@ main .links ul li a:hover {
   border-bottom: 3px solid #ffa500;
 }
 
+footer {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1B1B2F;
+  font-size: 0.5em;
+  color: #dedede;
+}
+
 code {
   font-family: "Fira code", "consolas", monospace;
   color: #9cdcfe;
@@ -68,4 +79,11 @@ code span.string {
 
 .centre {
   text-align: center;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
 }/*# sourceMappingURL=style.css.map */
