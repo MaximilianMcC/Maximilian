@@ -5,8 +5,6 @@ $secondary-background-color: #121317;
 $second-accent-color: #ffa500;
 $text-color: #dedede;
 
-//TODO: Use rem
-
 // Default styles
 *, *::before, *::after {
 	margin: 0;
@@ -14,16 +12,20 @@ $text-color: #dedede;
 	box-sizing: border-box;
 }
 
+
 // Website
-body {
-	height: 100vh;
-
-	background-color: $background-color;
-	color: $text-color;
-
-	font-family: 'Poppins', sans-serif;
+html {
 	font-size: 20px;
+
+	body {
+		height: 100vh;
+	
+		background-color: $background-color;
+		color: $text-color;
+		font-family: 'Poppins', sans-serif;
+	}
 }
+
 
 // Main header
 header {
@@ -61,7 +63,7 @@ main {
 			li {
 				a {
 					text-decoration: none;
-					font-size: 1.2em;
+					font-size: 1.2rem;
 					color: #cccccc;
 
 					&:hover {
@@ -85,7 +87,7 @@ footer {
 	flex-direction: column;
 
 	background-color: $accent-color;
-	font-size: 0.5em;
+	font-size: 0.5rem;
 	color: $text-color;
 }
 
@@ -102,7 +104,7 @@ code {
 	font-family: 'Fira code', 'consolas', monospace;
 	color: #9cdcfe;
 	--ti-cursor-color: #cccccc;
-	font-size: 2em;
+	font-size: 2rem;
 
 	// Syntax highlighting based off vscode
 	span.grey { color: #808080; }
