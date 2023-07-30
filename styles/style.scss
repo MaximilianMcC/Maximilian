@@ -3,6 +3,7 @@ $accent-color: #1B1B2F;
 $background-color: #0b0b0e;
 $secondary-background-color: #121317;
 $second-accent-color: #ffa500;
+$text-color: #dedede;
 
 // Default styles
 *, *::before, *::after {
@@ -16,7 +17,7 @@ body {
 	height: 100vh;
 
 	background-color: $background-color;
-	color: white;
+	color: $text-color;
 
 	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
@@ -32,8 +33,46 @@ header {
 	background-color: $accent-color;
 }
 
+// Main website content
+main {
+	margin: 50px 160px;
 
 
+	// Content box
+	.content-box {
+		background-color: $secondary-background-color;
+		border-radius: 8px;
+		
+		// TODO: Maybe remove margin
+		padding: 50px;
+		margin: 30px 0px;
+	}
+
+	// Row of links
+	// TODO: Make a class for space-even stuff flexbox
+	.links {
+		ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-evenly;
+
+			li {
+				a {
+					text-decoration: none;
+					font-size: 1.2em;
+					color: #cccccc;
+
+					&:hover {
+						color: $text-color;
+
+						// Fake underline
+						border-bottom: 3px solid $second-accent-color;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -52,5 +91,9 @@ code {
 	span.content { color: #cccccc; }
 	span.method { color: #dcdcaa; }
 	span.string { color: #ce9178; }
+}
 
+// Centred text
+.centre {
+	text-align: center;
 }

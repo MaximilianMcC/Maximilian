@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   background-color: #0b0b0e;
-  color: white;
+  color: #dedede;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
@@ -18,6 +18,30 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #1B1B2F;
+}
+
+main {
+  margin: 50px 160px;
+}
+main .content-box {
+  background-color: #121317;
+  border-radius: 8px;
+  padding: 50px;
+  margin: 30px 0px;
+}
+main .links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .links ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #cccccc;
+}
+main .links ul li a:hover {
+  color: #dedede;
+  border-bottom: 3px solid #ffa500;
 }
 
 code {
@@ -40,4 +64,8 @@ code span.method {
 }
 code span.string {
   color: #ce9178;
+}
+
+.centre {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
