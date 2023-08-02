@@ -146,8 +146,39 @@ main {
 				font-size: 0.6rem;
 			}
 
-			img {
-				width: 55%;
+			img { width: 55%; }
+		}
+	}
+
+	// Repo cards
+	.repos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		
+		a {
+			color: $text-color;
+			text-decoration: none;
+		}
+
+		.repo {
+			background-color: $secondary-background-color;
+			border-bottom: 10px solid $second-accent-color;
+			border-radius: 8px;
+			padding: 20px;
+			margin: 10px;
+
+			// List of stuff down at the bottom 
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				list-style-type: none;
+				
+				li {
+					color: gray;
+					text-transform: uppercase;
+					font-size: 0.6rem;
+				}
 			}
 		}
 	}
@@ -164,6 +195,8 @@ footer {
 	background-color: $accent-color;
 	font-size: 0.5rem;
 	color: $text-color;
+	
+	margin-top: 200px;
 }
 
 
