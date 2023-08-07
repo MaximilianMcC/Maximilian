@@ -67,7 +67,6 @@ async function updateGitHubStats() {
 		const name = repo["name"].replaceAll("-", " ");
 		const description = repo["description"];
 		const language = repo["language"];
-		const topics = repo["topics"];
 		const stars = repo["stargazers_count"];
 		const private = repo["private"];
 		const url = repo["html_url"];
@@ -76,9 +75,6 @@ async function updateGitHubStats() {
 		if (private == true) return;
 
 		// Create the HTML
-		let tags = ``;
-		if (topics.length > 0) tags = `<li><i class="fa-solid fa-tag"></i> ${topics.join(", ")}</li>`;
-
 		const html = `
 				<div class="repo">
 					<a href="${url}" target="_blank">
@@ -87,7 +83,6 @@ async function updateGitHubStats() {
 						
 						<ul class="info">
 							<li><i class="fa-solid fa-code"></i> ${language}</li>
-							${tags}
 							<li><i class="fa-solid fa-star"></i> ${stars}</li>
 						</ul>
 					</a>
