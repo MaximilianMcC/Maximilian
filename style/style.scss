@@ -1,0 +1,38 @@
+// Variables
+$accent: #e89500;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Inter Tight', sans-serif;
+}
+
+
+// TODO: Put in a separate css file. Call it topography or something
+.title {
+	font-weight: 900;
+	font-style: italic;
+}
+
+
+header {
+	height: 100%;
+
+	// Colors
+	background-color: #161516;
+	svg { fill: $accent; }
+	color: #f1f1f1;
+
+	// Font stuff
+	h1 {
+		position: absolute;
+		margin: 1rem 4rem;
+		font-size: 15rem;
+	}
+}
