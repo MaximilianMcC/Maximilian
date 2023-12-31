@@ -16,14 +16,27 @@ html, body {
 
 header {
   height: 100%;
-  background-color: #161516;
+}
+header .front {
+  z-index: 999;
   color: #f1f1f1;
 }
-header svg {
+header .front svg {
   fill: #e89500;
 }
-header h1 {
+header .front h1 {
   position: absolute;
   margin: 1rem 4rem;
   font-size: 15rem;
+}
+header .back {
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+}
+header .back video {
+  width: 50%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -23,16 +23,39 @@ html, body {
 
 header {
 	height: 100%;
+	// background-color: #161516;
 
-	// Colors
-	background-color: #161516;
-	svg { fill: $accent; }
-	color: #f1f1f1;
+	.front {
+		// Actually put it on the front
+		z-index: 999;
 
-	// Font stuff
-	h1 {
-		position: absolute;
-		margin: 1rem 4rem;
-		font-size: 15rem;
+		// Colors
+		svg { fill: $accent; }
+		color: #f1f1f1;
+
+		// Title text stuff
+		h1 {
+			position: absolute;
+			margin: 1rem 4rem;
+			font-size: 15rem;
+		}
 	}
+
+	.back {
+		// Put it in the back
+		z-index: -999;
+
+		// Shift everything to the right half of the page so that
+		// it only peaks out of the gap in SVG.
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+
+		video {
+			width: 50%;
+			height: 100%;
+		}
+	}
+
 }

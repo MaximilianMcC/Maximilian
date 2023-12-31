@@ -16,20 +16,27 @@
 	
 	<header>
 
-		<!-- Main header text -->
-		<h1 class="title">Maximilian</h1>
+		<div class="front">
+			<!-- Main header text -->
+			<h1 class="title">Maximilian</h1>
+	
+			<!-- triangle thingys -->
+			<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+	
+				<!-- Left "main" background triangle thing -->
+				<polygon points="0,0 50,0 60,100 0,100"/>
+	
+				<!-- Right side thing-->
+				<!--! this works, but idk how. rewrite -->
+				<polygon points="100,0 100,100, 100,150, 90,0"/>
+			</svg>
+		</div>
 
-		<!-- triangle thingys -->
-		<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-
-			<!-- Left "main" background triangle thing -->
-			<polygon points="0,0 50,0 60,100 0,100"/>
-
-			<!-- Right side thing-->
-			<!--! this works, but idk how. rewrite -->
-			<polygon points="100,0 100,100, 100,150, 90,0"/>
-		</svg>
-
+		<div class="back">
+			<!-- Background video -->
+			<video src="./assets/video/test.mp4" autoplay muted loop></video>
+		</div>
+		
 	</header>
 
 </body>
