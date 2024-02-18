@@ -1,5 +1,9 @@
-// Variables
+// Colors
+$text: white;
 $accent: #e89500;
+$background: #191919;
+$highlight: #deeeff;
+
 
 
 * {
@@ -8,54 +12,46 @@ $accent: #e89500;
 	box-sizing: border-box;
 }
 
+
+
 html, body {
 	height: 100%;
 	font-family: 'Inter Tight', sans-serif;
+	font-size: 24px;
+
+	// TODO: Maybe don't put this stuff here idk
+	color: $text;
+	background-color: $background;
 }
 
-
-// TODO: Put in a separate css file. Call it topography or something
-.title {
-	font-weight: 900;
-	font-style: italic;
-}
 
 
 header {
-	height: 100%;
-	// background-color: #161516;
+	background-color: $accent;
+	color: $text;
+	height: 60%;
 
-	.front {
-		// Actually put it on the front
-		z-index: 999;
-
-		// Colors
-		svg { fill: $accent; }
-		color: #f1f1f1;
-
-		// Title text stuff
-		h1 {
-			position: absolute;
-			margin: 1rem 4rem;
-			font-size: 15rem;
-		}
+	.text {
+		padding: 5%;
+		font-size: 85px;
+		font-weight: 900;
+		font-style: italic;
+		text-align: center;
 	}
-
-	.back {
-		// Put it in the back
-		z-index: -999;
-
-		// Shift everything to the right half of the page so that
-		// it only peaks out of the gap in SVG.
-		position: absolute;
-		top: 0;
-		left: 50%;
-		width: 100%;
-
-		video {
-			width: 50%;
-			height: 100%;
-		}
-	}
-
 }
+
+main {
+	margin: 5% 20%;
+
+	h2 {
+		font-weight: 900;
+		font-style: italic;
+		border-bottom: 2px solid #c0a0a0;
+		margin-bottom: 15px;
+	}
+
+	a { color: $highlight; }
+	span.highlight { color: $highlight }
+}
+
+.space { height: 50px; }

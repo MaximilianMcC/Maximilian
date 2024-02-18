@@ -7,36 +7,40 @@
 html, body {
   height: 100%;
   font-family: "Inter Tight", sans-serif;
-}
-
-.title {
-  font-weight: 900;
-  font-style: italic;
+  font-size: 24px;
+  color: white;
+  background-color: #191919;
 }
 
 header {
-  height: 100%;
+  background-color: #e89500;
+  color: white;
+  height: 60%;
 }
-header .front {
-  z-index: 999;
-  color: #f1f1f1;
+header .text {
+  padding: 5%;
+  font-size: 85px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
 }
-header .front svg {
-  fill: #e89500;
+
+main {
+  margin: 5% 20%;
 }
-header .front h1 {
-  position: absolute;
-  margin: 1rem 4rem;
-  font-size: 15rem;
+main h2 {
+  font-weight: 900;
+  font-style: italic;
+  border-bottom: 2px solid #c0a0a0;
+  margin-bottom: 15px;
 }
-header .back {
-  z-index: -999;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
+main a {
+  color: #deeeff;
 }
-header .back video {
-  width: 50%;
-  height: 100%;
+main span.highlight {
+  color: #deeeff;
+}
+
+.space {
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */

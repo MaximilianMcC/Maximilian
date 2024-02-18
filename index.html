@@ -5,39 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Maximilian</title>
+	<link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
 
 	<link rel="stylesheet" href="./style/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
 
+	<script src="./script.js" defer></script>
 </head>
 <body>
 	
 	<header>
-
-		<div class="front">
-			<!-- Main header text -->
-			<h1 class="title">Maximilian</h1>
-	
-			<!-- triangle thingys -->
-			<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-	
-				<!-- Left "main" background triangle thing -->
-				<polygon points="0,0 50,0 60,100 0,100"/>
-	
-				<!-- Right side thing-->
-				<!--! this works, but idk how. rewrite -->
-				<polygon points="100,0 100,100, 100,150, 90,0"/>
-			</svg>
+		<div class="text">
+			<h1>Maximilian</h1>
 		</div>
-
-		<div class="back">
-			<!-- Background video -->
-			<video src="./assets/video/test.mp4" autoplay muted loop></video>
-		</div>
-		
 	</header>
+
+	<main>
+
+		<!-- About me -->
+		<h2>About me</h2>
+		<p>My name is Max. I'm <span id="age">born in November</span> and I live in New Zealand. I mostly spend my time coding, watching YouTube, and playing games. I also know heaps of Star Wars lore. I'm a self-taught programmer and my favorite language is C#. Some of my favorite games are Minecraft, Half-life: Alyx, and Portal.</p>
+
+		<!-- TODO: Don't do this -->
+		<!--! bad practice -->
+		<div class="space"></div>
+
+		<!-- Where you can find me -->
+		<h2>Where you can find me</h2>
+		<p>If you'd like to talk to me, Discord is the best place (<span class="highlight">MTMB</span>). Otherwise, you can see what I'm doing on <a href="https://github.com/MaximilianMcC" target="_blank">GitHub</a>. I have traditional social media accounts, but I don't use them.</p>
+
+		<!-- TODO: Don't do this -->
+		<!--! bad practice -->
+		<div class="space"></div>
+		<div class="space"></div>
+	</main>
 
 </body>
 </html>
