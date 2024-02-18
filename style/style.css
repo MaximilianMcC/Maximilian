@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   font-family: "Inter Tight", sans-serif;
-  font-size: 24px;
+  font-size: 2.4vh;
   color: white;
   background-color: #191919;
 }
@@ -15,14 +15,21 @@ html, body {
 header {
   background-color: #e89500;
   color: white;
-  height: 60%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .text {
   padding: 5%;
-  font-size: 85px;
+  font-size: 8.5vh;
   font-weight: 900;
   font-style: italic;
   text-align: center;
+}
+header .text .fancy {
+  font-family: "Lobster";
+  font-style: normal;
 }
 
 main {
@@ -43,4 +50,16 @@ main span.highlight {
 
 .space {
   height: 50px;
+}
+
+@media only screen and (max-width: 760px) {
+  header {
+    height: 25%;
+  }
+  header .text {
+    font-size: 3.5vh;
+  }
+  main {
+    margin: 5%;
+  }
 }/*# sourceMappingURL=style.css.map */

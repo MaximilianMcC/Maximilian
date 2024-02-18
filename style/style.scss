@@ -17,7 +17,7 @@ $highlight: #deeeff;
 html, body {
 	height: 100%;
 	font-family: 'Inter Tight', sans-serif;
-	font-size: 24px;
+	font-size: 2.4vh;
 
 	// TODO: Maybe don't put this stuff here idk
 	color: $text;
@@ -29,14 +29,23 @@ html, body {
 header {
 	background-color: $accent;
 	color: $text;
-	height: 60%;
 
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 	.text {
 		padding: 5%;
-		font-size: 85px;
+		font-size: 8.5vh;
 		font-weight: 900;
 		font-style: italic;
 		text-align: center;
+
+		.fancy {
+			font-family: 'Lobster';
+			font-style: normal;
+		}
 	}
 }
 
@@ -55,3 +64,21 @@ main {
 }
 
 .space { height: 50px; }
+
+
+
+// Mobile stuff
+@media only screen and (max-width: 760px) {
+
+	header {
+		height: 25%;
+
+		.text {
+			font-size: 3.5vh;
+		}
+	}
+
+	main {
+		margin: 5%;
+	}
+}
