@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-	// Get all of the inputs for the table
+	// Get all of the bit inputs for the table
 	//? Might need to add an 'index' attribute to the HTML to order them
-	const binaryInputs = document.querySelectorAll("#binaryInput");
-	
+	const bitInputs = document.querySelectorAll("#binaryInput");
+
+	// Get all of the bit displays for the table
+	const bitDisplays = document.querySelectorAll("#bitDisplay");
+
 	// Get the character input
 	const characterInput = document.querySelector("#characterInput");
 
@@ -32,6 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 		mathsExplanation.innerHTML = `Because ${equation} = ${asciiValue}`;
 	});
+
+	for (let i = 0; i < bitInputs.length; i++) {
+
+		// Get the current bit input
+		const bitInput = bitInputs[i];
+		bitInput.addEventListener("input", () => {
+
+			// Set the corresponding bit display
+			// to reflect this checbox
+			bitDisplays[i].innerHTML = bitInput.checked ? '1' : '0';
+		});
+	};
 });
 
 
