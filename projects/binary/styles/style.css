@@ -31,6 +31,10 @@ main span.highlight {
   height: 50px;
 }
 
+.text-centre {
+  text-align: center;
+}
+
 .centre {
   display: flex;
   justify-content: center;
@@ -91,6 +95,10 @@ table td button:hover {
   border: none;
   border-bottom: solid 1vh #e89500;
   font-size: 30vh;
-  width: 50%;
+  width: 85%;
   text-align: center;
+}
+
+.number {
+  color: #e89500;
 }/*# sourceMappingURL=style.css.map */
