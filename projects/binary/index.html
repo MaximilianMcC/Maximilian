@@ -8,18 +8,25 @@
 	<link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
 
 	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/general.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
 	<script src="./script.js" defer></script>
 
 </head>
 <body>
 	
-	<main>
-		<!-- TODO: Write a litte bit about how it all works -->
+	<main class="margin-small">
+
+
+		<!-- TODO: Add yap session -->
+		
+
 
 		<div class="split">
 
@@ -27,7 +34,7 @@
 			<div class="centre">
 
 				<!-- The actual character input thing -->
-				<input id="characterInput" type="text" maxlength="1">
+				<input id="characterInput" type="text" maxlength="1" placeholder="0">
 
 				<div class="space"></div>
 
@@ -41,8 +48,38 @@
 			<div class="centre">
 				
 				<!-- Binary conversion table -->
+				<table>
+					<thead>
+						<tr>
+							<th><p>128</p></th>
+							<th><p>64</p></th>
+							<th><p>32</p></th>
+							<th><p>16</p></th>
+							<th><p>8</p></th>
+							<th><p>4</p></th>
+							<th><p>2</p></th>
+							<th><p>1</p></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+							<td><button id="bitInput" bit="0">0</button></td>
+						</tr>
+					</tbody>
+				</table>
 
+				
 				<!-- Maths explanation -->
+				<div class="space"></div>
+				<div class="space"></div>
+				<p class="text-centre" id="maths"></p>
 				
 			</div>
 

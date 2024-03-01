@@ -8,32 +8,27 @@ html, body {
   height: 100%;
   font-family: "Inter Tight", sans-serif;
   font-size: 2.4vh;
-  color: #ffffff;
+  color: white;
   background-color: #191919;
 }
 
-table {
-  table-layout: fixed;
-  width: 100%;
+main a {
+  color: #deeeff;
 }
-table th, table td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  padding: 25px;
-}
-table th input, table td input {
-  width: 100%;
-  height: 100%;
-  background-color: gray;
-  font-size: 2.4vh;
-}
-table .bitDisplays {
-  background-color: green;
+main span.highlight {
+  color: #deeeff;
 }
 
-main {
+.margin-large {
   margin: 5% 20%;
+}
+
+.margin-small {
+  margin: 3% 10%;
+}
+
+.space {
+  height: 50px;
 }
 
 .centre {
@@ -45,22 +40,57 @@ main {
   height: 100%;
 }
 
+@media only screen and (max-width: 760px) {
+  header {
+    height: 25%;
+  }
+  header .text {
+    font-size: 3.5vh;
+  }
+  main {
+    margin: 5%;
+  }
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+table th {
+  padding: 15px;
+  border: 5px solid #212121;
+  background-color: #151515;
+}
+table td {
+  width: 10vh;
+  height: 10vh;
+  border: 5px solid #212121;
+}
+table td button {
+  width: 100%;
+  height: 100%;
+  font-size: 6vh;
+  font-family: "Anta", "consolas", monospace;
+  border: none;
+  background-color: #303030;
+  color: #e89500;
+}
+table td button:hover {
+  background-color: #252525;
+}
+
 .split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 #characterInput {
   background-color: transparent;
-  color: #ffffff;
+  color: white;
   outline: none;
   border: none;
-  border-bottom: solid 15px #e89500;
-  font-size: 35vh;
-  width: 100%;
+  border-bottom: solid 1vh #e89500;
+  font-size: 30vh;
+  width: 50%;
   text-align: center;
-}
-
-.space {
-  height: 50px;
 }/*# sourceMappingURL=style.css.map */

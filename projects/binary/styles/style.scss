@@ -1,69 +1,47 @@
-// Colors
-$text: #ffffff;
-$accent: #e89500;
-$background: #191919;
-$highlight: #deeeff;
-
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html, body {
-	height: 100%;
-	font-family: 'Inter Tight', sans-serif;
-	font-size: 2.4vh;
-
-	// TODO: Maybe don't put this stuff here idk
-	color: $text;
-	background-color: $background;
-}
-
+@import '../../../style/general';
 
 table {
 	
-	table-layout: fixed;
 	width: 100%;
-
-	th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
-		
-		text-align: center;
-		padding: 25px;
+	table-layout: fixed;
+	border-collapse: collapse;
 	
-		input {
+	// Power headings
+	th {
+		padding: 15px;
+		border: 5px solid #212121;
+		background-color: #151515;
+	}
+
+	// Input thingys
+	td {
+		width: 10vh;
+		height: 10vh;
+		border: 5px solid #212121;
+
+		button {
 			width: 100%;
 			height: 100%;
-			background-color: gray;
-			font-size: 2.4vh;
+			
+			font-size: 6vh;
+			font-family: 'Anta', 'consolas', monospace;
+
+			border: none;
+			background-color: #303030;
+			color: $accent;
+
+			&:hover {
+				background-color: #252525;
+			}
 		}
 	}
 
-	.bitDisplays {
-		background-color: green;
-	}
-}
-
-main {
-	margin: 5% 20%;
-}
-
-.centre {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
 }
 
 //! If grid being difficult then just switch to flex
 .split {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 }
 
 
@@ -73,11 +51,9 @@ main {
 	color: $text;
 	outline: none;
 	border: none;
-	border-bottom: solid 15px $accent;
+	border-bottom: solid 1vh $accent;
 
-	font-size: 35vh;
-	width: 100%;
+	font-size: 30vh;
+	width: 50%;
 	text-align: center;
 }
-
-.space { height: 50px; }

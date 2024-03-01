@@ -1,56 +1,56 @@
-
-// TODO: Hide the site and have a message that says "due to the table layout used this site is unavallible on a screen of your size" or something like that
-
 document.addEventListener("DOMContentLoaded", () => {
 
-	// Get all of the bit inputs for the table
-	//? Might need to add an 'index' attribute to the HTML to order them
-	const bitInputs = document.querySelectorAll("#binaryInput");
-
-	// Get all of the bit displays for the table
-	const bitDisplays = document.querySelectorAll("#bitDisplay");
-
-	// Get the character input
-	const characterInput = document.querySelector("#characterInput");
-
-	// Get the maths explanation string
-	const mathsExplanation = document.querySelector("#maths");
-
-
-
-
-	characterInput.addEventListener("input", (e) => {
-		
-		// Get the ASCII value of the first
-		// character in the input string		
-		const asciiValue = characterInput.value.charCodeAt(0);
-		
-		// Figure out what numbers/bits are needed
-		// to make the ascii number of the character
-		const bitsRequired = getBitsRequired(asciiValue);
-
-		// Write the maths explanation
-		let equation = ``;
-		for (let i = 0; i < bitsRequired.length; i++) {
-			
-			equation += `<span class="number">${bitsRequired[i]}</span>`;
-			if (i < bitsRequired.length - 1) equation += ` + `;
-		}
-		mathsExplanation.innerHTML = `Because ${equation} = ${asciiValue}`;
-	});
-
-	for (let i = 0; i < bitInputs.length; i++) {
-
-		// Get the current bit input
-		const bitInput = bitInputs[i];
-		bitInput.addEventListener("input", () => {
-
-			// Set the corresponding bit display
-			// to reflect this checbox
-			bitDisplays[i].innerHTML = bitInput.checked ? '1' : '0';
-		});
-	};
+	// Add the update event listener to everything
+	document.querySelector("#characterInput").addEventListener("input", () => update());
 });
+
+
+// TODO: Get all elements first, not at runtime
+function update() {
+	
+	console.log("Updating rn");
+
+	// Get the ascii number
+	// and update the text
+	const asciiNumber = document.querySelector("#characterInput").value.charCodeAt(0);
+	document.querySelector("#asciiNumber").innerHTML = asciiNumber;
+
+
+
+	// Figure out what numbers/bits are needed
+	// to make the ascii number of the character
+	const bitsRequired = getBitsRequired(asciiNumber);
+
+
+
+	// Write and update the maths equation
+	let equation = ``;
+	for (let i = 0; i < bitsRequired.length; i++) {
+		
+		equation += `<span class="number">${bitsRequired[i]}</span>`;
+		if (i < bitsRequired.length - 1) equation += ` + `;
+	}
+	document.querySelector("#maths").innerHTML = `${equation} = ${asciiNumber}`;
+
+
+
+	// Update the bits in the table to
+	// show the correct inputs
+	const bitInputs = document.querySelectorAll("#bitInput");
+	for (let i = 0; i < bitInputs.length; i++) {
+		
+		// Get the 'header' value
+		//? number like 128, 65, 8, 2, etc
+		const header = Math.pow(2, i);
+
+		// Check for if the header needs to be toggled
+		const newBit = bitsRequired.includes(header) ? "1" : "0";
+		bitInputs[i].setAttribute("bit", newBit);
+
+		// Update the text to reflect it's bit state
+		bitInputs[i].innerHTML = bitInputs[i].getAttribute("bit");
+	}
+}
 
 
 
