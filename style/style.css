@@ -12,6 +12,9 @@ html, body {
   background-color: #191919;
 }
 
+main {
+  height: 100%;
+}
 main a {
   color: #deeeff;
 }
@@ -44,6 +47,17 @@ main span.highlight {
   height: 100%;
 }
 
+footer {
+  background-color: #282828;
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+}
+footer a {
+  color: #deeeff;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 760px) {
   header {
     height: 25%;
@@ -69,10 +83,6 @@ header .text {
   font-weight: 900;
   font-style: italic;
   text-align: center;
-}
-header .text .fancy {
-  font-family: "Lobster";
-  font-style: normal;
 }
 
 main h2 {

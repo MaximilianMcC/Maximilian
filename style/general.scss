@@ -28,6 +28,8 @@ html, body {
 
 
 main {
+	height: 100%;
+
 	a { color: $highlight; }
 	span.highlight { color: $highlight }
 }
@@ -50,6 +52,22 @@ main {
 	height: 100%;
 }
 
+footer {
+	background-color: #282828;
+	padding: 10px;
+	text-align: right;
+
+	a {
+		color: $highlight;
+		text-decoration: none;
+	}
+}
+
+
+.fancy {
+	font-family: 'Lobster';
+	font-style: normal;
+}
 
 
 // Mobile stuff

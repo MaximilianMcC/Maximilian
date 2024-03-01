@@ -12,6 +12,9 @@ html, body {
   background-color: #191919;
 }
 
+main {
+  height: 100%;
+}
 main a {
   color: #deeeff;
 }
@@ -42,6 +45,21 @@ main span.highlight {
   flex-direction: column;
   width: 100%;
   height: 100%;
+}
+
+footer {
+  background-color: #282828;
+  padding: 10px;
+  text-align: right;
+}
+footer a {
+  color: #deeeff;
+  text-decoration: none;
+}
+
+.fancy {
+  font-family: "Lobster";
+  font-style: normal;
 }
 
 @media only screen and (max-width: 760px) {
