@@ -80,4 +80,27 @@ main h2 {
   font-style: italic;
   border-bottom: 2px solid #c0a0a0;
   margin-bottom: 15px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.projects .card button {
+  background-color: #252525;
+  color: #deeeff;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+}
+.projects .card button:hover {
+  background-color: #282828;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

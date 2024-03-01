@@ -32,3 +32,32 @@ main {
 		margin-bottom: 15px;
 	}
 }
+
+.projects {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+
+	.card button {
+		
+		background-color: #252525;
+		color: $highlight;
+		
+		font-weight: 900;
+		font-style: italic;
+		font-size: 3vh;
+		
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+
+		width: 100%;
+		padding: 25px;
+		text-align: center;
+
+		&:hover {
+			background-color: #282828;
+			color: $text;
+		}
+	}
+}
