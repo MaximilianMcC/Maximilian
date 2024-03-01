@@ -32,23 +32,24 @@ function update() {
 	}
 	document.querySelector("#maths").innerHTML = `${equation} = ${asciiNumber}`;
 
+	console.log(bitsRequired);
 
 
 	// Update the bits in the table to
 	// show the correct inputs
 	const bitInputs = document.querySelectorAll("#bitInput");
 	for (let i = 0; i < bitInputs.length; i++) {
-		
+
 		// Get the 'header' value
-		//? number like 128, 65, 8, 2, etc
+		//? 128, 64, 32, etc
 		const header = Math.pow(2, i);
 
-		// Check for if the header needs to be toggled
+		// Check if the header needs to be toggled
 		const newBit = bitsRequired.includes(header) ? "1" : "0";
-		bitInputs[i].setAttribute("bit", newBit);
+		bitInputs[bitInputs.length - 1 - i].setAttribute("bit", newBit);
 
-		// Update the text to reflect it's bit state
-		bitInputs[i].innerHTML = bitInputs[i].getAttribute("bit");
+		// Update the text to reflect its bit state
+		bitInputs[bitInputs.length - 1 - i].innerHTML = newBit;
 	}
 }
 
