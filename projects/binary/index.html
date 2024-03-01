@@ -18,55 +18,37 @@
 </head>
 <body>
 	
-	<!-- TODO: Write a litte bit about how it all works -->
+	<main>
+		<!-- TODO: Write a litte bit about how it all works -->
 
-	<!-- Character input -->
-	<input id="characterInput" type="text" maxlength="1">
+		<div class="split">
 
-	<!-- Conversion table -->
-	<table>
-		<thead>
-			<tr>
-				<th><p>128</p></th>
-				<th><p>64</p></th>
-				<th><p>32</p></th>
-				<th><p>16</p></th>
-				<th><p>8</p></th>
-				<th><p>4</p></th>
-				<th><p>2</p></th>
-				<th><p>1</p></th>
-			</tr>
-		</thead>
-		<tbody>
-			
-			<!-- Bit displays -->
-			<tr>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-				<td><p id="bitDisplay">0</p></td>
-			</tr>
-			
-			<!-- Bit checkboxes -->
-			<tr>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-				<td><input id="binaryInput" maxlength="1" type="checkbox"></td>
-			</tr>
-		</tbody>
-	</table>
+			<!-- ASCII and letter input section -->
+			<div class="centre">
 
-	<!-- Maths explanation -->
-	<p id="maths">wow</p>
+				<!-- The actual character input thing -->
+				<input id="characterInput" type="text" maxlength="1">
 
+				<div class="space"></div>
+
+				<!-- Ascii number text -->
+				<p>ASCII number: <span id="asciiNumber"></span></p>
+
+
+			</div>
+
+			<!-- Table and maths section -->
+			<div class="centre">
+				
+				<!-- Binary conversion table -->
+
+				<!-- Maths explanation -->
+				
+			</div>
+
+		</div>
+
+	</main>
+	
 </body>
 </html>

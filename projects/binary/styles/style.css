@@ -8,18 +8,59 @@ html, body {
   height: 100%;
   font-family: "Inter Tight", sans-serif;
   font-size: 2.4vh;
-  color: white;
+  color: #ffffff;
   background-color: #191919;
 }
 
-table, th, td {
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table th, table td {
   border: 1px solid black;
   border-collapse: collapse;
-  padding: 10px;
+  text-align: center;
+  padding: 25px;
 }
-table input, th input, td input {
+table th input, table td input {
   width: 100%;
   height: 100%;
   background-color: gray;
   font-size: 2.4vh;
+}
+table .bitDisplays {
+  background-color: green;
+}
+
+main {
+  margin: 5% 20%;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#characterInput {
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: solid 15px #e89500;
+  font-size: 35vh;
+  width: 100%;
+  text-align: center;
+}
+
+.space {
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,6 @@
+
+// TODO: Hide the site and have a message that says "due to the table layout used this site is unavallible on a screen of your size" or something like that
+
 document.addEventListener("DOMContentLoaded", () => {
 
 	// Get all of the bit inputs for the table
