@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "big blue terminal";
+  src: url("../BigBlue_TerminalPlus.TTF");
+}
+.crt {
+  width: 65%;
+  height: 85%;
+  border: #e7dcca solid 50px;
+  border-radius: 30px;
+}
+.crt .screen {
+  border: #b2a899 solid 35px;
+  padding: 50px;
+  background-color: #010101;
+  font-family: "big blue terminal", "consolas", monospace;
+  color: #50cf1e;
+}/*# sourceMappingURL=style.css.map */
