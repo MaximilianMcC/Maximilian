@@ -58,10 +58,10 @@ section h2 {
 
 @media (max-width: 480px) {
   html {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   main {
-    margin: 10% 15%;
+    margin: 10% 10%;
   }
   nav {
     display: none;
