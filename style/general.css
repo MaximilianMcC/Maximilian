@@ -54,4 +54,20 @@ main {
 section h2 {
   border-bottom: 5px solid #212121;
   margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 1.5rem;
+  }
+  main {
+    margin: 10% 15%;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    font-size: 1.3rem;
+    height: 25%;
+  }
 }/*# sourceMappingURL=general.css.map */

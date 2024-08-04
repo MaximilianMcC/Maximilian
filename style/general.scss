@@ -52,7 +52,6 @@ header {
 nav {
 	background-color: $background-secondary;
 	height: 5%;
-	// box-shadow: 0px 5px 10px black;
 	
 	ul {
 		height: 100%;
@@ -82,5 +81,42 @@ section {
 	h2 {
 		border-bottom: 5px solid $background-secondary;
 		margin-bottom: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+// Responsive phone
+@media (max-width: 480px) {
+
+	// Make the base font smaller
+	html {
+		font-size: 1.5rem;
+	}
+
+	// Make the margins smaller
+	main {
+		margin: 10% 15%;
+	}
+
+	// Just straight up get
+	// rid of the navbar if
+	// they are on a phone
+	nav {
+		display: none;
+	}
+
+	// Make the header size smaller
+	// and also text smaller
+	header {
+		font-size: 1.3rem;
+		height: 25%;
 	}
 }
