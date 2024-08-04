@@ -1,0 +1,59 @@
+// Custom ttf fonts
+@font-face {
+	font-family: "BritishRailDark";
+	src: url("../assets/font/britrdn_.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "BritishRailLight";
+	src: url("../assets/font/britrln_.ttf") format("truetype");
+}
+
+// Colors
+$text: white;
+$accent: #e89500;
+$background: #191919;
+$highlight: #deeeff;
+
+// General styles
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100dvh;
+
+	//? Set the default font size to be double the normal
+	font-size: 2rem;
+}
+
+body {
+	height: 100%;
+
+	font-family: "BritishRailLight", sans-serif;
+
+	background-color: $background;
+	color: $text;
+}
+
+// Fancy text
+span.fancy {
+	font-family: "lobster", cursive;
+	font-style: normal;
+}
+
+// Header
+header {
+	height: 35%;	
+	display: grid;
+	place-content: center;
+
+	font-size: 2.5rem;
+    font-family: "Inter Tight", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+
+	background-color: $accent;
+}

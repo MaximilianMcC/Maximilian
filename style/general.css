@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "BritishRailDark";
+  src: url("../assets/font/britrdn_.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BritishRailLight";
+  src: url("../assets/font/britrln_.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100dvh;
+  font-size: 2rem;
+}
+
+body {
+  height: 100%;
+  font-family: "BritishRailLight", sans-serif;
+  background-color: #191919;
+  color: white;
+}
+
+span.fancy {
+  font-family: "lobster", cursive;
+  font-style: normal;
+}
+
+header {
+  height: 35%;
+  display: grid;
+  place-content: center;
+  font-size: 2.5rem;
+  font-family: "Inter Tight", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #e89500;
+}/*# sourceMappingURL=general.css.map */
