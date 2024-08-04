@@ -1,19 +1,9 @@
-// Custom ttf fonts
-@font-face {
-	font-family: "BritishRailDark";
-	src: url("../assets/font/britrdn_.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "BritishRailLight";
-	src: url("../assets/font/britrln_.ttf") format("truetype");
-}
-
 // Colors
 $text: white;
 $accent: #e89500;
-$background: #191919;
 $highlight: #deeeff;
+$background: #191919;
+$background-secondary: #212121;
 
 // General styles
 * {
@@ -26,22 +16,16 @@ html {
 	height: 100dvh;
 
 	//? Set the default font size to be double the normal
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 body {
 	height: 100%;
 
-	font-family: "BritishRailLight", sans-serif;
+	font-family: "Inter", sans-serif;
 
 	background-color: $background;
 	color: $text;
-}
-
-// Fancy text
-span.fancy {
-	font-family: "lobster", cursive;
-	font-style: normal;
 }
 
 // Header
@@ -56,4 +40,47 @@ header {
 	font-weight: bold;
 
 	background-color: $accent;
+
+	// Make the first letter of the title fancy
+	h1::first-letter {
+		font-family: "lobster", cursive;
+		font-style: normal;
+	}
+}
+
+// Navbar
+nav {
+	background-color: $background-secondary;
+	height: 5%;
+	// box-shadow: 0px 5px 10px black;
+	
+	ul {
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		list-style-type: none;
+
+		// Actual links
+		li a {
+			color: $highlight;
+			text-decoration: none;
+		}
+	}
+}
+
+// Actual content
+main {
+	margin: 3% 20%;
+}
+
+// Content
+section {
+
+	// Headings
+	h2 {
+		border-bottom: 5px solid $background-secondary;
+		margin-bottom: 10px;
+	}
 }
