@@ -120,3 +120,17 @@ section {
 		height: 25%;
 	}
 }
+
+// Responsive small screen
+@media (min-width: 760px) and (max-width: 2000px) {
+
+	// Make the base font smaller
+	html {
+		font-size: 1.5rem;
+	}
+
+	// Make the margins smaller
+	main {
+		margin: 4% 15%;
+	}
+}
