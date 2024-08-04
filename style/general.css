@@ -43,7 +43,7 @@ nav ul {
   list-style-type: none;
 }
 nav ul li a {
-  color: #deeeff;
+  color: #cceeff;
   text-decoration: none;
 }
 
@@ -51,9 +51,16 @@ main {
   margin: 3% 20%;
 }
 
+a, .highlight {
+  color: #cceeff;
+}
+
 section h2 {
   border-bottom: 5px solid #212121;
   margin-bottom: 10px;
+}
+section ul {
+  list-style-position: inside;
 }
 
 @media (max-width: 480px) {

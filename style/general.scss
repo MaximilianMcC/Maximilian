@@ -1,7 +1,7 @@
 // Colors
 $text: white;
 $accent: #e89500;
-$highlight: #deeeff;
+$highlight: #cceeff;
 $background: #191919;
 $background-secondary: #212121;
 
@@ -74,6 +74,11 @@ main {
 	margin: 3% 20%;
 }
 
+// Highlighted stuff
+a, .highlight {
+	color: $highlight;
+}
+
 // Content
 section {
 
@@ -81,6 +86,11 @@ section {
 	h2 {
 		border-bottom: 5px solid $background-secondary;
 		margin-bottom: 10px;
+	}
+
+	// Make lists respect margin
+	ul {
+		list-style-position: inside;
 	}
 }
 
