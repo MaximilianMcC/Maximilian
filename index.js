@@ -10,10 +10,9 @@ const port = process.env.PORT || 3000;
 // stuff (normal plain html website thing)
 app.use(Express.static(Path.join(__dirname, "public")));
 
-// Set up all the routers so we can use stuff
-// from other files (keeping clean fr)
+// Endpoints and whatnot
 app.get("/test", (request, response) => {
-	response.send("<h1>testing rn</p>");
+	response.send("<h1>testing rn</h1>");
 })
 
 // Make it so that all pages don't have
@@ -26,14 +25,8 @@ app.get("*", (request, response) => {
 
 	// Check for if the page exists. If it does then
 	// send them the page. Otherwise pack a sad
-	if (FileSystem.existsSync(page))
-	{
-		response.sendFile(page);
-		return;
-	}
-
-	// dodgy error screen
-	Send404(requestedContent, response);
+	if (FileSystem.existsSync(page)) response.sendFile(page);
+	else Send404(requestedContent, response);
 });
 
 // Run the express server
@@ -44,7 +37,7 @@ app.listen(port, () => console.log(`Server listening on port ${port}!`));
 // Send a fancy as 404 page
 function Send404(missingThing, response) {
 	
-	// Get the 404 html
+	// Get the 404 html page as a string
 	const path = Path.join(__dirname, "public", "responses", "404.html");
 	let html = FileSystem.readFileSync(path, "utf8");
 
