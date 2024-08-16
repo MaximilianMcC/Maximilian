@@ -12,7 +12,9 @@ app.use(Express.static(Path.join(__dirname, "public")));
 
 // Endpoints and whatnot
 app.get("/test", (request, response) => {
-	response.send("<h1>testing rn</h1>");
+	// response.send("<h1>testing rn</h1>");
+
+	SendCustomError("test", 403, response);
 })
 
 // Make it so that all pages don't have
@@ -26,7 +28,7 @@ app.get("*", (request, response) => {
 	// Check for if the page exists. If it does then
 	// send them the page. Otherwise pack a sad
 	if (FileSystem.existsSync(page)) response.sendFile(page);
-	else Send404(requestedContent, response);
+	else SendCustomError(requestedContent, 404, response);
 });
 
 // Run the express server
@@ -34,17 +36,17 @@ app.listen(port, () => console.log(`Server listening on port ${port}!`));
 
 
 
-// Send a fancy as 404 page
-function Send404(missingThing, response) {
+// Send a fancy as error page
+function SendCustomError(statusText, status, response) {
 	
-	// Get the 404 html page as a string
-	const path = Path.join(__dirname, "public", "responses", "404.html");
+	// Get the errors html page as a string
+	const path = Path.join(__dirname, "public", "responses", `${status}.html`);
 	let html = FileSystem.readFileSync(path, "utf8");
 
 	// Replace the error text thing
-	html = html.replace("{missingThing}", missingThing);
+	html = html.replace("{statusText}", statusText);
 
-	// Send back the 404 file and whatnot with
-	// the 404 status code also
-	response.status(404).send(html);
+	// Send back the file and whatnot with
+	// the status code also
+	response.status(status).send(html);
 }
