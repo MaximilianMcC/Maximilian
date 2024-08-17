@@ -162,3 +162,7 @@ dist
 # temp stuff idk
 *temp*
 *debug*
+
+# dynamic data stuff
+data-*.json
+data-*.txt
