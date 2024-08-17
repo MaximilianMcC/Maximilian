@@ -1,4 +1,5 @@
 const Express = require("express");
+const Cors = require("cors");
 const Path = require("path");
 const FileSystem = require("fs");
 const Utils = require("./utils");
@@ -6,6 +7,9 @@ const Utils = require("./utils");
 // Setup express
 const app = Express();
 const port = process.env.PORT || 3000;
+
+// Use cors (for json requests from browser or something)
+app.use(Cors());
 
 // Set the public folder for serving static
 // stuff (normal plain html website thing)
