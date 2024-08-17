@@ -62,6 +62,20 @@ router.get("/get-runs", (request, response) => {
 	response.status(200).json(runs);
 });
 
+// Delete the runs (website)
+router.get("/dashboard", (request, response) => {
+
+	response.status(200).sendFile(Path.join(__dirname, "dashboard.html"));
+});
+
+// Delete the runs (actually delete them)
+router.post("/delete-runs", (request, response) => {
+
+	// Just replace the current json with a new empty one
+	FileSystem.writeFileSync(path, "[]");
+
+	response.status(200).send("deleted all runs");
+});
 
 function getJson() {
 	
