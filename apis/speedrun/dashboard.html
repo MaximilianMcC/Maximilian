@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>speedrun delete thingy</title>
+
+	<style>
+		.split {
+			display: flex;
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+		.half {
+			flex: 50%;
+			padding-right: 25px;
+		}
+
+		table {
+			width: 100%;
+		}
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th {
+			background-color: #ff00ff;
+			color: white;
+		}
+
+		img {
+			max-width: 50%;
+		}
+	</style>
+
+</head>
+<body>
+
+	<marquee behavior="scroll" direction="right"><strong>very profesional speedrun delete page (budget of $170)</strong></marquee>
+
+	<div class="split">
+
+		<div class="half">
+
+			<h1>speedrun delete thing</h1>
+			<p>Click the button below if you wanna delete/reset all of the speedrun times (can't be undone)</p>
+			<button id="confirmation1">delete</button>
+		
+			<div class="conformation2" style="display: none;">
+				<p>are you sure</p>
+				<button id="confirmation2">yep</button>
+			</div>
+		
+			<div class="conformation3" style="display: none;">
+				<p>ok are you still sure</p>
+				<button id="confirmation3">delete it rn</button>
+			</div>
+		
+			<p><strong class="deletedText"></strong></p>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>If you want some budget added to this page (make it look half decent) tell me and I'll add it</p>
+			<br>
+			<img src="https://i.imgur.com/GmrlRqv.gif" alt="memorial picmix">
+
+		</div>
+
+		<div class="half">
+			<h1>preview of the thing rn</h1>
+			<p>(this doesnt update live btw (too much effort))</p>
+
+			<table>
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>time</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", showTable());
+
+		let confirmations = [false, false, false]
+
+		document.querySelector("#confirmation1").addEventListener("click", () => {
+			confirmations[0] = true;
+			document.querySelector(".conformation2").style.display = "block";
+		});
+
+		document.querySelector("#confirmation2").addEventListener("click", () => {
+			confirmations[1] = true;
+			document.querySelector(".conformation3").style.display = "block";
+		});
+
+		document.querySelector("#confirmation3").addEventListener("click", () => {
+			confirmations[2] = true;
+			
+			if (!(confirmations[0] === true && confirmations[1] === true && confirmations[2] === true)) return;
+
+			deleteLeaderboard();
+			document.querySelector(".deletedText").innerHTML = "ok its deleted";
+			showTable();
+		});
+
+		async function deleteLeaderboard() {
+			await fetch("http://maximilian.co.nz/apis/speedrun/delete-runs", { method: "POST" });
+		}
+
+		async function showTable() {
+			const table = document.querySelector("tbody");
+			table.innerHTML = "";
+			
+
+			const response = await fetch("http://maximilian.co.nz/apis/speedrun/get-runs");
+			const runs = await response.json();
+
+			runs.forEach(run => {
+				table.innerHTML += `
+				<tr>
+					<td>${run.name}</td>
+					<td>${run.time}</td>
+				</tr>
+				`;
+			});
+		}
+
+	</script>
+</body>
+</html>
