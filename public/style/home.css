@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  color: #fdfae9;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.layout .half.left {
+  padding: 150px 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+.layout .half.left h1 {
+  font-size: 100px;
+}
+.layout .half.left p {
+  font-size: 35px;
+}/*# sourceMappingURL=home.css.map */

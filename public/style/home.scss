@@ -1,0 +1,28 @@
+@import "general";
+
+body {
+	background-color: $background-primary;
+	color: $foreground-primary;
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+
+	.half {
+
+		// Left side (text and stuff)
+		&.left {
+			padding: 150px 100px;
+
+			font-family: 'Times New Roman', Times, serif;
+			h1 { font-size: 100px; }
+			p { font-size: 35px; }
+		}
+
+		// Right side (CRT)
+		&.right {
+
+		}
+	}
+}
