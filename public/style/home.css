@@ -43,13 +43,40 @@ body {
 }
 .layout .content .half.left {
   padding: 150px 100px;
-  font-family: "Times New Roman", Times, serif;
 }
-.layout .content .half.left h1 {
+.layout .content .half.left .introduction {
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 120px;
+}
+.layout .content .half.left .introduction h1 {
   font-size: 100px;
 }
-.layout .content .half.left p {
+.layout .content .half.left .introduction p {
   font-size: 35px;
+}
+.layout .content .half.left .navigation ul {
+  list-style-type: none;
+}
+.layout .content .half.left .navigation a {
+  color: #fdfae9;
+  text-decoration: none;
+  font-size: 65px;
+  position: relative;
+  display: inline-block;
+}
+.layout .content .half.left .navigation a:after {
+  position: absolute;
+  content: "";
+  background-color: #FF00FF;
+  border-radius: 1px;
+  top: 100%;
+  left: 0px;
+  height: 3px;
+  width: 0%;
+  transition: width 0.2s ease;
+}
+.layout .content .half.left .navigation a:hover:after {
+  width: 100%;
 }
 .layout .content .half.right {
   display: flex;

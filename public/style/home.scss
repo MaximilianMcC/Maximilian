@@ -38,10 +38,49 @@ body {
 			// Left side (text and stuff)
 			&.left {
 				padding: 150px 100px;
-	
-				font-family: 'Times New Roman', Times, serif;
-				h1 { font-size: 100px; }
-				p { font-size: 35px; }
+
+				// Top thingy
+				.introduction {
+		
+					font-family: 'Times New Roman', Times, serif;
+					h1 { font-size: 100px; }
+					p { font-size: 35px; }
+
+					padding-bottom: 120px;
+				}
+
+				// Bottom thingy (nav bar)
+				.navigation {
+					ul { list-style-type: none; }
+					
+					a {
+						color: $foreground-primary;
+						text-decoration: none;
+						font-size: 65px;
+
+						position: relative;
+						display: inline-block;
+
+						&:after {
+							position: absolute;
+							content: "";
+
+							background-color: $accent;
+							border-radius: 1px;
+
+							top: 100%;
+							left: 0px;
+							height: 3px;
+							
+							width: 0%;
+							transition: width 0.2s ease;
+						}
+
+						&:hover:after {
+							width: 100%;
+						}
+					}
+				}
 			}
 	
 			// Right side (CRT)
