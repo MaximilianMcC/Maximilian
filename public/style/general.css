@@ -2,4 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+*::-moz-selection {
+  background-color: #FF00FF;
+}
+*::selection {
+  background-color: #FF00FF;
+}
+
+span#explanation:hover {
+  cursor: url("../assets/image/point-up-emoji.svg") 16 0, pointer;
 }/*# sourceMappingURL=general.css.map */

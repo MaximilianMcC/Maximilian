@@ -7,4 +7,12 @@ $accent: #FF00FF;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	&::selection {
+		background-color: $accent;
+	}
+}
+
+span#explanation:hover {
+	cursor: url('../assets/image/point-up-emoji.svg') 16 0, pointer;
 }
