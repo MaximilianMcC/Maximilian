@@ -31,7 +31,7 @@ function getAge() {
 	const currentMonth = today.getMonth();
 	const birthMonth = birthday.getMonth();
 	month = currentMonth - birthMonth;
-	if (month < 0 || (month === 0) && today - birthday) age--;
+	if (month < 0 || (month === 0 && today.getDate() < birthday.getDate())) age--;
 
 	// Return my current age
 	return age;
