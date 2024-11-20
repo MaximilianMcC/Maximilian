@@ -9,7 +9,6 @@ body {
 
 .layout {
 	height: 100%;
-	position: relative;
 
 	// Fancy as SVG background
 	.background  {
@@ -32,9 +31,10 @@ body {
 	.content {
 		display: grid;
 		grid-template-columns: 2fr 3fr;
+		height: 100%;
 	
 		.half {
-	
+
 			// Left side (text and stuff)
 			&.left {
 				padding: 150px 100px;
@@ -46,8 +46,42 @@ body {
 	
 			// Right side (CRT)
 			&.right {
-	
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
+	}
+}
+
+span#explanation {
+	position: relative;
+
+	&:hover {
+		cursor: url('../assets/image/point-up-emoji.svg') 16 0, pointer;
+	}
+
+	// Spawn in a div with a background image
+	// showing the explanation
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 100%;
+		left: 30%;
+
+		width: 0%;
+		height: 0%;
+		overflow: hidden;
+		transition: 0.2s ease-in-out;
+
+		background-image: url('../assets/image/ferroequinology.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&:hover::before {
+		height: 300px;
+		width: 600px;
 	}
 }

@@ -14,10 +14,6 @@ body, html {
   background-color: #FF00FF;
 }
 
-span#explanation:hover {
-  cursor: url("../assets/image/point-up-emoji.svg") 16 0, pointer;
-}
-
 body {
   background-color: rgb(24, 24, 24);
   color: #fdfae9;
@@ -26,7 +22,6 @@ body {
 
 .layout {
   height: 100%;
-  position: relative;
 }
 .layout .background {
   position: absolute;
@@ -44,6 +39,7 @@ body {
 .layout .content {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  height: 100%;
 }
 .layout .content .half.left {
   padding: 150px 100px;
@@ -54,4 +50,33 @@ body {
 }
 .layout .content .half.left p {
   font-size: 35px;
+}
+.layout .content .half.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span#explanation {
+  position: relative;
+}
+span#explanation:hover {
+  cursor: url("../assets/image/point-up-emoji.svg") 16 0, pointer;
+}
+span#explanation::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  background-image: url("../assets/image/ferroequinology.png");
+  background-size: cover;
+  background-position: center;
+}
+span#explanation:hover::before {
+  height: 300px;
+  width: 600px;
 }/*# sourceMappingURL=home.css.map */
