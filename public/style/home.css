@@ -1,7 +1,21 @@
+html, body {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+*::-moz-selection {
+  background-color: #FF00FF;
+}
+*::selection {
+  background-color: #FF00FF;
+}
+
+span#explanation:hover {
+  cursor: url("../assets/image/point-up-emoji.svg") 16 0, pointer;
 }
 
 body {
@@ -10,16 +24,27 @@ body {
 }
 
 .layout {
+  height: 100%;
+}
+.layout .background {
+  height: 100%;
+}
+.layout .background svg {
+  width: 100%;
+  height: 100%;
+  fill: rgb(30, 30, 30);
+}
+.layout .content {
   display: grid;
   grid-template-columns: 2fr 3fr;
 }
-.layout .half.left {
+.layout .content .half.left {
   padding: 150px 100px;
   font-family: "Times New Roman", Times, serif;
 }
-.layout .half.left h1 {
+.layout .content .half.left h1 {
   font-size: 100px;
 }
-.layout .half.left p {
+.layout .content .half.left p {
   font-size: 35px;
 }/*# sourceMappingURL=home.css.map */
