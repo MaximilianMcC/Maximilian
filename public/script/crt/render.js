@@ -1,6 +1,4 @@
 
-const terminalInput = document.querySelector("#terminalInput");
-terminalInput.focus();
 
 
 // Get the thingy to render to
@@ -62,26 +60,17 @@ loader.load(
 	}
 );
 
-// Set camera position
 camera.position.z = 3;
 camera.position.y = 0.5;
-
-// Function to draw to the canvas
-function updateTerminal() {
-	ctx.clearRect(0, 0, terminalCanvas.width, terminalCanvas.height); // Clear the canvas
-
-	ctx.font = "20px Arial";
-	ctx.fillStyle = "blue";
-	ctx.fillText(terminalInput.value, 50, 50);
-
-	// Update the canvas texture
-	screenTexture.needsUpdate = true;
-}
 
 // Animation loop
 function animate() {
 	requestAnimationFrame(animate);
-	updateTerminal(); // Update terminal canvas
+
+	// Terminal stuff
+	update();
+	draw();
+
 	renderer.render(scene, camera);
 }
 animate();

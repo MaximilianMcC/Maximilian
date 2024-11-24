@@ -95,7 +95,17 @@ body {
 				}
 
 				.terminal-helper {
-					// display: none;
+
+					// Chuck the stuff out of the way so it
+					// doesn't mess with the positional stuff
+					// TODO: Make whole size of crt so clicking on it selects
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					//? Not using display because that actually removes it
+					// visibility: hidden;
+					opacity: 0%;
 				}
 			}
 		}
