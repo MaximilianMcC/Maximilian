@@ -8,10 +8,16 @@
 	<link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
 	<title>Maximilian - Home</title>
 
+	<!-- Styles -->
 	<link rel="stylesheet" href="./style/general.css">
 	<link rel="stylesheet" href="./style/home.css">
 
+	<!-- Javascript -->
 	<script src="./script/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+	<script src="./script/render.js" defer></script>
+
 </head>
 <body>
 
@@ -37,16 +43,25 @@
 				<!-- Links and whatnot -->
 				<div class="navigation">
 					<ul>
-						<li><a href="#">About/Facts</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="/about">About/Facts</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</div>
 
 			</section>
 	
 			<section class="half right">
-				<p>Monitor going here soon trust. Gotta learn 3js first (busy rn)</p>
+				<div class="render-output">
+
+					<!-- output is programmatically injected -->
+					 
+				</div>
+
+				<!-- Terminal helper things -->
+				<div class="terminal-helper">
+					<input id="terminalInput" type="text">
+				</div>
 			</section>
 		</div>
 

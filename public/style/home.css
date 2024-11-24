@@ -83,7 +83,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.layout .content .half.right .render-output {
+  width: 100%;
+  height: 100%;
+}
 span#explanation {
   position: relative;
 }
