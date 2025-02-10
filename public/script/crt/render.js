@@ -8,7 +8,7 @@ console.log(renderOutput);
 
 // Setup the scene
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
+let camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ alpha: true });
 
 // Target the render-output div
@@ -32,7 +32,7 @@ terminalCanvas.width = 400;
 terminalCanvas.height = 300;
 
 const screenTexture = new THREE.CanvasTexture(terminalCanvas);
-screenTexture.flipY = false; // Fix upside-down texture
+screenTexture.flipY = false;
 const screenMaterial = new THREE.MeshBasicMaterial({ map: screenTexture });
 
 
@@ -44,12 +44,22 @@ loader.load(
 	"./assets/model/crt.glb",
 	(gltf) => {
 		crt = gltf.scene;
-		crt.rotation.y = -0.1;
+
+		// Steal the camera from the model
+		camera = gltf.cameras[0];
+
+		// Make sure the aspect ratio is all the same
+		const cameraAspectRatio = camera.aspect || (renderOutput.clientWidth / renderOutput.clientHeight);
+		camera.aspect = cameraAspectRatio;
+		camera.updateProjectionMatrix();
+		renderer.setSize(renderOutput.clientWidth, renderOutput.clientWidth / cameraAspectRatio);
 
 		scene.add(crt);
 
 		crt.traverse((child) => {
-			if (child.isMesh && child.name === "screen") {
+			
+			// Check for if we've found the screen
+			if (child.isMesh && child.name === "Screen") {
 				child.material = screenMaterial;
 			}
 		});
@@ -60,8 +70,8 @@ loader.load(
 	}
 );
 
-camera.position.z = 3;
-camera.position.y = 0.5;
+// camera.position.z = 3;
+// camera.position.y = 0.5;
 
 // Animation loop
 function animate() {

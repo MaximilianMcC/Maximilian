@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// TODO: Only select if you click on the CRT
 	terminalInput.focus();
 	terminalInput.addEventListener("blur", (e) => {
+		
 		e.preventDefault();
 		terminalInput.focus();
 	});
@@ -32,6 +33,7 @@ terminalInput.addEventListener("keydown", (e) => {
 	if (input == "test") {
 
 		output += "Testing 123\n";
+		output += "\n";
 	}
 	else if (input == "help") {
 
@@ -42,6 +44,7 @@ terminalInput.addEventListener("keydown", (e) => {
 		output += "contact  | My contact information\n";
 		output += "projects | List of personal projects\n";	
 		output += "cls      | Clear the screen\n";
+		output += "\n";
 	}
 	else if (input == "about") {
 
@@ -52,6 +55,7 @@ terminalInput.addEventListener("keydown", (e) => {
 		output += "I know heaps of Star Wars lore, and I also love British steam trains.\n";
 		output += "I'm a self taught programmer, and my favorite language is C#.'\n";
 		output += "Some of my favorite games are Minecraft, Portal, and Half-Life: Alyx.\n";
+		output += "\n";
 	}
 	else if (input == "contact") {
 
@@ -61,24 +65,54 @@ terminalInput.addEventListener("keydown", (e) => {
 		output += "Discord: @MTMB\n";
 		output += "Email: max@maximilian.co.nz\n";
 		output += "Phone: +64 021 971711\n";
+		output += "\n";
 	}
 	else if (input == "projects") {
 
 		// TODO: HTTP GET request to get the content so it doesn't have to be written in two places. Maybe actually store in md or something
 		// TODO: ^ Have different output based on web or terminal
 		// TODO: 'Line by line' animation
-		output += "I rare finish any projects. About half of them live on GitHub, with the other half residing on my pc.\n";
+		output += "I rarely finish any projects. About half of them live on GitHub, with the other half residing on my pc.\n";
 		output += "GitHub: https://github.com/MaximilianMcC\n"
+		output += "\n";
 	}
 	else if (input == "cls") {
 
 		// Just fully get rid of the output
 		output = "";
 	}
+	else if (input == "sweep") {
+		
+		// sweep();
+		output += "                ┌───────┬───────┬───┬───────┬───────┐\n";
+		output += "                │  000  │       │ ☺ │       │  000  │\n"
+		output += "                └───────┴───────┴───┴───────┴───────┘\n"
+		output += "                ┌───┬───┬───┬───┬───┬───┬───┬───┬───┐\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
+		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
+		output += "                └───┴───┴───┴───┴───┴───┴───┴───┴───┘\n";
+		output += "\n";
+	}
 	else {
 
 		// Unknown command
-		output += "Unknown command. Type 'help' for a list of commands.\n"
+		output += "Unknown command. Type 'help' for a list of commands.\n";
+		output += "\n";
 	}
 
 	// We just ran a command. Reset the input thing
@@ -122,11 +156,11 @@ function draw() {
 	
 	// Set the terminal font text stuff
 	// TODO: Add bloom or something
-	ctx.font = "10px monospace";
+	ctx.font = "9px monospace";
 	ctx.fillStyle = "orange";
 
 	// Draw the terminal output and input
-	drawText(`${output}\n\n>${terminalInput.value}`, 15, 50, ctx)
+	drawText(`${output}\n\n>${terminalInput.value}`, 15, 50, ctx);
 	
 	// Say that we gotta update the texture
 	// and actually draw the screen thing yk
