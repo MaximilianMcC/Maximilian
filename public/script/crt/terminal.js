@@ -1,3 +1,5 @@
+let commands;
+
 document.addEventListener("DOMContentLoaded", () => {
 
 	// Get the terminal input box thingy
@@ -13,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		terminalInput.focus();
 	});
 
+	// Load all commands
+	commands.push(
+		helpCommand
+	)
 });
 
 let output = "Type 'help' for a list of commands\n\n\n";
@@ -24,100 +30,30 @@ terminalInput.addEventListener("keydown", (e) => {
 	// Check for if we press enter
 	if (e.key != "Enter") return;
 
-	// Clean the input a bit
+	// Get the input & clean it a bit
 	const input = terminalInput.value.trim().toLowerCase();
 
-	// Check for what the command is
-	// TODO: Use switch
-	// TODO: More commands. Use args or something
-	if (input == "test") {
+	commands.forEach(command => {
 
-		output += "Testing 123\n";
-		output += "\n";
-	}
-	else if (input == "help") {
+		// Check for if we've found a command
+		if (command.name == input)
+		{
+			// Get the args
+			const args = input.replace(command.name, "");
 
-		// Print the massive help menu thing
-		// TODO: 'Line by line' animation
-		output += "help     | Shows this command\n";
-		output += "about    | Information about me\n";
-		output += "contact  | My contact information\n";
-		output += "projects | List of personal projects\n";	
-		output += "cls      | Clear the screen\n";
-		output += "\n";
-	}
-	else if (input == "about") {
+			// We just ran a command. Reset the input thing
+			// TODO: Add the command to the history
+			terminalInput.value = "";
 
-		// TODO: HTTP GET request to get the content so it doesn't have to be written in two places. Maybe actually store in md or something
-		// TODO: 'Typing' animation effect
-		output += "My name is Max. I'm 18 and live in New Zealand\n";
-		output += "I mostly spend my time coding, watching youtube, and occasionally playing games.\n";
-		output += "I know heaps of Star Wars lore, and I also love British steam trains.\n";
-		output += "I'm a self taught programmer, and my favorite language is C#.'\n";
-		output += "Some of my favorite games are Minecraft, Portal, and Half-Life: Alyx.\n";
-		output += "\n";
-	}
-	else if (input == "contact") {
+			// Run the command
+			command.run(args);
+			return;
+		}
+	});
 
-		// TODO: HTTP GET request to get the content so it doesn't have to be written in two places. Maybe actually store in md or something
-		// TODO: 'Line by line' animation
-		output += "I don't really use traditional social media, but I do have an account on most to reserve my name. Discord is the best place to contact me, otherwise email.\n\n";
-		output += "Discord: @MTMB\n";
-		output += "Email: max@maximilian.co.nz\n";
-		output += "Phone: +64 021 971711\n";
-		output += "\n";
-	}
-	else if (input == "projects") {
-
-		// TODO: HTTP GET request to get the content so it doesn't have to be written in two places. Maybe actually store in md or something
-		// TODO: ^ Have different output based on web or terminal
-		// TODO: 'Line by line' animation
-		output += "I rarely finish any projects. About half of them live on GitHub, with the other half residing on my pc.\n";
-		output += "GitHub: https://github.com/MaximilianMcC\n"
-		output += "\n";
-	}
-	else if (input == "cls") {
-
-		// Just fully get rid of the output
-		output = "";
-	}
-	else if (input == "sweep") {
-		
-		// sweep();
-		output += "                ┌───────┬───────┬───┬───────┬───────┐\n";
-		output += "                │  000  │       │ ☺ │       │  000  │\n"
-		output += "                └───────┴───────┴───┴───────┴───────┘\n"
-		output += "                ┌───┬───┬───┬───┬───┬───┬───┬───┬───┐\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                ├───┼───┼───┼───┼───┼───┼───┼───┼───┤\n";
-		output += "                │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │ 1 │\n";
-		output += "                └───┴───┴───┴───┴───┴───┴───┴───┴───┘\n";
-		output += "\n";
-	}
-	else {
-
-		// Unknown command
-		output += "Unknown command. Type 'help' for a list of commands.\n";
-		output += "\n";
-	}
-
-	// We just ran a command. Reset the input thing
-	// TODO: Add the command to the history
-	terminalInput.value = "";
+	// Unknown command
+	output += "Unknown command. Type 'help' for a list of commands.\n";
+	output += "\n";
 });
 
 function update() {
