@@ -5,14 +5,33 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
 main {
   background-color: magenta;
-  width: 40%;
+  width: 40vw;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-gallery {
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.image-gallery figure {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 12px;
 }
 
 .tooltip {

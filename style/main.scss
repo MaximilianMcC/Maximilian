@@ -5,14 +5,31 @@
 }
 
 body {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 }
 
 main {
 	background-color: magenta;
-	width: 40%;
+	width: 40vw;
+	padding: 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.image-gallery {
+	columns: 3;
+	column-gap: 12px;
+
+	figure {
+		break-inside: avoid;
+		margin-bottom: 12px;
+	}
 }
 
 // TODO: Do different style ones (minecraft, clippy, etc)
