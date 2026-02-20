@@ -14,3 +14,39 @@ main {
 	background-color: magenta;
 	width: 40%;
 }
+
+// TODO: Do different style ones (minecraft, clippy, etc)
+.tooltip {
+	position: relative;
+	display: inline-block;
+
+	border-bottom: 1px dotted black;
+	cursor: help;
+
+	&-text {
+		visibility: hidden;
+		position: absolute;
+		z-index: 99999999999;
+
+		top: 1em;
+		left: 0;
+
+		background-color: green;
+		width: 30ch;
+		padding: 3px;
+		color: white;
+		border: 2px solid black;
+	}
+
+	&:hover &-text {
+		visibility: visible;
+	}
+}
+
+// Twemoji stuff
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}

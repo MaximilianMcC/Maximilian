@@ -11,6 +11,9 @@
 
 	<link rel="stylesheet" href="./style/main.css">
 
+	<!-- twemoji -->
+	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+
 	<script src="./script/aboutMe.js" defer></script>
 
 </head>
@@ -18,9 +21,33 @@
 	
 	<main>
 
-		<p>kia ora my name is Max or Marl or MTMB or whatever you wanna use. I am <span id="age"></span> and was born on <span id="birthday"></span> (<span id="birthdayForViewer"></span> for you (<span id="viewerTimezone"></span>)) Right now I am at university studying game development.</p>
+		<p>
+			<div class="tooltip">
+				Kia ora
+				<span class="tooltip-text">
+					Hello in te reo Māori
+				</span>
+			</div>
+			my name is Max or Marl or MTMB or whatever you wanna use. I am <span id="age"></span> and was born on
+			<div class="tooltip">
+				<span id="birthday"></span>.
+				<span class="tooltip-text">
+					<span id="birthdayForViewer"></span> for you (<span id="viewerTimezone"></span>)
+				</span>
+			</div>
+			Right now I am at university studying game development.
+		</p>
+
+		<figure>
+			<img src="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" alt="profile picture">
+			<figcaption>My current Discord pfp (will probably never change)</figcaption>
+		</figure>
 
 	</main>
 
 </body>
+
+<!-- TODO: Defer this -->
+<script>twemoji.parse(document.body);</script>
+
 </html>

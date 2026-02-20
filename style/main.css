@@ -13,4 +13,33 @@ body {
 main {
   background-color: magenta;
   width: 40%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: help;
+}
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 99999999999;
+  top: 1em;
+  left: 0;
+  background-color: green;
+  width: 30ch;
+  padding: 3px;
+  color: white;
+  border: 2px solid black;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
 }/*# sourceMappingURL=main.css.map */
