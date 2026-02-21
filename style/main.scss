@@ -11,15 +11,43 @@ body {
 }
 
 main {
-	background-color: magenta;
-	width: 40vw;
+
+	max-width: 1024px;
+	width: 100%;
+
 	padding: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	.content-panels {
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr;
+	}
+}
+
+header {
+	background-color: magenta;
+	color: white;
+	text-align: center;
+	font-size: 3em;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+ul.vertical-nav {
+	list-style-type: none;
 }
 
 .image-gallery {
