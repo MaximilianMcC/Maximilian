@@ -21,7 +21,7 @@ main {
 }
 main .content-panels {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1.2fr 5fr 1fr;
 }
 main .content-panels section.centre {
   background-color: antiquewhite;
@@ -37,8 +37,11 @@ main .content-panels section.side {
 header {
   background-color: magenta;
   color: white;
+  border: 4px dashed white;
+  border-bottom: none;
   text-align: center;
   font-size: 3em;
+  font-family: cursive;
 }
 
 img {
@@ -63,6 +66,8 @@ hr {
 
 figcaption {
   font-style: italic;
+  font-size: 0.8em;
+  margin-top: 3px;
 }
 
 ul.vertical-nav {
@@ -82,9 +87,11 @@ ul.vertical-nav {
 }
 
 .laser-kiwi {
+  background-color: black;
   background-image: url("../assets/image/flag/laser-kiwi-no-laser.png");
   background-size: cover;
-  height: 55px;
+  background-position: center;
+  height: 70px;
   border: 2px solid #a46811;
 }
 .laser-kiwi:hover {
