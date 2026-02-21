@@ -44,6 +44,13 @@ header {
   font-family: cursive;
 }
 
+h2 {
+  color: red;
+  font-family: "cooper black", sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+
 img {
   max-width: 100%;
   height: auto;
