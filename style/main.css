@@ -8,6 +8,8 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/seamless-repeating-background-tile-terryfic3d.jpg");
+  background-repeat: repeat;
 }
 
 main {
@@ -20,6 +22,16 @@ main {
 main .content-panels {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+}
+main .content-panels section.centre {
+  background-color: antiquewhite;
+  padding: 15px;
+  outline: 3px solid brown;
+}
+main .content-panels section.side {
+  background-color: rgb(244.3333333333, 212.3333333333, 169.6666666667);
+  padding: 15px;
+  outline: 3px solid brown;
 }
 
 header {
@@ -35,8 +47,18 @@ img {
   display: block;
 }
 
+.content-panels img:not(figure img), .content-panels figure {
+  margin-bottom: 20px;
+}
+
 p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
   padding-bottom: 1em;
+}
+
+hr {
+  margin: 10px 0;
 }
 
 figcaption {
@@ -57,6 +79,16 @@ ul.vertical-nav {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   margin-bottom: 12px;
+}
+
+.laser-kiwi {
+  background-image: url("../assets/image/flag/laser-kiwi-no-laser.png");
+  background-size: cover;
+  height: 55px;
+  border: 2px solid #a46811;
+}
+.laser-kiwi:hover {
+  background-image: url("../assets/image/flag/laser-kiwi.png");
 }
 
 .tooltip {
