@@ -1,0 +1,65 @@
+main {
+  max-width: 1024px;
+  width: 100%;
+  padding: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+main .content-panels {
+  display: grid;
+  grid-template-columns: 1.2fr 5fr 1fr;
+}
+main .content-panels section.centre {
+  padding: 15px;
+}
+main .content-panels section.side {
+  padding: 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-panels img:not(figure img), .content-panels figure {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 3px;
+}
+
+.image-gallery {
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.image-gallery figure {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+nav {
+  text-align: left;
+}
+nav ul {
+  list-style-type: square;
+  transform: translateX(2ch);
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}/*# sourceMappingURL=layouts.css.map */

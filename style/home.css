@@ -1,0 +1,43 @@
+body {
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/seamless-repeating-background-tile-terryfic3d.jpg");
+  background-repeat: repeat;
+}
+
+header {
+  background-color: magenta;
+  color: white;
+  border: 4px dashed white;
+  border-bottom: none;
+  text-align: center;
+  font-size: 3em;
+  font-family: cursive;
+}
+
+section.centre {
+  background-color: antiquewhite;
+  padding: 15px;
+  outline: 3px solid brown;
+}
+
+section.side {
+  background-color: rgb(244.3333333333, 212.3333333333, 169.6666666667);
+  outline: 3px solid brown;
+  padding: 15px;
+  text-align: center;
+}
+
+.laser-kiwi {
+  background-color: black;
+  background-image: url("../assets/image/flag/laser-kiwi-no-laser.png");
+  background-size: cover;
+  background-position: center;
+  height: 70px;
+  border: 2px solid #a46811;
+}
+.laser-kiwi:hover {
+  background-image: url("../assets/image/flag/laser-kiwi.png");
+}
+
+iframe.clock {
+  pointer-events: none;
+}/*# sourceMappingURL=home.css.map */
