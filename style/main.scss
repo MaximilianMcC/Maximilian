@@ -33,8 +33,9 @@ main {
 
 		section.side {
 			background-color: darken(antiquewhite, 10%);
-			padding: 15px;
 			outline: 3px solid brown;
+			padding: 15px;
+			text-align: center;
 		}
 	}
 }
@@ -70,6 +71,18 @@ img {
 	}
 }
 
+iframe {
+	pointer-events: none;
+}
+
+nav {
+	text-align: left;
+	ul {
+		list-style-type: square;
+		transform: translateX(2ch);
+	}
+}
+
 p {
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 18px;
@@ -85,10 +98,6 @@ figcaption {
 	font-style: italic;
 	font-size: 0.8em;
 	margin-top: 3px;
-}
-
-ul.vertical-nav {
-	list-style-type: none;
 }
 
 .image-gallery {

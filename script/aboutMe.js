@@ -55,3 +55,12 @@ document.querySelectorAll("span#viewerTimezone").forEach(element => {
 	// Check for if its plus or minus
 	element.innerText = ((offsetInHours >= 0) ? "+" : "-") + offsetInHours;
 });
+
+document.querySelectorAll("span#DayOfTheWeekInNz").forEach(element => {
+	element.innerText = new Date().toLocaleDateString("en-NZ", {
+		timeZone: "Pacific/Auckland",
+		day: "numeric",
+		month: "short",
+		weekday: "long"
+	});
+});
