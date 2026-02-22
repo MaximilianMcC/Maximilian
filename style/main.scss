@@ -51,3 +51,23 @@ p {
 		visibility: visible;
 	}
 }
+
+.new, .new-small {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		z-index: 99999999;
+		top: -20px;
+		right: -40px;
+		rotate: 10deg;
+	
+		content: url("../assets/image/icons/new.gif");
+	}
+
+	&-small::after {
+		scale: 60%;
+		right: -60px;
+		rotate: -5deg;
+	}
+}

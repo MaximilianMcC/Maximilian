@@ -43,4 +43,21 @@ p {
 }
 .tooltip:hover .tooltip-text {
   visibility: visible;
+}
+
+.new, .new-small {
+  position: relative;
+}
+.new::after, .new-small::after {
+  position: absolute;
+  z-index: 99999999;
+  top: -20px;
+  right: -40px;
+  rotate: 10deg;
+  content: url("../assets/image/icons/new.gif");
+}
+.new-small::after, .new-small-small::after {
+  scale: 60%;
+  right: -60px;
+  rotate: -5deg;
 }/*# sourceMappingURL=main.css.map */
