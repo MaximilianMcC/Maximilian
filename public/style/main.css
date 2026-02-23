@@ -54,7 +54,7 @@ p {
   top: -20px;
   right: -40px;
   rotate: 10deg;
-  content: url("../assets/image/icons/new.gif");
+  content: url("/image/icons/new.gif");
 }
 .new-small::after, .new-small-small::after {
   scale: 60%;

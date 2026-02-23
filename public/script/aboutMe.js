@@ -38,8 +38,10 @@ document.querySelectorAll("span#birthday").forEach(element => {
 // My birthday in the viewers timezone
 document.querySelectorAll("span#birthdayForViewer").forEach(element => {
 	element.innerText = birthday.toLocaleString(undefined, {
-		dateStyle: "long",
-		timeStyle: "short"
+		day: "numeric",
+		month: "long",
+		hour: "numeric",
+		minute: "2-digit"
 	});
 });
 
@@ -53,7 +55,8 @@ document.querySelectorAll("span#viewerTimezone").forEach(element => {
 	const offsetInHours = -offsetInMinutes / 60;
 	
 	// Check for if its plus or minus
-	element.innerText = ((offsetInHours >= 0) ? "+" : "-") + offsetInHours;
+	//? a - is automatically added so just using a ""
+	element.innerText = ((offsetInHours >= 0) ? "+" : "") + offsetInHours;
 });
 
 document.querySelectorAll("span#DayOfTheWeekInNz").forEach(element => {
