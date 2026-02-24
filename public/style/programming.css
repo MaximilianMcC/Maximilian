@@ -1,3 +1,22 @@
 body {
   background-image: url("/image/backgrounds/circuit-board.jpg");
+}
+
+section.centre, section.side {
+  background-color: black;
+  outline: 3px solid greenyellow;
+  padding: 15px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: monospace;
+  color: green;
+}
+
+a:hover, li {
+  color: greenyellow;
+}
+
+hr {
+  border: 1px inset gray;
 }/*# sourceMappingURL=programming.css.map */

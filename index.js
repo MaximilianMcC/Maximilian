@@ -14,6 +14,7 @@ app.use(Cors());
 app.use(Express.json());
 
 // Set the public folder serving status web pages
+// TODO: Do one for responses too
 app.use(Express.static(Path.join(__dirname, "public")));
 
 // Set the public folder serving assets (cdn)
@@ -39,4 +40,4 @@ app.use((request, response) => {
 });
 
 // Run the express server
-app.listen(port, () => console.log(`Server listening on port ${port}!`));
+app.listen(port, () => console.log(`Server listening on port ${port}!\nVisit it at http://localhost:${port}`));

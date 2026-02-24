@@ -71,3 +71,11 @@ p {
 		rotate: -5deg;
 	}
 }
+
+.home-button {
+	content: url("/image/buttons/home-button.gif");
+
+	&:hover {
+		outline: 2px red outset;
+	}
+}

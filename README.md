@@ -16,6 +16,7 @@ https://maximilian.co.nz
 - photographs of greggs photos in the margin
 - union jacks and welsh flags and stuff on the railway 200 trip + write about the actual countires (like greggs and stuff)
 - say how packed the schedule was and how it was cool to do something i wanted to do (instead of being dragged along on parents thing)
+- little raylib game embedded on the programming page where you are c# and have to destroy python or something idk
 
 - web graphics or whtever theyr'e called
 - buttons at the bottom of the gutters/margins that say "home" yk. red and yellow maybe one in each one
