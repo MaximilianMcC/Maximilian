@@ -67,4 +67,8 @@ p {
 }
 .home-button:hover {
   outline: 2px red outset;
+}
+
+.title {
+  font-size: 3em;
 }/*# sourceMappingURL=main.css.map */

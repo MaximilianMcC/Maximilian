@@ -22,6 +22,7 @@ main .content-panels section.side {
 
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -39,6 +40,7 @@ figcaption {
   font-style: italic;
   font-size: 0.8em;
   margin-top: 3px;
+  text-align: center;
 }
 
 .image-gallery {
@@ -63,9 +65,22 @@ nav ul {
   transform: translateX(2ch);
 }
 
+.inline, .inline-right, .inline-left {
+  width: 50%;
+  margin: 10px;
+}
+.inline-left {
+  float: left;
+  margin-left: 0;
+}
+.inline-right {
+  float: right;
+  margin-left: 0;
+}
+
 img.emoji {
+  display: inline-block;
   height: 1em;
   width: 1em;
-  margin: 0 0.05em 0 0.1em;
-  vertical-align: -0.1em;
+  vertical-align: -0.2em;
 }/*# sourceMappingURL=layouts.css.map */

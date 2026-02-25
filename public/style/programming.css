@@ -19,4 +19,27 @@ a:hover, li {
 
 hr {
   border: 1px inset gray;
+}
+
+img, figcaption {
+  color: white;
+}
+img a, figcaption a {
+  color: blue;
+}
+
+.matrix-background {
+  background-image: url("https://miro.medium.com/1*tjHTmF_1SUY6_pykU6_VpQ.gif");
+}
+
+.title {
+  border-bottom: 2px dotted greenyellow;
+  margin-bottom: 10px;
+}
+
+span.tooltip {
+  border-bottom: 1px dotted greenyellow;
+}
+span.tooltip a {
+  color: white;
 }/*# sourceMappingURL=programming.css.map */

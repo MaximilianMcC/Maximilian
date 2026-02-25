@@ -28,6 +28,7 @@ main {
 
 img {
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
 }
@@ -48,6 +49,7 @@ figcaption {
 	font-style: italic;
 	font-size: 0.8em;
 	margin-top: 3px;
+	text-align: center;
 }
 
 .image-gallery {
@@ -70,10 +72,35 @@ nav {
 	}
 }
 
+.inline {
+	width: 50%;
+	margin: 10px;
+
+	&-left {
+		@extend .inline;
+		float: left;
+		margin-left: 0;
+	}
+
+	&-right {
+		@extend .inline;
+		float: right;
+		margin-left: 0;
+	}
+}
+
 // Twemoji stuff
+// img.emoji {
+// 	display: inline-block;
+// 	height: 1em;
+// 	width: 1em;
+// 	margin: 0 .05em 0 .1em;
+// 	vertical-align: -0.1em;
+// }
 img.emoji {
+	display: inline-block;
 	height: 1em;
 	width: 1em;
-	margin: 0 .05em 0 .1em;
-	vertical-align: -0.1em;
+	// vertical-align: middle;
+	vertical-align: -0.2em;
 }
