@@ -8,7 +8,6 @@ main {
 
 	.content-panels {
 		display: grid;
-		grid-template-columns: 1.2fr 5fr 1fr;
 
 		section.centre {
 			padding: 15px;
@@ -24,6 +23,18 @@ main {
 			justify-content: flex-start;
 		}
 	}
+}
+
+// todo: nest
+.content-panels-default {
+	@extend .content-panels;
+	grid-template-columns: 1.2fr 5fr 1fr;
+}
+
+// todo: nest
+.content-panels-no-right-panel {
+	@extend .content-panels;
+	grid-template-columns: 1.2fr 6fr;
 }
 
 img {
@@ -68,8 +79,11 @@ nav {
 
 	ul {
 		list-style-type: square;
-		transform: translateX(2ch);
 	}
+}
+
+ul, ol {
+	transform: translateX(2ch);
 }
 
 .inline {

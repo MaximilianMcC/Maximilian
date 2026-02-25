@@ -26,6 +26,13 @@ section.side {
   text-align: center;
 }
 
+h2.changelog-title {
+  text-align: left;
+  font-size: 2em;
+  border-top: 2px solid black;
+  margin-top: 10px;
+}
+
 .laser-kiwi {
   background-color: black;
   background-image: url("/image/random/laser-kiwi-no-laser.png");
@@ -45,4 +52,11 @@ iframe.clock {
 
 .interest-banner img:hover {
   outline: 3px solid magenta;
+}
+
+h2.changelog-title {
+  text-align: left;
+  font-size: 2em;
+  border-top: 2px solid black;
+  margin-top: 10px;
 }/*# sourceMappingURL=home.css.map */

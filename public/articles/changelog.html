@@ -3,29 +3,95 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	
+	<!-- my Discord pfp -->
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
+	<title>max</title>
+
+	<link rel="stylesheet" href="/style/main.css">
+	<link rel="stylesheet" href="/style/layouts.css">
+	<link rel="stylesheet" href="/style/home.css">
+	<link rel="stylesheet" href="/style/changelog.css">
+
+	<!-- twemoji -->
+	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<h1>changelog</h1>
+	
+	<main>
+		<div class="content-panels-no-right-panel">
+			<section class="side">
+				
+				<nav>
+					<h1>Articles</h1>
+					<ul class="vertical-nav">
+						<li><a href="/responses/coming-soon.html">Railway 200 Trip</a></li>
+						<li><a href="/responses/coming-soon.html">Model railway</a></li>
+						<li><a href="/responses/coming-soon.html">L&P collection</a></li>
+						<li><a href="/articles/changelog">Changelog</a></li>
+					</ul>
+					<h1>Interests</h1>
+					<ul class="vertical-nav">
+						<li><a href="/interests/programming">Programming</a></li>
+						<li><a href="/responses/coming-soon.html">Telegraphy</a></li>
+						<li><a href="/responses/coming-soon.html">Railways</a></li>
+						<li><a href="/responses/coming-soon.html">Oceanliners</a></li>
+					</ul>
+				</nav>
 
-	<h2>21 February 2026</h2>
-	<ul>
-		<li>Started making this new website</li>
-	</ul>
+				<hr>
 
-	<h2>23 February 2026</h2>
-	<ul>
-		<li>published first version of the website</li>
-	</ul>
+				<a href="/" class="home-button"></a>
 
-	<h2>24 February 2026</h2>
-	<ul>
-		<li>Switched from a fully static version to using express.js</li>
-		<li>Fixed the local timezone showing two minuses for minus timezones</li>
-		<li>Added random crap</li>
-		<!-- Removed Herobrine -->
-	</ul>
+				<hr>
 
+			</section>
+			<section class="centre">
+				<h1>Changelog</h1>
+				<p>All of the websites code is on
+					<a target="_blank" href="https://github.com/MaximilianMcC/maximilian">GitHub</a>
+					for if you're interested to see how it works! You will need to download
+					<a href="https://nodejs.org/en/download">Node</a> with
+					<a href="https://expressjs.com/">Express</a>
+					if you wanna run it though. If you have any questions then you can dm me on 
+					<span class="tooltip">
+						Discord.
+						<span class="tooltip-text">
+							@MTMB
+						</span>
+					</span>
+				</p>
+
+				<h2 class="changelog-title new">25 February 2026</h2>
+				<ul>
+					<li>Added Programming article</li>
+					<li>Added changelog (kia ora)</li>
+					<li>Added other random crap</li>
+					<li>Removed underline on images with tooltips</li>
+				</ul>
+
+				<h2 class="changelog-title">24 February 2026</h2>
+				<ul>
+					<li>Switched from a fully static version to using express.js</li>
+					<li>Fixed the local timezone showing two minuses for minus timezones</li>
+					<li>Added other random crap</li>
+					<!-- Removed Herobrine -->
+				</ul>
+
+				<h2 class="changelog-title">23 February 2026</h2>
+				<ul>
+					<li>published first version of the website</li>
+				</ul>
+
+				<h2 class="changelog-title">21 February 2026</h2>
+				<ul>
+					<li>Started making this new website</li>
+				</ul>
+
+			</section>
+		</div>
+	</main>
 
 </body>
 </html>
