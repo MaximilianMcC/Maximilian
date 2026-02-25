@@ -30,7 +30,11 @@ a {
 .tooltip {
   position: relative;
   display: inline-block;
+}
+.tooltip h1, .tooltip h2, .tooltip h3, .tooltip h4, .tooltip h5, .tooltip h6, .tooltip p {
   border-bottom: 1px dotted black;
+}
+.tooltip {
   cursor: help;
 }
 .tooltip-text {

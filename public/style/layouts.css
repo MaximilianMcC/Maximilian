@@ -34,8 +34,8 @@ img {
   display: block;
 }
 
-.content-panels img:not(figure img), .content-panels-default img:not(figure img), .content-panels-no-right-panel img:not(figure img), .content-panels figure, .content-panels-default figure, .content-panels-no-right-panel figure {
-  margin-bottom: 20px;
+.gap {
+  height: 1em;
 }
 
 hr {

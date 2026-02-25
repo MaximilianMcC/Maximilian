@@ -33,7 +33,10 @@ a {
 	position: relative;
 	display: inline-block;
 
-	border-bottom: 1px dotted black;
+	h1, h2, h3, h4, h5, h6, p {
+		border-bottom: 1px dotted black;
+	}
+
 	cursor: help;
 
 	&-text {
