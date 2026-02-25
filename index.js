@@ -3,6 +3,7 @@ const Cors = require("cors");
 const Path = require("path");
 const FileSystem = require("fs");
 const Utils = require("./utils");
+const Navbar = require("./dynamic/navbar");
 
 // Setup express
 const app = Express();
@@ -13,12 +14,10 @@ const port = process.env.PORT || 3000;
 app.use(Cors());
 app.use(Express.json());
 
-// Set the public folder serving status web pages
-// TODO: Do one for responses too
-app.use(Express.static(Path.join(__dirname, "public")));
-
-// Set the public folder serving assets (cdn)
+// Serve static stuff
 app.use(Express.static(Path.join(__dirname, "assets")));
+app.use("/style", Express.static(Path.join(__dirname, "public", "style")));
+app.use("/script", Express.static(Path.join(__dirname, "public", "script")));
 
 // Endpoints and whatnot
 app.get("/test", (request, response) => {
@@ -30,12 +29,22 @@ app.get("/test", (request, response) => {
 app.use((request, response) => {
 
 	// Get the stuff we're after
-	const requestedContent = request.path.slice(1);
+	const requestedContent = request.path.slice(1) || "index";
 	const page = Path.join(__dirname, "public", `${requestedContent}.html`);
 
 	// Check for if the page exists. If it does then
 	// send them the page. Otherwise pack a sad
-	if (FileSystem.existsSync(page)) response.sendFile(page);
+	if (FileSystem.existsSync(page))
+	{
+		// We have the right page. Add any dynamic content if needed
+		// TODO: Do somewhere else
+		let pageContents = FileSystem.readFileSync(page, "utf8");
+		pageContents = pageContents.replaceAll("<DYNAMIC-SIDE-BAR/>", Navbar.generateSideNavHtml());
+		pageContents = pageContents.replaceAll("<DYNAMIC-INTERESTS/>", Navbar.generateInterestsHtml());
+
+		// Serve the page
+		response.send(pageContents);
+	}
 	else Utils.SendCustomError(requestedContent, 404, response);
 });
 

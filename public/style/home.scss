@@ -54,8 +54,15 @@ iframe.clock {
 	pointer-events: none;
 }
 
-.interest-banner img:hover {
-	outline: 3px solid magenta;
+.interest-banner {
+
+	img {
+		margin-bottom: 10px;
+
+		&:hover {
+			outline: 3px solid magenta;
+		}		
+	}
 }
 
 h2.changelog-title {

@@ -50,6 +50,9 @@ iframe.clock {
   pointer-events: none;
 }
 
+.interest-banner img {
+  margin-bottom: 10px;
+}
 .interest-banner img:hover {
   outline: 3px solid magenta;
 }

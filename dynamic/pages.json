@@ -3,8 +3,22 @@
 		{
 			"displayName": "Railway 200",
 			"page": "railway200",
-			"showInSideNavBar": true,
-			"timestampAdded": "2026-04-23T12:00:00Z"
+			"showInSideNavBar": false
+		},
+		{
+			"displayName": "Model railway",
+			"page": "model-railway",
+			"showInSideNavBar": true
+		},
+		{
+			"displayName": "L&P collection",
+			"page": "lemon-and-paeroa",
+			"showInSideNavBar": true
+		},
+		{
+			"displayName": "Site changelog",
+			"page": "changelog",
+			"showInSideNavBar": true
 		}
 	],
 	"interests": [
@@ -12,8 +26,29 @@
 			"displayName": "Programming",
 			"imageBanner": "programming.png",
 			"page": "programming",
-			
-			"timestampAdded": "0"
+			"showInSideNavBar": true,
+			"showOnHomePage": true
+		},
+		{
+			"displayName": "Telegraphy",
+			"imageBanner": "telegraphy.png",
+			"page": "telegraphy",
+			"showInSideNavBar": true,
+			"showOnHomePage": true
+		},
+		{
+			"displayName": "Railways",
+			"imageBanner": "railways.png",
+			"page": "railways",
+			"showInSideNavBar": true,
+			"showOnHomePage": true
+		},
+		{
+			"displayName": "Oceanliners",
+			"imageBanner": "oceanliners.png",
+			"page": "oceanliners",
+			"showInSideNavBar": true,
+			"showOnHomePage": true
 		}
 	]
 }
