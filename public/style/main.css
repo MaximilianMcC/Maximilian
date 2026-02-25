@@ -23,6 +23,10 @@ p {
   padding-bottom: 1em;
 }
 
+a {
+  color: magenta;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;

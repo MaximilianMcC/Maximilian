@@ -45,3 +45,7 @@ section.side {
 iframe.clock {
 	pointer-events: none;
 }
+
+.interest-banner img:hover {
+	outline: 3px solid magenta;
+}
