@@ -29,7 +29,7 @@ section.side {
 
 .laser-kiwi {
 	background-color: black;
-	background-image: url("/image/flag/laser-kiwi-no-laser.png");
+	background-image: url("/image/random/laser-kiwi-no-laser.png");
 	background-size: cover;
 	background-position: center;
 	height: 70px;
@@ -38,7 +38,7 @@ section.side {
 	border: 2px solid #a46811;
 
 	&:hover {
-		background-image: url("/image/flag/laser-kiwi.png");
+		background-image: url("/image/random/laser-kiwi.png");
 	}
 }
 
