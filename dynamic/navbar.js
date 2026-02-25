@@ -44,8 +44,11 @@ function generateInterestsHtml() {
 	let interests = ``;
 	pages["interests"].forEach(interest => {
 		if (interest["showOnHomePage"] == false) return;
+		
+		// TODO: Make this dynamic based on time
+		const isNew = interest["new"] ? "new" : "";
 
-		interests += `<a class="interest-banner" href="/interests/${interest["page"]}"><img src="/image/interest-banners/${interest["imageBanner"]}" alt="${interest["displayName"]}"></a>`;
+		interests += `<a class="interest-banner ${isNew}" href="/interests/${interest["page"]}"><img src="/image/interest-banners/${interest["imageBanner"]}" alt="${interest["displayName"]}"></a>`;
 	});
 
 	return interests;

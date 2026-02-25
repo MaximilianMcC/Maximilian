@@ -27,7 +27,8 @@
 			"imageBanner": "programming.png",
 			"page": "programming",
 			"showInSideNavBar": true,
-			"showOnHomePage": true
+			"showOnHomePage": true,
+			"new": true
 		},
 		{
 			"displayName": "Telegraphy",
