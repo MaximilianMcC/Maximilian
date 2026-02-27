@@ -1,5 +1,5 @@
 // My birthday (in gmt/utc)
-const birthday = new Date(Date.UTC(2006, 11, 16, 11));
+const birthday = new Date(Date.UTC(2006, 10, 16, 11));
 
 function getAge() {
 

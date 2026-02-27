@@ -1,3 +1,6 @@
+// Import this so we can see the .new class
+@use "./main.scss";
+
 body {
 	background-image: url("/image/backgrounds/sky.jpg");
 	background-repeat: repeat;
@@ -33,6 +36,10 @@ h2.changelog-title {
 
 	border-top: 2px solid black;
 	margin-top: 10px;
+
+	&:first-of-type {
+		@extend .new;
+	}
 }
 
 .laser-kiwi {

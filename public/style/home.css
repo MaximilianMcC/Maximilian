@@ -1,3 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: red;
+  font-family: "cooper black", sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding-bottom: 1em;
+}
+
+a {
+  color: magenta;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip:not(:has(img)) {
+  border-bottom: 1px dotted black;
+}
+.tooltip {
+  cursor: help;
+}
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 99999999999;
+  top: 1em;
+  left: 0;
+  background-color: green;
+  width: 30ch;
+  padding: 3px;
+  color: white;
+  border: 2px solid black;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.new, h2.changelog-title:first-of-type, .new-small {
+  position: relative;
+}
+.new::after, h2.changelog-title:first-of-type::after, .new-small::after {
+  position: absolute;
+  z-index: 99999999;
+  top: -20px;
+  right: -40px;
+  rotate: 10deg;
+  content: url("/image/icons/new.gif");
+}
+.new-small::after, .new-small-small::after {
+  scale: 60%;
+  right: -60px;
+  rotate: -5deg;
+}
+
+.home-button {
+  content: url("/image/buttons/home-button.gif");
+}
+.home-button:hover {
+  outline: 2px red outset;
+}
+
+.title {
+  font-size: 3em;
+}
+
 body {
   background-image: url("/image/backgrounds/sky.jpg");
   background-repeat: repeat;
@@ -32,7 +115,6 @@ h2.changelog-title {
   border-top: 2px solid black;
   margin-top: 10px;
 }
-
 .laser-kiwi {
   background-color: black;
   background-image: url("/image/random/laser-kiwi-no-laser.png");
