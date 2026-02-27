@@ -1,5 +1,6 @@
 // My birthday (in gmt/utc)
-const birthday = new Date(Date.UTC(2006, 10, 16, 11));
+//? month is 1 off since it uses zero-based indexing
+const birthday = new Date(Date.UTC(2006, 10, 17));
 
 function getAge() {
 
