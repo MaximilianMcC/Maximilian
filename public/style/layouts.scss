@@ -85,18 +85,18 @@ ul, ol {
 
 .inline {
 	width: 50%;
-	margin: 10px;
+	padding: 10px;
 
 	&-left {
 		@extend .inline;
 		float: left;
-		margin-left: 0;
+		padding-left: 0;
 	}
 
 	&-right {
 		@extend .inline;
 		float: right;
-		margin-left: 0;
+		padding-right: 0;
 	}
 }
 

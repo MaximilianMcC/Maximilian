@@ -77,15 +77,15 @@ ul, ol {
 
 .inline, .inline-right, .inline-left {
   width: 50%;
-  margin: 10px;
+  padding: 10px;
 }
 .inline-left {
   float: left;
-  margin-left: 0;
+  padding-left: 0;
 }
 .inline-right {
   float: right;
-  margin-left: 0;
+  padding-right: 0;
 }
 
 img.emoji {

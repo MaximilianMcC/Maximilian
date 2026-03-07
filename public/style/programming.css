@@ -33,6 +33,7 @@ img a, figcaption a {
 }
 
 .title {
+  color: greenyellow;
   border-bottom: 2px dotted greenyellow;
   margin-bottom: 10px;
 }
@@ -42,4 +43,8 @@ span.tooltip {
 }
 span.tooltip a {
   color: white;
+}
+
+p a {
+  color: #6ba612;
 }/*# sourceMappingURL=programming.css.map */
