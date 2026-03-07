@@ -3,7 +3,7 @@
 		{
 			"displayName": "Railway 200",
 			"page": "railway200",
-			"showInSideNavBar": false
+			"showInSideNavBar": true
 		},
 		{
 			"displayName": "Model railway",

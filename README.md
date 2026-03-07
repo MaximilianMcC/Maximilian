@@ -18,10 +18,9 @@ https://maximilian.co.nz
 - say how packed the schedule was and how it was cool to do something i wanted to do (instead of being dragged along on parents thing)
 - little raylib game embedded on the programming page where you are c# and have to destroy python or something idk
 - dynamic changelog that's read from a json file
-
-- web graphics or whtever theyr'e called
-- buttons at the bottom of the gutters/margins that say "home" yk. red and yellow maybe one in each one
-
+- thing where i do <DISCORD> and it makes a tooltip that says dm and has my discord
+- rename home.scss because its gonna be used for articles
+- on right of railway 200 have photos of tickets and stuff
 
 for dynamic nav and stuff do this in `pages.json`
 ```json

@@ -31,7 +31,7 @@ a {
   position: relative;
   display: inline-block;
 }
-.tooltip:not(:has(img)) {
+.tooltip:not(:has(> img)) {
   border-bottom: 1px dotted black;
 }
 .tooltip {
@@ -79,4 +79,8 @@ a {
 
 .title {
   font-size: 3em;
+}
+
+img#openImageWhenClicked {
+  cursor: zoom-in;
 }/*# sourceMappingURL=main.css.map */

@@ -33,7 +33,8 @@ a {
 	position: relative;
 	display: inline-block;
 
-	&:not(:has(img))
+	// Underline text but not images
+	&:not(:has(> img))
 	{
 		border-bottom: 1px dotted black;
 	}
@@ -90,4 +91,8 @@ a {
 
 .title {
 	font-size: 3em;
+}
+
+img#openImageWhenClicked {
+	cursor: zoom-in;
 }

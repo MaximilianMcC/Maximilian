@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	
 	<!-- my Discord pfp -->
 	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
@@ -11,122 +10,228 @@
 
 	<link rel="stylesheet" href="/style/main.css">
 	<link rel="stylesheet" href="/style/layouts.css">
+	<link rel="stylesheet" href="/style/home.css">
 
 	<!-- twemoji -->
 	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 
-	<script src="/script/aboutMe.js" defer></script>
+	<script src="/script/image.js" defer></script>
 
 </head>
 <body>
 	
 	<main>
-		<h1>Railway 200</h1>
-		<p>I went to England, Wales, and France in September/October of 2025. This was for railway 200 (celebrating the 200th anniversary of the modern railway) I have wanted to go to England since I was like four or something ngl (shout out a specific blue tank engine) I never thought that I would go to France, but I went to see La La Land in concert. I used the channel tunnel to get there.</p>
-		<p>I usually prefer to just kinda enjoy the moment, but I did bring my DSLR everywhere I went. Most of the time I kinda neglected it, and ngl most of the photographs I took were pretty bung. I can't really be bothered to edit them, but the actual colors are quite nice anyways. Also I am too lazy to make an image enlarger thing so just open in new tab should you want to zoom in. Here are a few of the nicer ones:</p>
+		<div class="content-panels-default">
+			<section class="side">
 
-		<div class="image-gallery">
+				<DYNAMIC-SIDE-BAR/>
 
-			<!-- Column 1 -->
-			<figure>
-				<img src="/image/uk2025/swanage.jpg" alt="">
-				<figcaption>Schools class 926 departing Swanage Station. This might be my favourite photograph</figcaption>
-			</figure>
+				<hr>
 
-			<figure>
-				<img src="/image/uk2025/camelot.jpg" alt="">
-				<figcaption>73082 Camelot's valve gear at the Severn Valley Railway</figcaption>
-			</figure>
+				<a href="/" class="home-button"></a>
 
-			<figure>
-				<img src="/image/uk2025/bridgnorth.jpg" alt="">
-				<figcaption>Engines at the Severn Valley Railway's Bridgnorth Loco Works</figcaption>
-			</figure>
+				<hr>
+			</section>
 
-			<figure>
-				<img src="/image/uk2025/35006cab.jpg" alt="">
-				<figcaption>Fireman hanging out the cab of Merchant Navy 35006 at the Severn Valley Railway</figcaption>
-			</figure>
+			<section class="centre">
+				<h1>Railway 200</h1>
+				<!-- first time out of the south pacific -->
+				<p>In September/October of 2025 I went over to Britain to celebrate 
+					<span class="tooltip">
+						Railway 200.
+						<span class="tooltip-text">
+							The 200th anniversary of the modern railway (1825 - 2025)
+						</span>
+					</span>
+					This was my first
+					<span class="tooltip">
+						proper
+						<span class="tooltip-text">
+							I went to England when I was like 3 months old to see family
+						</span>
+					</span>
+					time going overseas to somewhere that's not Oceania. Going to England has been something I've wanted to do for pretty much my whole life, and I could not have gone at a better time.
+				</p>
 
-			<figure>
-				<img src="/image/uk2025/tornado-smokebox.jpg" alt="">
-				<figcaption>Tornado at Hopetown Darlington</figcaption>
-			</figure>
+				<p>About 90% of my trip was in England, but I also had a few days in Wales. In my original plan I was also going to go to Scotland, but I ran out of time in the end (next time trust) One day it would be cool to explore the British Isles.</p>
 
-			<!-- Column 2 -->
-			<figure>
-				<img src="/image/uk2025/225peterborough.jpg" alt="">
-				<figcaption>LNER InterCity 225 at Peterborough</figcaption>
-			</figure>
+				<hr>
 
-			<figure>
-				<img src="/image/uk2025/stanley-side.jpg" alt="">
-				<figcaption>Stanley's crew leaving at the Tanfield Railway</figcaption>
-			</figure>
+				<p>I brought my DSLR everywhere I went on my trip, but most of the time I preferred to just enjoy the moment irl and forgot to take photographs. Here are a few of the half decent ones that I did take (unedited)</p>
 
-			<figure>
-				<img src="/image/uk2025/signal-gantry.jpg" alt="">
-				<figcaption>Signal gantry at the Buckinghamshire Railway Centre</figcaption>
-			</figure>
+				<div class="image-gallery">
 
-			<figure>
-				<img src="/image/uk2025/tornado-valve-gear.jpg" alt="">
-				<figcaption>Tornado's valve gear at Hopetown Darlington</figcaption>
-			</figure>
+					<!-- Column 1 -->
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/swanage.jpg" alt="">
+						<figcaption>Schools class 926 departing Swanage Station. This might be my favourite photograph</figcaption>
+					</figure>
 
-			<!-- Column 3 -->
-			<figure>
-				<img src="/image/uk2025/platform.jpg" alt="">
-				<figcaption>Passengers at the Severn Valley Railway (second favourite)</figcaption>
-			</figure>
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/camelot.jpg" alt="">
+						<figcaption>73082 Camelot's valve gear at the Severn Valley Railway</figcaption>
+					</figure>
 
-			<figure>
-				<img src="/image/uk2025/bakerloo.jpg" alt="">
-				<figcaption>Bakerloo train. I wish this wasn't out of frame</figcaption>
-			</figure>
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/bridgnorth.jpg" alt="">
+						<figcaption>Engines at the Severn Valley Railway's Bridgnorth Loco Works</figcaption>
+					</figure>
 
-			<figure>
-				<img src="/image/uk2025/stanley-front.jpg" alt="">
-				<figcaption>Stanley warming up at the Tanfield Railway</figcaption>
-			</figure>
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/35006cab.jpg" alt="">
+						<figcaption>Fireman hanging out the cab of Merchant Navy 35006 at the Severn Valley Railway</figcaption>
+					</figure>
 
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/tornado-smokebox.jpg" alt="">
+						<figcaption>Tornado at Hopetown Darlington</figcaption>
+					</figure>
+
+					<!-- Column 2 -->
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/225peterborough.jpg" alt="">
+						<figcaption>LNER InterCity 225 at Peterborough</figcaption>
+					</figure>
+
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/stanley-side.jpg" alt="">
+						<figcaption>Stanley's crew leaving at the Tanfield Railway</figcaption>
+					</figure>
+
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/signal-gantry.jpg" alt="">
+						<figcaption>Signal gantry at the Buckinghamshire Railway Centre</figcaption>
+					</figure>
+
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/tornado-valve-gear.jpg" alt="">
+						<figcaption>Tornado's valve gear at Hopetown Darlington</figcaption>
+					</figure>
+
+					<!-- Column 3 -->
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/platform.jpg" alt="">
+						<figcaption>Passengers at the Severn Valley Railway (second favourite)</figcaption>
+					</figure>
+
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/bakerloo.jpg" alt="">
+						<figcaption>Bakerloo train. I wish this wasn't out of frame (would have been #1)</figcaption>
+					</figure>
+
+					<figure>
+						<img id="openImageWhenClicked" src="/image/uk2025/stanley-front.jpg" alt="">
+						<figcaption>Stanley warming up at the Tanfield Railway</figcaption>
+					</figure>
+
+				</div>
+
+				<h2>Railways I visited</h2>
+				<p>I was only in Britain for 23 days, so I only got to see the tiniest fraction of things. There is so much to do there it's actually insane. I could probably spend six months in London alone. Here is a list (in order) of all heritage railways I visited. Many of them were visited on gala weekends.</p>
+				<!-- TODO: Add a map of england/wales (interactive) -->
+				<ul>
+					<li>Swanage Railway</li>
+					<li>Nene Valley Railway</li>
+					<li>Buckinghamshire Railway Centre</li>
+					<li>Talyllyn Railway</li>
+					<li>Ffestiniog & Welsh highland railway</li>
+					<li>Severn Valley Railway</li>
+					<li>Epping Ongar Railway</li>
+					<li>Isle Of Wight Steam Railway</li>
+					<li>Beamish (trams but close enough)</li>
+					<li>Keighley & Worth Valley Railway</li>
+					<li>North Yorkshire Moors Railway</li>
+					<li>Locomotion (like 3 metres of track (still counts))</li>
+					<li>Tanfield Railway</li>
+					<li>Bluebell Railway</li>
+					<li>West Somerset Railway</li>
+				</ul>
+				<br>
+				<p>I cannot pick a favourite because all were so good for different reasons, but I remembered the most from the KWVR so I think that shall be my favourite. My original list had over one hundred railways/activities, but I am quite happy with the ones that I chose.</p>
+
+				<h2>Celebrating Railway 200</h2>
+				<figure class="inline-right">
+					<img src="https://www.hopetowndarlington.co.uk/media/1gsabobj/27-sept-2025.webp" alt="A crowd watching Locomotion No.1">
+					<figcaption>Locomotion No.1 on it's anniversary journey (27th)</figcaption>
+				</figure>
+				<p>On the day of Railway 200, 27 September, I went to Locomotion. My original plan was to go to Hopetown Darlington for the anniversary
+					<span class="tooltip">
+						(obviously)
+						<span class="tooltip-text">
+							Hopetown Darlington is a museum on the grounds of the first 'modern' railway, the Stockton & Darlington railway. Railway 200 marks the S&DR's 200th birthday.
+						</span>
+					</span>
+					but I was too late when booking tickets. At Locomotion I was able to ride a replica of
+					<span class="tooltip">
+						Stephenson's Rocket,
+						<span class="tooltip-text">
+							<img src="https://live.staticflickr.com/2520/5790506385_b16a7676aa_b.jpg" alt="The Rocket">
+							The first actually good steam locomotive
+						</span>
+					</span>
+					and I also went on
+					<span class="tooltip">
+						Inspiration
+						<span class="tooltip-text">
+							Inspiration is a travelling museum (a train) that toured Great Britain during Railway 200
+						</span>
+					</span>
+					The day after, 28, I went to Hopetown Darlington. Prince Edward was there for some reason. Hopetown Darlington was honestly a little bit of a let-down, I was expecting more for how much it was hyped up. I did see the
+					<span class="tooltip">
+						Locomotion replica,
+						<span class="tooltip-text">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Locomotion_No._1_New_Bridge.jpg/1280px-Locomotion_No._1_New_Bridge.jpg" alt="Locomotion No.1">
+							The first locomotive to run on the S&DR
+						</span>
+					</span>
+					and I got to go on the Footplate of both
+					<span class="tooltip">
+						Tornado
+						<span class="tooltip-text">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/LNER_Class_A1_4-6-2_No60163_%27Tornado%27_%2829903372180%29.jpg/1280px-LNER_Class_A1_4-6-2_No60163_%27Tornado%27_%2829903372180%29.jpg" alt="Tornado">
+							A very famous new-build locomotive completed in 2008
+						</span>
+					</span>
+					and
+					<span class="tooltip">
+						Sir Nigel Gresley.
+						<span class="tooltip-text">
+							<img src="https://www.railwaymagazine.co.uk/wp-content/uploads/sites/24/2022/03/Sir-Nigel-Gresley-at-Bewdley-South-6-3-2009-Spring-Steam-Gala.-Alan-Corfield.jpg" alt="Sir Nigel Gresley">
+							A very famous locomotive named after it's designer, Sir Nigel Gresley
+						</span>
+					</span>
+					I am rather glad that I was at Locomotion during the celebration, because it was a much cooler place.
+					</p>
+
+				<h2>Getting around</h2>
+				<p>In England I used the railway for everything (except for the bus like one or two times) Obviously the tube was used extensively too. For the first few days that I arrived there was a tube strike. Luckily, I was staying in Whitechapel which has an Elizabeth line station. When I went to the isle of wight I went on a hovercraft which was really cool. In Wales I used a car to save time (railway strat was a mega detour (cannot afford to lose any time)) I used the channel tunnel and Paris metro too. I flew into Heathrow, and I flew out from Charles de Gaulle. Both flights needed me to stop in singapore to switch aeroplanes.</p>
+				<p>Regardless for my love of trains, using the train is by far the best, and cheapest, way to travel around Great Britain. I brought a BritRail pass, which gave me unlimited travel on all trains (except TFL stuff) in England. I got the first-class pass, so all travelling was in first-class. Massive respect to that one lady from LNER who made me a hot chocolate who had the worlds loveliest accent ever (first class gives you free food/drink) For when in London, I got a visitor Oyster Card which gave me a decent discount.</p>
+
+				<!-- TODO: Put this on it's own page -->
+				<!-- <h2>Fr*nce</h2>
+				<p>My favourite movie is La La Land. In France they were performing La La Land in concert (where they have a band playing the music with irl instruments as you watch the film) in Paris, so I went over there to see it. Seeing La La Land was one of the coolest experiences in my life though. I brought a t-shirt and a signed poster.</p>
+				<p>I am not trolling but France was even more dingier than Birmingham somehow. The people were really nice though which was kinda strange.</p>
+				<p>The Paris Metro was so pathetic. The tickets were legit paper and the stations are so dingy and horribly laid out. The trains are yuck (some were double decker though which was cool) and it was one euro to use the toilet (acting like its victorian london for some reason) The main thing that made the Paris metro so unusable was they have like zero interchange stations.</p>
+				<p>I was only in Paris for like two days (1.5 days too much ngl) and during that went to Louvre. Pretty much the week after it was robbed. I also went up the Eiffel Tower and went to some other place that I forgot the name of.</p>
+				<p>This was my first and only time in France.</p> -->
+
+				<h2>Awesome urinal I saw</h2>
+				<figure class="inline-right">
+					<img src="/image/random/urinal.jpg" alt="urinal">
+					<figcaption>One of the urinals from the Hopetown Darlington bathroom. This is my photograph (you can tell because of the Discord compression when I sent it to my computer)</figcaption>
+				</figure>
+				<p>At Hopetown Darlington there is a preserved Victorian toilet. I do not remember much about it sorry. I do remember it said something about being very rare at the time (1800s) There were about 15 of them in the room. Inside each urinal there was a little bit of cardboard telling you not to use them (not fair)</p>
+				<p>I also saw another interesting urinal at the severn valley railway. This one I did actually get to use. It was very cramped inside, but so cool to piss in something that historic.</p>
+				<figure class="inline-left">
+					<img src="https://www.urinal.net/bewdley_railway_station/IM003256.med.jpg" alt="urinal">
+					<figcaption>The SVR urinal. This is not my photograph.</figcaption>
+				</figure>
+			</section>
+
+			<section class="side">
+				<img src="/image/random/limited-clearance.gif" alt="Limited clearance">
+			</section>
 		</div>
-
-		<h2>Railways I visited</h2>
-		<p>My original plan was to visit the whole of Great Britain, but I was only there for a month which was not enough time to get me up to Scotland. There is so much to do in Britain its actually insane. I could probably spend six months in London alone. Here is a list (in order) of all heritage railways I visited. Many of them were visited on gala weekends.</p>
-		<ul>
-			<li>Swanage Railway</li>
-			<li>Nene Valley Railway</li>
-			<li>Buckinghamshire Railway Centre</li>
-			<li>Talyllyn Railway</li>
-			<li>Ffestiniog & Welsh highland railway</li>
-			<li>Severn Valley Railway</li>
-			<li>Epping Ongar Railway</li>
-			<li>Isle Of Wight Steam Railway</li>
-			<li>Beamish (trams but close enough)</li>
-			<li>Keighley & Worth Valley Railway</li>
-			<li>North Yorkshire Moors Railway</li>
-			<li>Locomotion (like 3 metres of track (still counts))</li>
-			<li>Tanfield Railway</li>
-			<li>Bluebell Railway</li>
-			<li>West Somerset Railway</li>
-		</ul>
-		<p>I cannot pick a favourite because all were so good for different reasons, but I remembered the most from the KWVR so I think that shall be my favourite. My original list had over one hundred railways/activities, so it was shortened heaps.</p>
-
-		<h2>Getting around</h2>
-		<p>In England I used the railway for everything (except for the bus like one or two times) Obviously the tube was used extensively too. For the first few days that I arrived there was a tube strike. Luckily, I was staying in Whitechapel which has an Elizabeth line station. When I went to the isle of wight I went on a hovercraft which was really cool. To get to France I used the channel tunnel. In Wales I used a car to save time (railway strat was a mega detour (cannot afford to lose any time)) When in Paris I used the Paris metro. I flew into Heathrow, and I flew out from Paris. Both trips needed me to stop in singapore to switch aeroplanes.</p>
-
-		<h2>Stuff I purchased</h2>
-		<p>My entire suitcase was fully bursting at the seams when I arrived back in nz. Whilst at all of the heritage railways they add had heaps of model railway stuff for sale at insanely cheap prices. As well as second hand stuff from railways, I also got a few new things. They still use cash quite a lot in Britain so it was pretty fun to use it again. The last time I properly used cash in nz I was probably only like nine or something.</p>
-
-		<h2>Fr*nce</h2>
-		<p>My favourite movie is La La Land. In France they were performing La La Land in concert (where they have a band playing the music with irl instruments as you watch the film) in Paris, so I went over there to see it. Seeing La La Land was one of the coolest experiences in my life though. I brought a t-shirt and a signed poster.</p>
-		<p>I am not trolling but France was even more dingier than Birmingham somehow. The people were really nice though which was kinda strange.</p>
-		<p>The Paris Metro was so pathetic. The tickets were legit paper and the stations are so dingy and horribly laid out. The trains are yuck (some were double decker though which was cool) and it was one euro to use the toilet (acting like its victorian london for some reason) The main thing that made the Paris metro so unusable was they have like zero interchange stations.</p>
-		<p>I was only in Paris for like two days (1.5 days too much ngl) and during that went to Louvre. Pretty much the week after it was robbed. I also went up the Eiffel Tower and went to some other place that I forgot the name of.</p>
-		<p>This was my first and only time in France.</p>
-
-		<h2>Awesome urinal I saw</h2>
 
 	</main>
 
