@@ -1,6 +1,6 @@
 const FileSystem = require("fs");
 
-function generateSideNavHtml() {
+function generateSideNavHtml(page) {
 	
 	// Open the pages file to see what goes where
 	// TODO: Use path.join
@@ -11,7 +11,10 @@ function generateSideNavHtml() {
 	pages["articles"].forEach(article => {
 		if (article["showInSideNavBar"] == false) return;
 
-		articles += `<li><a href="/articles/${article["page"]}">${article["displayName"]}</a></li>`;
+		// Check for if we need to add a new sticker thingy
+		const newSticker = isNew(article, page) ? `class="new-small"` : ``;
+
+		articles += `<li><a ${newSticker} href="/articles/${article["page"]}">${article["displayName"]}</a></li>`;
 	});
 
 	// Generate all the interest links
@@ -19,7 +22,15 @@ function generateSideNavHtml() {
 	pages["interests"].forEach(interest => {
 		if (interest["showInSideNavBar"] == false) return;
 
-		interests += `<li><a href="/interests/${interest["page"]}">${interest["displayName"]}</a></li>`;
+		// Check for if we need to add a new sticker thingy.
+		// If we are on the home page then don't show it though
+		let newSticker = ``;
+		if (page != "index") {
+			
+			newSticker = isNew(interest, page) ? `class="new-small"` : ``;
+		}
+
+		interests += `<li><a ${newSticker} href="/interests/${interest["page"]}">${interest["displayName"]}</a></li>`;
 	});
 
 	// Chuck them together and add the headers
@@ -45,13 +56,34 @@ function generateInterestsHtml() {
 	pages["interests"].forEach(interest => {
 		if (interest["showOnHomePage"] == false) return;
 		
-		// TODO: Make this dynamic based on time
-		const isNew = interest["new"] ? "new" : "";
+		// Check for if we need to add a new sticker thingy
+		const newSticker = isNew(interest) ? `new` : ``;
 
-		interests += `<a class="interest-banner ${isNew}" href="/interests/${interest["page"]}"><img src="/image/interest-banners/${interest["imageBanner"]}" alt="${interest["displayName"]}"></a>`;
+		interests += `<a class="interest-banner ${newSticker}" href="/interests/${interest["page"]}"><img src="/image/interest-banners/${interest["imageBanner"]}" alt="${interest["displayName"]}"></a>`;
 	});
 
 	return interests;
+}
+
+// TODO: Don't show the new sticker if we're on the new page
+function isNew(thing, page) {
+
+	// If the page we're on is potentially new then don't show it
+	// TODO: Do this some other way
+	if (page == `interests/${thing["page"]}`) return false;
+	if (page == `articles/${thing["page"]}`) return false;
+
+	if (thing["lastUpdated"] != null || thing["ignoreNew"] != true)
+	{
+		// Get the ms in between rn and the last updated time is less than a week
+		const week = 7 * 24 * 60 * 60 * 1000;
+		const lessThanWeek = (Date.now() - new Date(thing["lastUpdated"])) < week;
+
+		// If the page is less than a week old then add a new sticker
+		if (lessThanWeek) return true;
+	}
+
+	return false;
 }
 
 function getJson(path) {

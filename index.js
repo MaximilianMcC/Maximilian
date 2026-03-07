@@ -39,7 +39,7 @@ app.use((request, response) => {
 		// We have the right page. Add any dynamic content if needed
 		// TODO: Do somewhere else
 		let pageContents = FileSystem.readFileSync(page, "utf8");
-		pageContents = pageContents.replaceAll("<DYNAMIC-SIDE-BAR/>", Navbar.generateSideNavHtml());
+		pageContents = pageContents.replaceAll("<DYNAMIC-SIDE-BAR/>", Navbar.generateSideNavHtml(requestedContent));
 		pageContents = pageContents.replaceAll("<DYNAMIC-INTERESTS/>", Navbar.generateInterestsHtml());
 
 		// Serve the page
