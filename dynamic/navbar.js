@@ -65,7 +65,6 @@ function generateInterestsHtml() {
 	return interests;
 }
 
-// TODO: Don't show the new sticker if we're on the new page
 function isNew(thing, page) {
 
 	// If the page we're on is potentially new then don't show it
@@ -73,6 +72,7 @@ function isNew(thing, page) {
 	if (page == `interests/${thing["page"]}`) return false;
 	if (page == `articles/${thing["page"]}`) return false;
 
+	// Check for if we should be showing the sticker at all
 	if (thing["lastUpdated"] != null || thing["ignoreNew"] != true)
 	{
 		// Get the ms in between rn and the last updated time is less than a week
@@ -86,6 +86,24 @@ function isNew(thing, page) {
 	return false;
 }
 
+// TODO: Don't do this maybe because there's nothing actually dynamic about it
+function generatePhoneNavHtml(page) {
+	
+	return `
+	<div class="phone-navbar-button">
+		<button>
+			<img src="/image/buttons/phone-navigation-button.gif" alt="Navigation">
+		</button>
+	</div>
+
+	<div class="phone-navbar hidden">
+		${generateSideNavHtml(page)}
+		<hr>
+		<a href="/" class="home-button"></a>
+	</div>
+	`;
+}
+
 function getJson(path) {
 	
 	// Open the JSON file and get its content, then
@@ -96,5 +114,6 @@ function getJson(path) {
 
 module.exports = {
 	generateSideNavHtml,
+	generatePhoneNavHtml,
 	generateInterestsHtml
 };

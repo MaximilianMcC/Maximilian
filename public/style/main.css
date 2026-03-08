@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,6 +6,7 @@
 
 body {
   height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -66,7 +67,7 @@ a {
 }
 .new-small::after, .new-small-small::after {
   scale: 60%;
-  right: -60px;
+  right: -80px;
   rotate: -5deg;
 }
 

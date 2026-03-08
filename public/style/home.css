@@ -6,8 +6,10 @@
 
 body {
   height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -31,7 +33,7 @@ a {
   position: relative;
   display: inline-block;
 }
-.tooltip:not(:has(img)) {
+.tooltip:not(:has(> img)) {
   border-bottom: 1px dotted black;
 }
 .tooltip {
@@ -55,6 +57,7 @@ a {
 
 .new, h2.changelog-title:first-of-type, .new-small {
   position: relative;
+  overflow: hidden;
 }
 .new::after, h2.changelog-title:first-of-type::after, .new-small::after {
   position: absolute;
@@ -66,7 +69,7 @@ a {
 }
 .new-small::after, .new-small-small::after {
   scale: 60%;
-  right: -60px;
+  right: -80px;
   rotate: -5deg;
 }
 
@@ -81,9 +84,14 @@ a {
   font-size: 3em;
 }
 
+img#openImageWhenClicked {
+  cursor: zoom-in;
+}
+
 body {
   background-image: url("/image/backgrounds/sky.jpg");
   background-repeat: repeat;
+  background-color: skyblue;
 }
 
 header {
@@ -92,8 +100,13 @@ header {
   border: 4px dashed white;
   border-bottom: none;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5rem;
   font-family: cursive;
+}
+@media (max-width: 800px) {
+  header {
+    font-size: 1rem;
+  }
 }
 
 section.centre {

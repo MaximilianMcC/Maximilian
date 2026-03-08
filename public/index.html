@@ -16,6 +16,7 @@
 	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 
 	<script src="/script/aboutMe.js" defer></script>
+	<script src="/script/responsive.js" defer></script>
 
 </head>
 <body>
@@ -53,8 +54,16 @@
 			</section>
 
 			<section class="centre">
+				<p class="phone-warning">It looks as if you are viewing at this website on a telephone. I highly recommend you switch to desktop. I am too lazy to make this site work fully on a phone, so you are viewing a 'stripped-down' version right now (sorry)</p>
+
 				<p>
-					Kia ora my name is Max or Marl or MTMB or whatever you wanna use. I am <span id="age">19</span> and was born
+					<span class="tooltip">
+						Kia ora 
+						<span class="tooltip-text">
+							Kia ora means hello in te reo Māori, New Zealand's other language (nz sign language doesn't count) I don't speak te reo btw
+						</span>
+					</span>
+					my name is Max or Marl or MTMB or whatever you wanna use. I am <span id="age">19</span> and was born
 					<span class="tooltip">
 						<span id="birthday">17 November 2006</span>.
 						<span class="tooltip-text">
@@ -67,7 +76,7 @@
 				<hr>
 
 				<p>I've remade my website like a grillion times (kinda like 3-5 times per year for ~10 years) and in the past they've all been really posh and modern and flash. Not this one.</p>
-				<p>ngl idk what to really put on here but imma be updating it semi often probably. If the website looks bad then sorry but I can't really be stuffed to make it fully responsive and stuff. I would not try and use this on a phone.</p>
+				<p>ngl idk what to really put on here but imma be updating it semi often probably. Every time I add something new I chuck a note in the <a href="/articles/changelog">changelog</a> so go and look at that or something</p>
 
 				<hr>
 
@@ -107,6 +116,8 @@
 
 	</main>
 
+	<DYNAMIC-PHONE-NAV/>
+	
 </body>
 
 <!-- TODO: Defer this -->

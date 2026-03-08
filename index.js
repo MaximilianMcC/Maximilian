@@ -40,6 +40,7 @@ app.use((request, response) => {
 		// TODO: Do somewhere else
 		let pageContents = FileSystem.readFileSync(page, "utf8");
 		pageContents = pageContents.replaceAll("<DYNAMIC-SIDE-BAR/>", Navbar.generateSideNavHtml(requestedContent));
+		pageContents = pageContents.replaceAll("<DYNAMIC-PHONE-NAV/>", Navbar.generatePhoneNavHtml(requestedContent));
 		pageContents = pageContents.replaceAll("<DYNAMIC-INTERESTS/>", Navbar.generateInterestsHtml());
 
 		// Serve the page
