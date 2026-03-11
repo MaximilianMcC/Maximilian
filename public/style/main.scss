@@ -9,7 +9,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
-	// overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 h2 {
@@ -64,9 +64,9 @@ a {
 
 .new, .new-small {
 	position: relative;
-	// overflow: hidden;
-
+	
 	&::after {
+		overflow: hidden;
 		position: absolute;
 		z-index: 99999999;
 		top: -20px;

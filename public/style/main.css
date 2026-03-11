@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -58,6 +59,7 @@ a {
   position: relative;
 }
 .new::after, .new-small::after {
+  overflow: hidden;
   position: absolute;
   z-index: 99999999;
   top: -20px;

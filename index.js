@@ -14,6 +14,8 @@ const port = process.env.PORT || 3000;
 app.use(Cors());
 app.use(Express.json());
 
+Utils.resizeImages(app);
+
 // Serve static stuff
 app.use(Express.static(Path.join(__dirname, "assets")));
 app.use("/style", Express.static(Path.join(__dirname, "public", "style")));
