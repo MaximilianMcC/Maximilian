@@ -23,8 +23,8 @@ app.use("/script", Express.static(Path.join(__dirname, "public", "script")));
 
 // Endpoints and whatnot
 app.get("/test", (request, response) => {
-	response.send("<h1>the test worked</h1>");
-})
+	response.send(`<h1>the test worked</h1> <img src="/image/test.png"><p>this is my test image btw</p>`);
+});
 
 // Make it so that all pages don't have
 // the .html part at the end of them
