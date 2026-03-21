@@ -99,6 +99,7 @@ ul, ol {
 .inline, .inline-right, .inline-left {
   width: 50%;
   padding: 10px;
+  padding-bottom: 0px;
 }
 .inline-left {
   float: left;
@@ -107,6 +108,9 @@ ul, ol {
 .inline-right {
   float: right;
   padding-right: 0;
+}
+.inline.small, .small.inline-left, .small.inline-right {
+  width: 30%;
 }
 
 .horizontal-image-collection {

@@ -109,6 +109,7 @@ ul, ol {
 .inline {
 	width: 50%;
 	padding: 10px;
+	padding-bottom: 0px;
 
 	&-left {
 		@extend .inline;
@@ -120,6 +121,10 @@ ul, ol {
 		@extend .inline;
 		float: right;
 		padding-right: 0;
+	}
+
+	&.small {
+		width: 30%;
 	}
 }
 
