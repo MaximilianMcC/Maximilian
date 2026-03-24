@@ -41,9 +41,6 @@ img a, figcaption a {
 span.tooltip {
   border-bottom: 1px dotted greenyellow;
 }
-span.tooltip a {
-  color: white;
-}
 
 p a {
   color: #6ba612;

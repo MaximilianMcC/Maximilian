@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +51,7 @@ a {
   padding: 3px;
   color: white;
   border: 2px solid black;
+  text-align: left;
 }
 .tooltip:hover .tooltip-text {
   visibility: visible;
