@@ -20,6 +20,12 @@ h2 {
 	font-size: 2em;
 }
 
+h3 {
+	color: red;
+	font-family: "cooper black", sans-serif;
+	font-size: 1.8em;
+}
+
 p {
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 18px;
@@ -104,4 +110,48 @@ a {
 
 img#openImageWhenClicked {
 	cursor: zoom-in;
+}
+
+table {
+	width: 100%;
+
+	&, th, td {
+		border: 3px solid black;
+		border-collapse: collapse;
+		padding: 5px;
+	}
+
+	.centre {
+		text-align: center;
+	}
+
+	.left {
+		text-align: left;
+	}
+}
+
+code {
+	background-color: #1F1F1F;
+	font-family: "consolas", monospace;
+	padding: 1px 3px;
+	border-radius: 5px;
+
+	color: #9CDCFE;
+
+	font-size: 0.85rem;
+
+	&.string {
+		color: #CE8F70;
+
+		&::before { content: "\""; }
+		&::after { content: "\""; }
+	}
+
+	&.number {
+		color: #B5CEA8;
+	}
+
+	&.keyword {
+		color: #8b41b4;
+	}
 }

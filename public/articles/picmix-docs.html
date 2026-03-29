@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- my Discord pfp -->
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
+	<title>max</title>
+
+	<link rel="stylesheet" href="/style/main.css">
+	<link rel="stylesheet" href="/style/home.css">
+	<link rel="stylesheet" href="/style/layouts.css">
+
+	<script src="/script/responsive.js" defer></script>
+
+</head>
+<body>
+	
+	<main>
+	
+		<div class="content-panels-no-right-panel">
+			<section class="side">
+
+				<DYNAMIC-SIDE-BAR/>
+				
+				<hr>
+
+				<a href="/" class="home-button"></a>
+
+				<hr>
+
+			</section>
+
+			<section class="centre">
+				<h1 class="title">PicMix api</h1>
+				<p>
+					<a target="_blank" href="https://www.picmix.com">PicMix</a> is a website in which you may create animated gifs by combining different stickers together. There is no official api, so I've made one. Should you have any issues with using it, please
+					<span class="tooltip">
+						dm
+						<span class="tooltip-text">
+							@MTMB on Discord
+						</span>
+					</span>
+					me and I am more than happy to help. You can also find my PicMix account <a target="_blank" href="https://www.picmix.com/profile/MaximilianMcC">here</a>!
+				</p>
+				<p>There is no key or ratelimiting, so please be respectful with your requests to both PicMix and my website.</p>
+
+				<hr>
+
+				<h2>Endpoints</h2>
+				<p>The base URL for the api is <code class="string">https://maximilian.co.nz/api/picmix/</code>. So for example, if you wanted to use the profiles endpoint, you would use <code class="string">https://maximilian.co.nz/api/picmix/profiles</code>.</p>
+				<table>
+					<thead>
+						<tr>
+							<th class="centre">Name</th>
+							<th class="left">Description</th>
+							<th class="left">Route</th>
+							<th>Docs</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="centre">Profile</td>
+							<td>Get in-depth user information</td>
+							<td><code class="string">/profile</code></td>
+							<td class="centre"><a href="#profile">here</a></td>
+						</tr>
+						<tr>
+							<td class="centre">Friends</td>
+							<td>Get a list of all a users friends</td>
+							<td><code class="string">/friends</code></td>
+							<td class="centre">coming soon</td>
+						</tr>
+						<tr>
+							<td class="centre">Picmix</td>
+							<td>Get a list of all picmixs made</td>
+							<td><code class="string">/picmixs</code></td>
+							<td class="centre">coming soon</td>
+						</tr>						
+					</tbody>
+				</table>
+
+				<hr>
+				<h3 id="picmix">picmix JSON object</h3>
+				<table>
+					<thead>
+						<tr>
+							<th class="left">Key</th>
+							<th class="left">Value Type</th>
+							<th class="left">Example Response</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code class="string">title</code></td>
+							<td>string</td>
+							<td><code class="string">Good Morning!</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">id</code></td>
+							<td>string</td>
+							<td><code class="string">good-morning-43274839</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">urlThumbnail</code></td>
+							<td>string</td>
+							<td>small sized image, <code class="string">https://img1.picmix.com/output/pic/thumb/x.gif</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">urlNormal</code></td>
+							<td>string</td>
+							<td>large sized image, <code class="string">https://img1.picmix.com/output/pic/normal/x.gif</code></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<hr>
+				<h3 id="profile">Profile information endpoint</h3>
+				<p><code class="string">/profile</code></p>
+				<table>
+					<thead>
+						<tr>
+							<th class="centre">Query</th>
+							<th class="centre">Required</th>
+							<th class="left">Example</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="centre"><code class="string">username</code></td>
+							<td class="centre">Yes</td>
+							<td><code class="string">?username=maximilianmcc</code></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="gap"></div>
+				<table>
+					<thead>
+						<tr>
+							<th class="left">Key</th>
+							<th class="left">Value Type</th>
+							<th class="left">Example Response</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code class="string">gender</code></td>
+							<td>string</td>
+							<td>Will be either <code class="string">Male</code> or <code class="string">Female</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">username</code></td>
+							<td>string</td>
+							<td><code class="string">MaximilianMcC</code></td>	
+						</tr>
+						<tr>
+							<td><code class="string">bio</code></td>
+							<td>string</td>
+							<td><code class="string">haere mai :)) \n I love picmix!</code></td>	
+						</tr>
+						<tr>
+							<td><code class="string">language</code></td>
+							<td>string</td>
+							<td><code class="string">English</code> or <code class="string">Français</code> will be seen most often</td>
+						</tr>
+						<tr>
+							<td><code class="string">specialUrl</code></td>
+							<td>string</td>
+							<td><code class="string">https://maximilianmcc.picmix.com</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">regularUrl</code></td>
+							<td>string</td>
+							<td><code class="string">https://www.picmix.com/profile/MaximilianMcC</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">joinDate</code></td>
+							<td>ISO 8601 formatted string</td>
+							<td><code class="string">2024-08-08T22:13:00.000Z</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">vip</code></td>
+							<td>boolean</td>
+							<td><code>false</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">avatarPicmix</code></td>
+							<td>picmix</td>
+							<td>A <a href="#picmix">picmix</a> object</td>
+						</tr>
+						<tr>
+							<td><code class="string">totalPicmix</code></td>
+							<td>integer</td>
+							<td><code class="number">25</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">mostRecentPicmix</code></td>
+							<td>picmix[]</td>
+							<td>The users 36 most recent <a href="#picmix">picmix</a>s</td>
+						</tr>
+						<tr>
+							<td><code class="string">totalFriends</code></td>
+							<td>integer</td>
+							<td><code class="number">99999</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">totalReceivedGifs</code></td>
+							<td>integer</td>
+							<td><code class="number">99999</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">totalContestEntries</code></td>
+							<td>integer</td>
+							<td><code class="number">50</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">totalStickers</code></td>
+							<td>integer</td>
+							<td><code class="number">4</code></td>
+						</tr>
+						<tr>
+							<td><code class="string">totalComments</code></td>
+							<td>integer</td>
+							<td><code class="number">15</code></td>
+						</tr>						
+					</tbody>
+				</table>
+
+
+			</section>
+		</div>
+
+	</main>
+
+	<DYNAMIC-PHONE-NAV/>
+
+</body>
+</html>

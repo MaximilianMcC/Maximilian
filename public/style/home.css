@@ -53,6 +53,9 @@ a {
   border: 2px solid black;
   text-align: left;
 }
+.tooltip-text a {
+  color: brown;
+}
 .tooltip:hover .tooltip-text {
   visibility: visible;
 }
@@ -88,6 +91,45 @@ a {
 
 img#openImageWhenClicked {
   cursor: zoom-in;
+}
+
+table {
+  width: 100%;
+}
+table, table th, table td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table .centre {
+  text-align: center;
+}
+table .left {
+  text-align: left;
+}
+
+code {
+  background-color: #1F1F1F;
+  font-family: "consolas", monospace;
+  padding: 1px 3px;
+  border-radius: 5px;
+  color: #9CDCFE;
+  font-size: 0.85rem;
+}
+code.string {
+  color: #CE8F70;
+}
+code.string::before {
+  content: '"';
+}
+code.string::after {
+  content: '"';
+}
+code.number {
+  color: #B5CEA8;
+}
+code.keyword {
+  color: #8b41b4;
 }
 
 body {
@@ -159,4 +201,8 @@ h2.changelog-title {
   font-size: 2em;
   border-top: 2px solid black;
   margin-top: 10px;
+}
+
+th {
+  background-color: rgb(244.3333333333, 212.3333333333, 169.6666666667);
 }/*# sourceMappingURL=home.css.map */
