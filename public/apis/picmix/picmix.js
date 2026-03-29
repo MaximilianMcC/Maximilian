@@ -81,6 +81,16 @@ function initPicmixApi(app) {
 		// Get the special url
 		apiResponse["specialUrl"] = "https://" + dom.querySelector("a.pAddressLink").textContent;
 
+		// Get the join date
+		apiResponse["joinDate"] = new Date(dom.querySelector("div#pDateRegister span").title).toISOString();
+
+		// Get if they have vip or not
+		apiResponse["vip"] = dom.querySelector("div#pVipIcon") != undefined;
+
+		// Get the avatar
+		apiResponse["avatarPicmixName"] = (dom.querySelector("div#pAvatar a").href).split("/").pop();
+		apiResponse["avatarPicmixUrl"] = dom.querySelector("div#pAvatar a img").src;
+
 		return response.json(apiResponse);
 	});
 }
