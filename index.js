@@ -4,6 +4,7 @@ const Path = require("path");
 const FileSystem = require("fs");
 const Utils = require("./utils");
 const Navbar = require("./dynamic/navbar");
+const PicmixApi = require("./public/apis/picmix/picmix");
 
 // Setup express
 const app = Express();
@@ -15,6 +16,7 @@ app.use(Cors());
 app.use(Express.json());
 
 Utils.resizeImages(app);
+PicmixApi.initPicmixApi(app);
 
 // Serve static stuff
 app.use(Express.static(Path.join(__dirname, "assets")));
