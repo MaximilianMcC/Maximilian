@@ -8,6 +8,7 @@ const headers = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
 };
 
+// TODO: Add a 10 minute cache or something
 async function scrapeWebsite(url) {
 	try {
 
@@ -115,8 +116,28 @@ function initPicmixApi(app) {
 		apiResponse["vip"] = dom.querySelector("div#pVipIcon") != undefined;
 
 		// Get the avatar
-		apiResponse["avatarPicmixName"] = (dom.querySelector("div#pAvatar a").href).split("/").pop();
+		apiResponse["avatarPicmixId"] = (dom.querySelector("div#pAvatar a").href).split("/").pop();
 		apiResponse["avatarPicmixUrl"] = dom.querySelector("div#pAvatar a img").src;
+
+		// Get the total picmix count (up to 36)
+		apiResponse["totalPicmix"] = Number((dom.querySelector("div#pPics h3.pTitle span").textContent).replace("(", "").replace(")", ""));
+		// apiResponse["mostRecentPicmix"] = 
+
+		// Get the total friends count
+		apiResponse["totalFriends"] = Number((dom.querySelector("div#pFriends h3.pTitle span").textContent).replace("(", "").replace(")", ""));
+
+		// Get the total received gifts
+		apiResponse["totalRecievedGifts"] = Number((dom.querySelector("div#pGifts h3.pTitle span").textContent).replace("(", "").replace(")", ""));
+
+		// Get the total contest entries
+		apiResponse["totalContestEntries"] = Number((dom.querySelector("div#pContests h3.pTitle span").textContent).replace("(", "").replace(")", ""));
+
+		// Get the total sticker count
+		// TODO: Rename to stamps because that's french or whatever
+		apiResponse["totalStickers"] = Number((dom.querySelector("div#pStamps h3.pTitle span").textContent).replace("(", "").replace(")", ""));
+
+		// Get the total comments count
+		apiResponse["totalComments"] = Number((dom.querySelector("div#pComments h3.pTitle span").textContent).replace("(", "").replace(")", ""));
 
 		return response.json(apiResponse);
 	});
