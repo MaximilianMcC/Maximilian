@@ -37,6 +37,34 @@ async function scrapeWebsite(url) {
 	}
 }
 
+function convertPicmixToBasicObject(anchor) {
+	const image = anchor.querySelector("img");
+
+	// Check for if we're looking at a thumbnail or the full size thing
+	// TODO: Don't do this ever this might just be the worst code ive ever written ever
+	const url = image.src;
+	let thumbnailUrl = url;
+	let normalUrl = url;
+
+	//? worst code ever bruh
+	//! PLEASE FIX!!!!!
+	if (url.includes("/thumb/"))
+	{
+		normalUrl = url.replace("/thumb/", "/normal/");
+	}
+	else
+	{
+		thumbnailUrl = url.replace("/normal/", "/thumb/");
+	}
+
+	return {
+		title: image.alt.replace(" - Free animated GIF", ""),
+		id: anchor.href.split("/").pop(),
+		urlThumbnail: thumbnailUrl,
+		urlNormal: normalUrl
+	}
+}
+
 function convertHtmlEmojisToPlainText(paragraph) {
 	let result = "";
 
@@ -106,8 +134,9 @@ function initPicmixApi(app) {
 		// Get the language
 		apiResponse["language"] = dom.querySelector("span.pLang").title;
 
-		// Get the special url
+		// Get the urls
 		apiResponse["specialUrl"] = "https://" + dom.querySelector("a.pAddressLink").textContent;
+		apiResponse["regularUrl"] = `${picmixBaseUrl}/profile/${apiResponse.username}`;
 
 		// Get the join date
 		apiResponse["joinDate"] = new Date(dom.querySelector("div#pDateRegister span").title).toISOString();
@@ -116,12 +145,17 @@ function initPicmixApi(app) {
 		apiResponse["vip"] = dom.querySelector("div#pVipIcon") != undefined;
 
 		// Get the avatar
-		apiResponse["avatarPicmixId"] = (dom.querySelector("div#pAvatar a").href).split("/").pop();
-		apiResponse["avatarPicmixUrl"] = dom.querySelector("div#pAvatar a img").src;
+		apiResponse["avatarPicmix"] = convertPicmixToBasicObject(dom.querySelector("div#pAvatar a"));
 
 		// Get the total picmix count (up to 36)
 		apiResponse["totalPicmix"] = Number((dom.querySelector("div#pPics h3.pTitle span").textContent).replace("(", "").replace(")", ""));
-		// apiResponse["mostRecentPicmix"] = 
+		{
+			let recents = [];
+			dom.querySelectorAll("div#pPics div.list-grid div.container a").forEach(picmix => {
+				recents.push(convertPicmixToBasicObject(picmix));
+			});
+			apiResponse["mostRecentPicmix"] = recents;
+		}
 
 		// Get the total friends count
 		apiResponse["totalFriends"] = Number((dom.querySelector("div#pFriends h3.pTitle span").textContent).replace("(", "").replace(")", ""));
