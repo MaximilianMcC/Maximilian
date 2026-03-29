@@ -36,6 +36,30 @@ async function scrapeWebsite(url) {
 	}
 }
 
+function convertHtmlEmojisToPlainText(paragraph) {
+	let result = "";
+
+	//? this is some super rinky thing but I've gotta use it I think
+	// TODO: Don't do this
+	const ELEMENT_NODE = 1;
+	const TEXT_NODE = 3;
+
+	// Loop over everything in the paragraph and only use the emoji alt text
+	paragraph.childNodes.forEach(child => {
+		
+		// Check for what we're looking at
+		if (child.nodeType === TEXT_NODE) result += child.textContent;
+		else if (child.nodeType == ELEMENT_NODE) {
+
+			// Add the text representation of the emoji
+			//? tag names must be caps
+			if (child.tagName === "IMG") result += child.alt;
+		}
+	});
+
+	return result;
+}
+
 function initPicmixApi(app) {
 
 	// Get information about a user (profile)
@@ -74,6 +98,9 @@ function initPicmixApi(app) {
 
 		// Get the username (using the gender)
 		apiResponse["username"] = dom.querySelector(`span.p${apiResponse.gender}`).textContent;
+
+		// Get the bio
+		apiResponse["bio"] = convertHtmlEmojisToPlainText(dom.querySelector("div#pMe p"));
 
 		// Get the language
 		apiResponse["language"] = dom.querySelector("span.pLang").title;
