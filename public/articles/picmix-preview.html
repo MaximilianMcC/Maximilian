@@ -147,7 +147,46 @@
 
 				<hr>
 
-				<p>Soon I shall add an option to export text with emojis as an image/gif, so they can be used in picmixes too</p>
+				<p class="no-bottom">Soon I shall add an option to export text with emojis as an image/gif so they can be used in picmixes too</p>
+
+				<hr>
+
+				<p>
+					All of these emojis were obtained by inspecting the emoji picker on the picmix website. The 'secret' emojis all had
+					<span class="tooltip">
+						<code>display: none;</code>.
+						<span class="tooltip-text">
+							A bit of code which visually hides elements on websites.
+						</span>
+					</span>
+					There are 75 total emojis, but only 74 of these show up in the code. Emoji number 29 is missing for some reason. We know what it looks like because the emojis are all stored in the same place with their name being their index. The image provides no other information, so we do not know what its
+					<span class="tooltip">
+						ascii representation
+						<span class="tooltip-text">
+							'text' version. For example,
+							<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/4.gif" title=":D">
+							is represented in ascii by writing :D
+							<br>
+							<br>
+							This is how you actually use the emoji
+						</span>
+					</span>
+					is.
+				</p>
+
+				<p>
+					<code class="string">https://picmix.com/css/smileys/29.gif</code>
+					looks like a lady rolling her eyes:
+					<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/29.gif" title="???">
+				</p>					
+
+				<p>
+					Out of the 75 total emojis, only 32 are actually supposed to be shown to the user, but since emoji number 29 is missing, only 31 are shown. It looks like
+					<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/29.gif" title="???">
+					was intended to be usable. I assume we will never know why Emoji number 29 was missing/removed. Perhaps it was an accident.
+				</p>
+				<p>I would like to make it my personal headcannon that $( would have been its ascii representation.</p>
+					
 				<hr>
 				My account on PicMix is <a href="https://maximilianmcc.picmix.com/">MaximilianMcC</a>
 				<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/6.gif" title="&gt;:D&lt;">
