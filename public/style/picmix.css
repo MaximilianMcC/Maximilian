@@ -1,0 +1,36 @@
+.picmix-base-text, .picmix-emoji, .picmix-header, .picmix-text-box {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.picmix-text-box {
+  padding: 15px;
+  width: 100%;
+  field-sizing: content;
+  min-height: 7lh;
+  border-radius: 20px;
+  border: 1px #ddd solid;
+  background-color: white;
+  resize: none;
+  outline: none;
+}
+
+.picmix-header {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: #ed7bc9;
+}
+
+#picmix-emoji-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.picmix-emoji {
+  height: 1rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}/*# sourceMappingURL=picmix.css.map */

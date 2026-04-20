@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- my Discord pfp -->
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
+	<title>max</title>
+
+	<link rel="stylesheet" href="/style/main.css">
+	<link rel="stylesheet" href="/style/layouts.css">
+	<link rel="stylesheet" href="/style/home.css">
+	<link rel="stylesheet" href="/style/picmix.css">
+
+	<script src="/script/responsive.js" defer></script>
+	<script src="/script/picmixEmojis.js" defer></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+	<main>
+	
+		<div class="content-panels-no-right-panel">
+			<section class="side">
+
+				<DYNAMIC-SIDE-BAR/>
+				
+				<hr>
+
+				<a href="/" class="home-button"></a>
+
+				<hr>
+
+			</section>
+
+			<section class="centre">
+				<h1 class="title">PicMix emoji preview</h1>
+				<p>
+					Tool to preview what the <a href="https://www.picmix.com" target="_blank">PicMix</a>
+					<span class="tooltip">
+						smileys
+						<span class="tooltip-text">
+							What PicMix officially calls them
+						</span>
+					</span>
+					(emojis) look like since you can't see them live when you type them yk. This also features some of the secret emojis which don't show in the regular picker.
+				</p>
+
+				<hr>
+
+				<h3 class="picmix-header">Enter your text</h3>
+				<textarea class="picmix-text-box" id="text-input" spellcheck="false"></textarea>
+
+				<div class="emojis">
+					<button id="picmix-emoji-button" title=":)"><img src="https://www.picmix.com/css/smileys/1.gif"></button>
+					<button id="picmix-emoji-button" title=":("><img src="https://www.picmix.com/css/smileys/2.gif"></button>
+					<button id="picmix-emoji-button" title=";)"><img src="https://www.picmix.com/css/smileys/3.gif"></button>
+					<button id="picmix-emoji-button" title=":D"><img src="https://www.picmix.com/css/smileys/4.gif"></button>
+					<button id="picmix-emoji-button" title=";;)"><img src="https://www.picmix.com/css/smileys/5.gif"></button>
+					<button id="picmix-emoji-button" title=">:D<"><img src="https://www.picmix.com/css/smileys/6.gif"></button>
+					<button id="picmix-emoji-button" title=":-/"><img src="https://www.picmix.com/css/smileys/7.gif"></button>
+					<button id="picmix-emoji-button" title=":x"><img src="https://www.picmix.com/css/smileys/8.gif"></button>
+					<button id="picmix-emoji-button" title=":\"><img src="https://www.picmix.com/css/smileys/9.gif"></button>
+					<button id="picmix-emoji-button" title=":P"><img src="https://www.picmix.com/css/smileys/10.gif"></button>
+					<button id="picmix-emoji-button" title=":-*"><img src="https://www.picmix.com/css/smileys/11.gif"></button>
+					<button id="picmix-emoji-button" title="=((("><img src="https://www.picmix.com/css/smileys/12.gif"></button>
+					<button id="picmix-emoji-button" title=":-O"><img src="https://www.picmix.com/css/smileys/13.gif"></button>
+					<button id="picmix-emoji-button" title="X("><img src="https://www.picmix.com/css/smileys/14.gif"></button>
+					<button id="picmix-emoji-button" title=":>"><img src="https://www.picmix.com/css/smileys/15.gif"></button>
+					<button id="picmix-emoji-button" title="B-)"><img src="https://www.picmix.com/css/smileys/16.gif"></button>
+					<button id="picmix-emoji-button" title=":-S"><img src="https://www.picmix.com/css/smileys/17.gif"></button>
+					<button id="picmix-emoji-button" title="#:-S"><img src="https://www.picmix.com/css/smileys/18.gif"></button>
+					<button id="picmix-emoji-button" title=">: )"><img src="https://www.picmix.com/css/smileys/19.gif"></button>
+					<button id="picmix-emoji-button" title=":(( "><img src="https://www.picmix.com/css/smileys/20.gif"></button>
+					<button id="picmix-emoji-button" title=":))"><img src="https://www.picmix.com/css/smileys/21.gif"></button>
+					<button id="picmix-emoji-button" title=":|"><img src="https://www.picmix.com/css/smileys/22.gif"></button>
+					<button id="picmix-emoji-button" title="/:)"><img src="https://www.picmix.com/css/smileys/23.gif"></button>
+					<button id="picmix-emoji-button" title="=))"><img src="https://www.picmix.com/css/smileys/24.gif"></button>
+					<button id="picmix-emoji-button" title="O:)"><img src="https://www.picmix.com/css/smileys/25.gif"></button>
+					<button id="picmix-emoji-button" title=":-B"><img src="https://www.picmix.com/css/smileys/26.gif"></button>
+					<button id="picmix-emoji-button" title="=;"><img src="https://www.picmix.com/css/smileys/27.gif"></button>
+					<button id="picmix-emoji-button" title="I-)"><img src="https://www.picmix.com/css/smileys/28.gif"></button>
+					<button id="picmix-emoji-button" title="L-)"><img src="https://www.picmix.com/css/smileys/30.gif"></button>
+					<button id="picmix-emoji-button" title="8-|"><img src="https://www.picmix.com/css/smileys/31.gif"></button>
+					<button id="picmix-emoji-button" title=":-$"><img src="https://www.picmix.com/css/smileys/32.gif"></button>
+					<br>
+					<br>
+					<button id="picmix-emoji-button" title="[-("><img src="https://www.picmix.com/css/smileys/33.gif"></button>
+					<button id="picmix-emoji-button" title=":O)"><img src="https://www.picmix.com/css/smileys/34.gif"></button>
+					<button id="picmix-emoji-button" title="8-}"><img src="https://www.picmix.com/css/smileys/35.gif"></button>
+					<button id="picmix-emoji-button" title="<:-P"><img src="https://www.picmix.com/css/smileys/36.gif"></button>
+					<button id="picmix-emoji-button" title="(:|"><img src="https://www.picmix.com/css/smileys/37.gif"></button>
+					<button id="picmix-emoji-button" title="=P~"><img src="https://www.picmix.com/css/smileys/38.gif"></button>
+					<button id="picmix-emoji-button" title=":-?"><img src="https://www.picmix.com/css/smileys/39.gif"></button>
+					<button id="picmix-emoji-button" title="#-o"><img src="https://www.picmix.com/css/smileys/40.gif"></button>
+					<button id="picmix-emoji-button" title="=D>"><img src="https://www.picmix.com/css/smileys/41.gif"></button>
+					<button id="picmix-emoji-button" title=":-SS"><img src="https://www.picmix.com/css/smileys/42.gif"></button>
+					<button id="picmix-emoji-button" title="@-)"><img src="https://www.picmix.com/css/smileys/43.gif"></button>
+					<button id="picmix-emoji-button" title=":^o"><img src="https://www.picmix.com/css/smileys/44.gif"></button>
+					<button id="picmix-emoji-button" title=":-w"><img src="https://www.picmix.com/css/smileys/45.gif"></button>
+					<button id="picmix-emoji-button" title=":-<"><img src="https://www.picmix.com/css/smileys/46.gif"></button>
+					<button id="picmix-emoji-button" title=">:P"><img src="https://www.picmix.com/css/smileys/47.gif"></button>
+					<button id="picmix-emoji-button" title="<):)"><img src="https://www.picmix.com/css/smileys/48.gif"></button>
+					<button id="picmix-emoji-button" title=":@)"><img src="https://www.picmix.com/css/smileys/49.gif"></button>
+					<button id="picmix-emoji-button" title="3:-O"><img src="https://www.picmix.com/css/smileys/50.gif"></button>
+					<button id="picmix-emoji-button" title=":(|)"><img src="https://www.picmix.com/css/smileys/51.gif"></button>
+					<button id="picmix-emoji-button" title="~:>"><img src="https://www.picmix.com/css/smileys/52.gif"></button>
+					<button id="picmix-emoji-button" title="@};-"><img src="https://www.picmix.com/css/smileys/53.gif"></button>
+					<button id="picmix-emoji-button" title="%%-"><img src="https://www.picmix.com/css/smileys/54.gif"></button>
+					<button id="picmix-emoji-button" title="**=="><img src="https://www.picmix.com/css/smileys/55.gif"></button>
+					<button id="picmix-emoji-button" title="(~~)"><img src="https://www.picmix.com/css/smileys/56.gif"></button>
+					<button id="picmix-emoji-button" title="~O)"><img src="https://www.picmix.com/css/smileys/57.gif"></button>
+					<button id="picmix-emoji-button" title="*-:)"><img src="https://www.picmix.com/css/smileys/58.gif"></button>
+					<button id="picmix-emoji-button" title="8-X"><img src="https://www.picmix.com/css/smileys/59.gif"></button>
+					<button id="picmix-emoji-button" title="=:)"><img src="https://www.picmix.com/css/smileys/60.gif"></button>
+					<button id="picmix-emoji-button" title=">-)"><img src="https://www.picmix.com/css/smileys/61.gif"></button>
+					<button id="picmix-emoji-button" title=":-L"><img src="https://www.picmix.com/css/smileys/62.gif"></button>
+					<button id="picmix-emoji-button" title="[-O<"><img src="https://www.picmix.com/css/smileys/63.gif"></button>
+					<button id="picmix-emoji-button" title="$-)"><img src="https://www.picmix.com/css/smileys/64.gif"></button>
+					<button id="picmix-emoji-button" title=":-&quot;"><img src="https://www.picmix.com/css/smileys/65.gif"></button>
+					<button id="picmix-emoji-button" title="b-("><img src="https://www.picmix.com/css/smileys/66.gif"></button>
+					<button id="picmix-emoji-button" title=":)>-"><img src="https://www.picmix.com/css/smileys/67.gif"></button>
+					<button id="picmix-emoji-button" title="[-X"><img src="https://www.picmix.com/css/smileys/68.gif"></button>
+					<button id="picmix-emoji-button" title="\:D/"><img src="https://www.picmix.com/css/smileys/69.gif"></button>
+					<button id="picmix-emoji-button" title=">:/"><img src="https://www.picmix.com/css/smileys/70.gif"></button>
+					<button id="picmix-emoji-button" title=";))"><img src="https://www.picmix.com/css/smileys/71.gif"></button>
+					<button id="picmix-emoji-button" title=":-@"><img src="https://www.picmix.com/css/smileys/72.gif"></button>
+					<button id="picmix-emoji-button" title="^:)^"><img src="https://www.picmix.com/css/smileys/73.gif"></button>
+					<button id="picmix-emoji-button" title=":-j"><img src="https://www.picmix.com/css/smileys/74.gif"></button>
+					<button id="picmix-emoji-button" title="(*)"><img src="https://www.picmix.com/css/smileys/75.gif"></button>
+				</div>
+
+				<h3 class="picmix-header">There is emoji</h3>
+				<div class="picmix-text-box" id="text-output"></div>
+
+				<hr>
+
+				<p>Soon I shall add an option to export text with emojis as an image/gif, so they can be used in picmixes!</p>
+			</section>
+		</div>
+
+	</main>
+
+	<DYNAMIC-PHONE-NAV/>
+
+</body>
+</html>
