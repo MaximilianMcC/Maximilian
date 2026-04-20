@@ -71,3 +71,28 @@ function updateOutputBox() {
 
 	outputBox.innerHTML = newContent;
 }
+
+// Check for if we press the copy button
+const copyButton = document.querySelector("#copy-button")
+copyButton.addEventListener("click", async () => {
+
+	// No playing silly buggers
+	if (inputBox.value == "") return;
+
+	//? try/catch because some browsers don't like this apparently
+	try {
+		// Copy the ascii stuff to clipboard
+		await navigator.clipboard.writeText(inputBox.value);
+	
+		// Change the text
+		copyButton.textContent = "copied!";
+
+		// Make the text go back to copy after a second
+		setTimeout(() => {
+			copyButton.textContent = "copy";
+		}, 1 * 1000);
+
+	} catch (error) {
+		console.log(error);
+	}
+});

@@ -1,4 +1,4 @@
-.picmix-base-text, .picmix-emoji, .picmix-header, .picmix-text-box {
+.picmix-base-text, .picmix-emoji, .picmix-button, .picmix-header, .picmix-text-box {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -26,6 +26,31 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.picmix-button {
+  color: white;
+  background-color: #249bff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: none;
+  width: 10ch;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99999999999999;
+}
+.picmix-button:active {
+  background-color: #91CDFF;
 }
 
 .picmix-emoji {

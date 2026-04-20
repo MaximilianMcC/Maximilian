@@ -10,11 +10,11 @@
 	width: 100%;
 	field-sizing: content;
 	min-height: 7lh;
-
+	
 	border-radius: 20px;
 	border: 1px #ddd solid;
 	background-color: white;
-
+	
 	resize: none;
 	outline: none;
 }
@@ -33,6 +33,35 @@
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.picmix-button {
+	@extend .picmix-base-text;
+
+	color: white;
+	background-color: #249bff;
+
+	border-radius: 20px;
+	padding: 5px 15px;
+	border: none;
+	width: 10ch;
+	text-align: center;
+
+	cursor: pointer;
+	user-select: none;
+
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 99999999999999;
+
+	&:active {
+		background-color: #91CDFF;
+	}
 }
 
 .picmix-emoji {

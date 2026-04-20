@@ -7,21 +7,27 @@
 			"lastUpdated": "2026-03-07T00:00:00+12:00"
 		},
 		{
+			"displayName": "PicMix Emoji",
+			"page": "picmix-preview",
+			"showInSideNavBar": true,
+			"lastUpdated": "2026-4-20T00:00:00+12:00"
+		},
+		{
 			"displayName": "Model railway",
 			"page": "model-railway",
-			"showInSideNavBar": true,
+			"showInSideNavBar": false,
 			"lastUpdated": null
 		},
 		{
 			"displayName": "L&P collection",
 			"page": "lemon-and-paeroa",
-			"showInSideNavBar": true,
+			"showInSideNavBar": false,
 			"lastUpdated": null
 		},
 		{
 			"displayName": "Picmix api docs",
 			"page": "picmix-docs",
-			"showInSideNavBar": true,
+			"showInSideNavBar": false,
 			"lastUpdated": "2026-03-30T00:00:00+12:00"
 		},
 		{
