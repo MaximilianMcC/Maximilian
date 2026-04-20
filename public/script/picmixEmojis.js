@@ -5,7 +5,7 @@ const outputBox = document.querySelector("#text-output");
 
 inputBox.addEventListener("input", () => updateOutputBox());
 
-const mappings = []
+let mappings = []
 document.querySelectorAll("#picmix-emoji-button").forEach(button => {
 
 	// Get the mappings of all ascii to image
@@ -27,6 +27,11 @@ document.querySelectorAll("#picmix-emoji-button").forEach(button => {
 
 function updateOutputBox() {
 	let newContent = ``;
+
+	// Sort the emojis list so the longer ascii ones are first
+	// to stop conflicts between stuff like :( and :((
+	// TODO: Don't do this each time
+	mappings = mappings.sort((a, b) => (b.ascii.length - a.ascii.length));
 
 	// Loop over every character of the input box and check for if we've come across an emoji key
 	for (let i = 0; i < inputBox.value.length; i++) {
@@ -50,7 +55,7 @@ function updateOutputBox() {
 			if (potentialEmoji == emoji.ascii)
 			{
 				// Add the html for the emoji
-				newContent += `<img class="picmix-emoji" src="${emoji.url}"> `
+				newContent += `<img class="picmix-emoji" src="${emoji.url}" title="${emoji.ascii}"> `
 
 				// Advance past the emoji so we don't 'doubly count it'
 				// TODO: Add 1
@@ -60,7 +65,7 @@ function updateOutputBox() {
 		});
 
 		// If there was no emoji associated with this character
-		// then just add the character to the box normally
+		// then just add the letter as a normal p string thing
 		if (foundEmoji == false) newContent += inputBox.value[i];
 	}
 
