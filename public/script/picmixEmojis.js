@@ -96,3 +96,23 @@ copyButton.addEventListener("click", async () => {
 		console.log(error);
 	}
 });
+
+// Add a random mon vote thing
+document.addEventListener("DOMContentLoaded", () => {
+
+	const monVotes = [
+		"Mon vote!!!",
+		"Mon coup de  :x  :x ",
+		"Sacré bleu!! :-O  :-O  :-O ",
+		"Mon vote :D +5*****",
+		"Mon vote est de 5 étoiles!",
+		"Mon coup de (*)  (*)  (*)  (*)  (*) ",
+		"Magnifique :D  :D ",
+		"Une création magnifique, 5*****",
+		"Beautiful Creation!  >:D< ",
+		"Merci du partage!"
+	];
+
+	const randomMonVote = monVotes[Math.floor(Math.random() * monVotes.length)];
+	inputBox.placeholder = randomMonVote;	
+});
