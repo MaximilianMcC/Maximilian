@@ -1,9 +1,30 @@
 const inputBox = document.querySelector("#text-input");
 const outputBox = document.querySelector("#text-output");
 
+// Add a random mon vote thing
+document.addEventListener("DOMContentLoaded", () => {
+
+	const monVotes = [
+		"Mon vote!!!",
+		"Mon coup de  :x  :x ",
+		"Sacré bleu!! :-O  :-O  :-O ",
+		"Mon vote :D +5*****",
+		"Mon vote est de 5 étoiles!",
+		"Mon coup de (*)  (*)  (*)  (*)  (*) ",
+		"Magnifique :D  :D ",
+		"Une création magnifique, 5*****",
+		"Beautiful Creation!  >:D< ",
+		"Merci du partage!"
+	];
+
+	const randomMonVote = monVotes[Math.floor(Math.random() * monVotes.length)];
+	inputBox.placeholder = randomMonVote;	
+});
 
 
-inputBox.addEventListener("input", () => updateOutputBox());
+inputBox.addEventListener("input", () => {
+	updateOutputBox();
+});
 
 let mappings = []
 document.querySelectorAll("#picmix-emoji-button").forEach(button => {
@@ -70,6 +91,7 @@ function updateOutputBox() {
 	}
 
 	outputBox.innerHTML = newContent;
+	updateWordCount();
 }
 
 // Check for if we press the copy button
@@ -97,22 +119,12 @@ copyButton.addEventListener("click", async () => {
 	}
 });
 
-// Add a random mon vote thing
-document.addEventListener("DOMContentLoaded", () => {
-
-	const monVotes = [
-		"Mon vote!!!",
-		"Mon coup de  :x  :x ",
-		"Sacré bleu!! :-O  :-O  :-O ",
-		"Mon vote :D +5*****",
-		"Mon vote est de 5 étoiles!",
-		"Mon coup de (*)  (*)  (*)  (*)  (*) ",
-		"Magnifique :D  :D ",
-		"Une création magnifique, 5*****",
-		"Beautiful Creation!  >:D< ",
-		"Merci du partage!"
-	];
-
-	const randomMonVote = monVotes[Math.floor(Math.random() * monVotes.length)];
-	inputBox.placeholder = randomMonVote;	
-});
+// TODO: Make it say both limits
+const maxDescriptionCharacters = 255;
+const maxCommentCharacters = 1000;
+function updateWordCount() {
+	
+	// Update the counter thingy
+	let characters = inputBox.value.length;
+	document.querySelector("#characterCount").innerText = `There is ${characters}`;
+}

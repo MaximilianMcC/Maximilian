@@ -21,6 +21,10 @@ https://maximilian.co.nz
 - thing where i do <DISCORD> and it makes a tooltip that says dm and has my discord
 - rename home.scss because its gonna be used for articles
 - on right of railway 200 have photos of tickets and stuff
+- page with other friends websites
+- raylib tutorial
+- maths tutorial
+- game physics tutorial
 
 for dynamic nav and stuff do this in `pages.json`
 ```json
@@ -42,3 +46,5 @@ for dynamic nav and stuff do this in `pages.json`
 ]
 ```
 the dateAdded thing is used for showing the 'new' thingy on the link (up to one/two weeks after was added)
+
+`npm install --no-bin-links`

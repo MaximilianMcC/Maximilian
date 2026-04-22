@@ -7,7 +7,7 @@
 			"lastUpdated": "2026-03-07T00:00:00+12:00"
 		},
 		{
-			"displayName": "PicMix Emoji",
+			"displayName": "PicMix emoji",
 			"page": "picmix-preview",
 			"showInSideNavBar": true,
 			"lastUpdated": "2026-4-20T00:00:00+12:00"
@@ -25,7 +25,7 @@
 			"lastUpdated": null
 		},
 		{
-			"displayName": "Picmix api docs",
+			"displayName": "PicMix api docs",
 			"page": "picmix-docs",
 			"showInSideNavBar": true,
 			"lastUpdated": "2026-03-30T00:00:00+12:00"

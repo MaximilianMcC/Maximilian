@@ -39,6 +39,13 @@
 	position: relative;
 }
 
+.input-information {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 999;
+}
+
 .picmix-button {
 	@extend .picmix-base-text;
 
@@ -53,11 +60,6 @@
 
 	cursor: pointer;
 	user-select: none;
-
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-	z-index: 99999999999999;
 
 	&:active {
 		background-color: #91CDFF;

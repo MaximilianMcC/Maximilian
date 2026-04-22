@@ -32,6 +32,13 @@
   position: relative;
 }
 
+.input-information {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 999;
+}
+
 .picmix-button {
   color: white;
   background-color: #249bff;
@@ -44,10 +51,6 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  z-index: 99999999999999;
 }
 .picmix-button:active {
   background-color: #91CDFF;

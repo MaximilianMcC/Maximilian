@@ -58,7 +58,26 @@
 
 				<h3 class="picmix-header">Enter your text</h3>
 				<div class="input-wrapper">
-					<button class="picmix-button" id="copy-button">copy</button>
+					<div class="input-information">
+						<span class="tooltip">
+							<span id="characterCount">There is 0</span>
+							<span class="tooltip-text">
+								Character limits:
+								<br>
+								<strong>PicMix Description:</strong> 255
+								<br>
+								<strong>PicMix Title:</strong> 59
+								<br>
+								<strong>PicMix Sticker Title:</strong> 50
+								<br>
+								<strong>Comment:</strong> 1000
+								<br>
+								<strong>Profile Bio:</strong> 2000
+							</span>
+						</span>
+						<br>
+						<button class="picmix-button" id="copy-button">copy</button>
+					</div>
 					<textarea class="picmix-text-box" id="text-input" spellcheck="false"></textarea>
 				</div>
 
@@ -144,10 +163,37 @@
 				<br>
 				<h3 class="picmix-header">There is emoji</h3>
 				<div class="picmix-text-box" id="text-output"></div>
-
-				<hr>
-
-				<p class="no-bottom">Soon I shall add an option to export text with emojis as an image/gif so they can be used in picmixes too</p>
+				<br>
+				<p>
+					All text inputs have character limits. I've added a counter which tells you what you're at
+					<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/8.gif" title=":x">
+				</p>
+				<table>
+					<tr>
+						<th>Field</th>
+						<th>Maximum characters allowed</th>
+					</tr>
+					<tr>
+						<td>PicMix Description</td>
+						<td>255</td>
+					</tr>
+					<tr>
+						<td>PicMix Title</td>
+						<td>59</td>
+					</tr>
+					<tr>
+						<td>Sticker Title</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Comment</td>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td>Profile Bio</td>
+						<td>2000</td>
+					</tr>
+				</table>
 
 				<hr>
 
@@ -185,8 +231,12 @@
 					<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/29.gif" title="???">
 					was intended to be usable. I assume we will never know why Emoji number 29 was missing/removed. Perhaps it was an accident.
 				</p>
-				<p>I would like to make it my personal headcannon that $( would have been its ascii representation.</p>
+				<p class="no-bottom">I would like to make it my personal headcannon that $( would have been its ascii representation.</p>
 					
+				<hr>
+
+				<p class="no-bottom">Soon I shall add an option to export text with emojis as an image/gif so they can be used in picmixes too</p>
+
 				<hr>
 				My account on PicMix is <a href="https://maximilianmcc.picmix.com/">MaximilianMcC</a>
 				<img class="picmix-emoji" src="https://www.picmix.com/css/smileys/6.gif" title="&gt;:D&lt;">
