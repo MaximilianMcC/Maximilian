@@ -36,12 +36,24 @@ document.querySelectorAll("#picmix-emoji-button").forEach(button => {
 	});
 
 	// Check for if we are using the emoji
-	button.addEventListener("click", () => {
+	// TODO: Maybe use click instead
+	button.addEventListener("mousedown", (e) => {
+
+		// Don't focus the button
+		e.preventDefault();
 
 		// Get the ascii representation of the emoji from the tooltip thing
 		// then add it to the input box plaintext thingy
 		// TODO: Maybe store it somewhere else
-		inputBox.value += " " + button.title + " ";
+		const cursorPosition = inputBox.selectionStart;
+		const emoji = ` ${button.title} `;
+		inputBox.value = inputBox.value.slice(0, cursorPosition) + emoji + inputBox.value.slice(cursorPosition);
+
+		// Update the cursor position because we manually inserted at it
+		const newCursorPosition = cursorPosition + emoji.length;
+		inputBox.selectionStart = newCursorPosition;
+		inputBox.selectionEnd = newCursorPosition;
+
 		updateOutputBox();
 	});
 });
