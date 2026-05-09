@@ -68,3 +68,14 @@ document.querySelectorAll("span#DayOfTheWeekInNz").forEach(element => {
 		weekday: "long"
 	});
 });
+
+document.querySelectorAll("span#MeridiemInNz").forEach(element => {
+	const hour = new Date().toLocaleDateString("en-NZ", {
+		timeZone: "Pacific/Auckland",
+		hour: "numeric",
+		hour12: false
+	});
+	const isAm = Number(hour) < 12;
+	
+	element.innerText = isAm ? "am" : "pm";
+});
