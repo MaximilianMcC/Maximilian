@@ -1,0 +1,42 @@
+body {
+	background-image: url("/image/backgrounds/dark-wood.png");
+	background-position: center;
+	background-repeat: repeat;
+
+	background-color: #6c3030;
+}
+
+$line-gap: 30px;
+
+.ruled-paper-background {
+
+	background-color: #faf6f2;
+	background-image: repeating-linear-gradient(
+		to bottom,
+		transparent,
+		transparent calc(#{$line-gap} - 1px),
+		#6fa8dc calc(#{$line-gap} - 1px),
+		#6fa8dc #{$line-gap}
+	);
+
+	background-position: 0 -28px;
+}
+
+p {
+	font-family: "Indie Flower", cursive;
+	font-size: 24px;
+	line-height: $line-gap;
+	
+	margin-bottom: $line-gap;
+	padding: 0;
+}
+
+.side {
+	background-image: url("/image/backgrounds/ripped-paper.png");
+	background-repeat: repeat-y;
+	background-size: contain;
+}
+
+.only-show-right-side {
+	mask-image: linear-gradient(to right, transparent 50%, black 50%);
+}

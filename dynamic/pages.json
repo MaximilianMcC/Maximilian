@@ -64,11 +64,19 @@
 			"lastUpdated": null
 		},
 		{
+			"displayName": "Orthography",
+			"imageBanner": "orthography.png",
+			"page": "orthography",
+			"showInSideNavBar": true,
+			"showOnHomePage": true,
+			"lastUpdated": null
+		},
+		{
 			"displayName": "Oceanliners",
 			"imageBanner": "oceanliners.png",
 			"page": "oceanliners",
-			"showInSideNavBar": true,
-			"showOnHomePage": true,
+			"showInSideNavBar": false,
+			"showOnHomePage": false,
 			"lastUpdated": null
 		}
 	]
