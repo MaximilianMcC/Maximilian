@@ -25,7 +25,7 @@
 	<main>
 	
 		<div class="content-panels-no-right-panel">
-			<section class="side ruled-paper-background">
+			<section class="side">
 
 				<DYNAMIC-SIDE-BAR/>
 				
@@ -39,8 +39,8 @@
 
 			<section class="centre ruled-paper-background">
 				<h1 class="title">Orthography</h1>
-				<p>Orthography is the set of rules that describes how a language is <i>supposed</i> to be written. I speak New Zealand English with a slightly stronger British influence than typical for a regular kiwi.</p>
-				<p>Most of my findings are naturally gathered by just talking to people from other parts of the world. Throughout this page you will find mini polls where you can contribute your country, and how you use the word/phrase which is being discussed.</p>
+				<p>Orthography is the set of rules that describes how a language is <i>supposed</i> to be written. This will also speak about grammar quite a bit too.</p>
+				<p>I speak New Zealand English with a slightly stronger British influence than typical for a regular kiwi. Most of my findings are naturally gathered by just talking to people from other parts of the world.</p>
 				<p>
 					I first developed an interest for orthography somewhere around 2024. During this time, I was speaking to a lot of my online friends. Often they would point out specific words that they had never heard of before, but were normal for me. This is when I realised that not all versions of English were the same. Around this time I also figured out that I had an accent, which started my interest in
 					<span class="tooltip">
@@ -51,6 +51,47 @@
 					</span>
 				</p>
 				<p>"Heaps" was the first word that I remember learning to be nonstandard. I use this word a lot, so it came as a massive shock to me that no one else used it with the frequency that Kiwis and Aussies use it.</p>
+
+				<p>In terms of grammar everyone seems to stay largely the same, except for Canada and America. Americans actively tried to distance themselves from British English, and these choices spread into Canada since they're neighbours</p>
+
+				<div class="word-section">
+					<h2>
+						<span class="tooltip">
+							Which do you typically use?
+							<div class="tooltip-text">
+								This is usually found on a car
+							</div>
+						</span>
+					</h2>
+
+					<div class="options">
+						<button>Tire</button>
+						<button>Tyre</button>
+					</div>
+					<br>
+					<div class="location">
+						<!-- todo: tooltip that says just select whatevers closest/biggest -->
+						<p class="no-bottom">I am from:</p>
+						<select name="location" id="locationInput">
+							<option value="nothingSelected">Area</option>
+							<option value="auckland">Auckland</option>
+							<option value="auckland">Hamilton</option>
+							<option value="auckland">Wellington</option>
+							<option value="auckland">Christchurch</option>
+							<option value="auckland">Dunedin</option>
+							<option value="auckland">Queenstown</option>
+						</select>
+						<select name="country" id="countryInput">
+							<option value="nothingSelected">Country</option>
+							<option value="nz">New Zealand</option>
+							<option value="nz">Australia</option>
+							<option value="nz">Britain</option>
+							<option value="auckland">America</option>
+							<option value="auckland">Canada</option>
+						</select>
+					</div>
+				</div>
+
 			</section>
 
 		</div>

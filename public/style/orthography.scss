@@ -22,21 +22,69 @@ $line-gap: 30px;
 	background-position: 0 -28px;
 }
 
-p {
+p, a, button, h2, select, option {
 	font-family: "Indie Flower", cursive;
+}
+
+p {
 	font-size: 24px;
 	line-height: $line-gap;
 	
 	margin-bottom: $line-gap;
 	padding: 0;
+
+	text-align: justify;
 }
 
 .side {
-	background-image: url("/image/backgrounds/ripped-paper.png");
-	background-repeat: repeat-y;
-	background-size: contain;
+	// todo: use the -shadow version of the paper
+	background-image: 
+		url("/image/backgrounds/ripped-paper.png"),
+		linear-gradient(to right, transparent 50%, #faf6f2 50%);
+
+	background-repeat: repeat-y, no-repeat;
+	background-size: 100% auto, 100% 100%;
+	background-position: center, center;
 }
 
-.only-show-right-side {
-	mask-image: linear-gradient(to right, transparent 50%, black 50%);
+
+.word-section {
+	background-image: url("/image/backgrounds/ripped-paper-square.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+
+	text-align: center;
+	p { text-align: center; }
+
+	button {
+		width: 60%;
+		background-color: transparent;
+		border: none;
+
+		font-size: 2rem;
+		padding: 10px;
+
+		background-image: url("/image/buttons/hand-drawn-1.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		&:hover {
+			cursor: pointer;
+			scale: 1.01;
+		}
+	}
+
+	option, select {
+		font-size: 1rem;
+	}
+
+	select {
+		background-color: transparent;
+		border: none;
+	}
+
+	// filter: drop-shadow(10px 10px rgba(0, 0, 0, 0.1));
 }

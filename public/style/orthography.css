@@ -11,21 +11,54 @@ body {
   background-position: 0 -28px;
 }
 
-p {
+p, a, button, h2, select, option {
   font-family: "Indie Flower", cursive;
+}
+
+p {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 30px;
   padding: 0;
+  text-align: justify;
 }
 
 .side {
-  background-image: url("/image/backgrounds/ripped-paper.png");
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-image: url("/image/backgrounds/ripped-paper.png"), linear-gradient(to right, transparent 50%, #faf6f2 50%);
+  background-repeat: repeat-y, no-repeat;
+  background-size: 100% auto, 100% 100%;
+  background-position: center, center;
 }
 
-.only-show-right-side {
-  -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
-          mask-image: linear-gradient(to right, transparent 50%, black 50%);
+.word-section {
+  background-image: url("/image/backgrounds/ripped-paper-square.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.word-section p {
+  text-align: center;
+}
+.word-section button {
+  width: 60%;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  background-image: url("/image/buttons/hand-drawn-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.word-section button:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+.word-section option, .word-section select {
+  font-size: 1rem;
+}
+.word-section select {
+  background-color: transparent;
+  border: none;
 }/*# sourceMappingURL=orthography.css.map */
