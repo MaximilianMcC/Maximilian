@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- my Discord pfp -->
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
+	<title>max</title>
+
+	<link rel="stylesheet" href="/style/main.css">
+	<link rel="stylesheet" href="/style/home.css">
+	<link rel="stylesheet" href="/style/layouts.css">
+	<link rel="stylesheet" href="/style/portal.css">
+
+	<script src="/script/responsive.js" defer></script>
+
+</head>
+<body>
+	
+	<main>
+	
+		<div class="content-panels-no-right-panel">
+			<section class="side">
+
+				<DYNAMIC-SIDE-BAR/>
+				
+				<hr>
+
+				<a href="/" class="home-button"></a>
+
+				<hr>
+
+			</section>
+
+			<section class="centre">
+				<h1 class="title">Portal Test Chamber Sign Generator</h1>
+				<p>Click on the different parts of the sign below to change them. This is recreated as best as I could get it by using pure html, instead of something like a canvas. The sign is rendered at 512x1024, which is the same size that the actual assets from the game use, so that's why it probably doesn't all fit on your screen at once. Zooming in and out may break it.</p>
+
+				<!-- TODO: Use the editable html css thingy instead of inputs -->
+				<div class="sign">
+					<div class="content">
+						<hr>
+						<!-- using input mode because it takes away the up/down arrows -->
+						<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="0">
+						<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="6">
+						<span>
+	
+						<!-- TODO: Link this with the above inputs automatically -->
+						<input type="number" min="0" max="99">
+						/
+						<input type="number" min="0" max="99">
+						</span>
+						<hr>
+						<hr>						
+					</div>
+				</div>
+
+				<p>Writing this was so fun. Its the first time that I've done any 'proper' drawing/positional stuff with css. It was mainly done with absolute positioning (what I mean by proper drawing) This kind of programming is my absolute favourite to do, but I usually do it in like graphics libraries such as raylib and whatnot. I could have done like 90% of this just with a background image, but doing it in css was super fun and also easy. I will definitely be coming back to do something like this again in the future.</p>
+			</section>
+		</div>
+
+	</main>
+
+	<DYNAMIC-PHONE-NAV/>
+
+</body>
+</html>

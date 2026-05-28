@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "portal sign";
+  src: url("/font/Univers LT Std 49 Light Ultra Condensed.otf");
+}
+body {
+  background-image: url("/image/backgrounds/portal-2-wall-texture.jpg");
+  background-size: 20%;
+  background-repeat: repeat;
+}
+
+.sign {
+  position: absolute;
+  width: 512px;
+  height: 1024px;
+  background-image: url("/image/random/TEMP.png");
+  padding-left: 5%;
+}
+.sign .content {
+  width: 80%;
+  position: absolute;
+}
+.sign input {
+  position: relative;
+  font-family: "portal sign";
+  border: none;
+  outline: none;
+}
+.sign input#chamberIndex {
+  position: absolute;
+  top: 0px;
+  font-size: 535px;
+  background-color: transparent;
+  color: black;
+}
+.sign input#chamberIndex:nth-of-type(1) {
+  left: 5px;
+}
+.sign input#chamberIndex:nth-of-type(2) {
+  left: 195px;
+}
+.sign hr {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  height: 4px;
+  border: none;
+}
+.sign hr:nth-of-type(1) {
+  top: 75px;
+}
+.sign hr:nth-of-type(2) {
+  top: 520px;
+}
+.sign hr:nth-of-type(3) {
+  top: 650px;
+}/*# sourceMappingURL=portal.css.map */
