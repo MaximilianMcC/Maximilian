@@ -68,7 +68,7 @@ body {
 		font-family: "portal sign 2";
 	}
 
-	.progressBars {
+	.progress-bars {
 		position: absolute;
 		top: 584px;
 		left: 1px;
@@ -104,6 +104,12 @@ body {
 
 			&.off {
 				opacity: 30%;
+			}
+
+			&:hover {
+				cursor: pointer;
+				-webkit-user-drag: none;
+				user-select: none;
 			}
 		}
 	}

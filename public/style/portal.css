@@ -53,7 +53,7 @@ body {
   font-size: 27px;
   font-family: "portal sign 2";
 }
-.sign .progressBars {
+.sign .progress-bars {
   position: absolute;
   top: 584px;
   left: 1px;
@@ -61,7 +61,7 @@ body {
   height: 60px;
   display: flex;
 }
-.sign .progressBars img {
+.sign .progress-bars img {
   height: 100%;
   width: 16.5px;
   margin: 0;
@@ -84,6 +84,13 @@ body {
 }
 .sign .icons img.off {
   opacity: 30%;
+}
+.sign .icons img:hover {
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .sign hr {
   position: absolute;

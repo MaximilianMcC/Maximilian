@@ -6,9 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- my Discord pfp -->
-		<link rel="shortcut icon"
-			href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp"
-			type="image/x-icon">
+		<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
 		<title>max</title>
 
 		<link rel="stylesheet" href="/style/main.css">
@@ -17,6 +15,7 @@
 		<link rel="stylesheet" href="/style/portal.css">
 
 		<script src="/script/responsive.js" defer></script>
+		<script src="/script/portal.js" defer></script>
 
 	</head>
 
@@ -35,16 +34,23 @@
 
 					<hr>
 
+					<img src="https://combineoverwiki.net/images/thumb/3/3f/Cave_johnson_50s.png/451px-Cave_johnson_50s.png" alt="Cave Johnson">
+					<div class="gap"></div>
+					<img src="https://combineoverwiki.net/images/thumb/0/05/Cave_johnson_70s.png/451px-Cave_johnson_70s.png" alt="Cave Johnson">
+					<div class="gap"></div>
+					<img src="https://combineoverwiki.net/images/thumb/a/ac/Cave_johnson_80s.png/451px-Cave_johnson_80s.png" alt="Cave Johnson">
+
+					<hr>
+					
+
 				</section>
 
 				<section class="centre">
 					<h1 class="title">Portal Test Chamber Sign Generator</h1>
-					<p>Click on the different parts of the sign below to change them. This is recreated as best as I
-						could get it by using pure html, instead of something like a canvas. The sign is rendered at
-						512x1024, which is the same size that the actual assets from the game use, so that's why it
-						probably doesn't all fit on your screen at once. Zooming in and out may break it.</p>
+					<p>Click on the different parts of the sign below to change them. This is recreated as best as I could get it by using pure html, instead of something like a canvas. The sign is rendered at 512x1024, which is the same size that the actual assets from the game use, so that's why it probably doesn't all fit on your screen at once. Zooming in and out may break it. I am not too sure how to fix this sorry</p>
 
 					<!-- TODO: Use the editable html css thingy instead of inputs -->
+					<!-- TODO: Chuck this in an iframe or use css transform stuff to scale it -->
 					<div class="sign">
 						<div class="content">
 							<hr>
@@ -56,7 +62,7 @@
 							<input id="progressText" type="text" value="6/6">
 							<hr>
 
-							<div class="progressBars">
+							<div class="progress-bars">
 								<img src="/image/portal/chamber-progress-bars.png" alt="|">
 								<img src="/image/portal/chamber-progress-bars.png" alt="|">
 								<img src="/image/portal/chamber-progress-bars.png" alt="|">
@@ -84,9 +90,9 @@
 
 							<hr>
 							<div class="icons">
-								<img src="/image/portal/120px-Chamber_icon_cube_dispenser_on.png" alt="empty">
-								<img class="off" src="/image/portal/120px-Chamber_icon_laser_redirection_on.png" alt="empty">
-								<img class="off" src="/image/portal/120px-Chamber_icon_player_button_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
 								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
 								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
 								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
