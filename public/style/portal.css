@@ -13,15 +13,15 @@ body {
 }
 
 .sign {
-  position: absolute;
+  position: relative;
   width: 512px;
   height: 1024px;
-  background-image: url("/image/random/TEMP.png");
+  background-image: url("/image/portal/sign-clean-no-border.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
-  padding-left: 5%;
+  padding-left: 13%;
 }
 .sign .content {
   width: 80%;
@@ -82,8 +82,11 @@ body {
   width: 70px;
   height: 70px;
 }
+.sign .icons img.off {
+  opacity: 30%;
+}
 .sign hr {
-  position: relative;
+  position: absolute;
   width: 96.5%;
   background-color: #616363;
   height: 3px;
@@ -93,8 +96,14 @@ body {
   top: 75px;
 }
 .sign hr:nth-of-type(2) {
-  top: 550px;
+  top: 565px;
 }
 .sign hr:nth-of-type(3) {
-  top: 680px;
+  top: 706px;
+}
+.sign .logo {
+  position: absolute;
+  width: 30%;
+  left: 1px;
+  top: 968px;
 }/*# sourceMappingURL=portal.css.map */

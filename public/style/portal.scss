@@ -17,18 +17,19 @@ body {
 }
 
 .sign {
-	position: absolute;
+	position: relative;
 	width: 512px;
 	height: 1024px;
 	
 	//! temp
-	background-image: url("/image/random/TEMP.png");
+	// background-image: url("/image/random/TEMP.png");
+	background-image: url("/image/portal/sign-clean-no-border.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: white;
 
-	padding-left: 5%;
+	padding-left: 13%;
 	.content {
 		width: 80%;
 		position: absolute;
@@ -39,7 +40,6 @@ body {
 		outline: none;
 		background-color: transparent;
 	}
-		
 		
 	input#chamberIndex {
 		position: absolute;
@@ -101,11 +101,15 @@ body {
 		img {
 			width: 70px;
 			height: 70px;
+
+			&.off {
+				opacity: 30%;
+			}
 		}
 	}
 
 	hr {
-		position: relative;
+		position: absolute;
 		width: 96.5%;
 
 		// TODO: Make this a little darker. Closer to black
@@ -118,11 +122,19 @@ body {
 		}
 
 		&:nth-of-type(2) {
-			top: 550px;
+			top: 565px;
 		}
 
 		&:nth-of-type(3) {
-			top: 680px;
+			top: 706px;
 		}
+	}
+
+	.logo
+	{
+		position: absolute;
+		width: 30%;
+		left: 1px;
+		top: 968px;
 	}
 }
