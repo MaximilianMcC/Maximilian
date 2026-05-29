@@ -1,8 +1,12 @@
-// TODO: Do this with a proper path
 @font-face {
 	font-family: "portal sign";
 	// src: url("/font/UniversLTStd-BoldCn.ttf");
 	src: url("/font/Univers LT Std 49 Light Ultra Condensed.otf");
+}
+
+@font-face {
+	font-family: "portal sign 2";
+	src: url("/font/UniversLTStd-BoldCn.ttf");
 }
 
 body {
@@ -19,7 +23,10 @@ body {
 	
 	//! temp
 	background-image: url("/image/random/TEMP.png");
-	// background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
 
 	padding-left: 5%;
 	.content {
@@ -28,35 +35,82 @@ body {
 	}
 
 	input {
-		position: relative;
-		font-family: "portal sign";
 		border: none;
 		outline: none;
+		background-color: transparent;
+	}
+		
+		
+	input#chamberIndex {
+		position: absolute;
+		color: black;
+		width: 150px;
 
-		&#chamberIndex {
-			position: absolute;
-			top: 0px;
-			font-size: 535px;
-			
-			background-color: transparent;
-			color: black;			
-			
-			&:nth-of-type(1) {
-				left: 5px;
-			}
+		font-family: "portal sign";
+		top: 0px;
+		font-size: 535px;
+		
+		&:nth-of-type(1) {
+			left: 5px;
+		}
 
-			&:nth-of-type(2) {
-				left: 195px;
-			}
+		&:nth-of-type(2) {
+			left: 195px;
+		}
+	}
+
+	input#progressText {
+		position: absolute;
+		top: 545px;
+		left: 5px;
+
+		font-size: 27px;
+		font-family: "portal sign 2";
+	}
+
+	.progressBars {
+		position: absolute;
+		top: 584px;
+		left: 1px;
+		width: 94%;
+		height: 60px;
+
+		display: flex;
+
+		img {
+			height: 100%;
+			width: 16.5px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.icons {
+		position: absolute;
+		width: 94%;
+		height: 149px;
+		top: 730px;
+		left: 1px;
+
+		// display: flex;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 9px;
+
+		img {
+			width: 70px;
+			height: 70px;
 		}
 	}
 
 	hr {
 		position: relative;
-		width: 100%;
+		width: 96.5%;
 
-		background-color: black;
-		height: 4px;
+		// TODO: Make this a little darker. Closer to black
+		background-color: #616363;
+		height: 3px;
 		border: none;
 
 		&:nth-of-type(1) {
@@ -64,11 +118,11 @@ body {
 		}
 
 		&:nth-of-type(2) {
-			top: 520px;
+			top: 550px;
 		}
 
 		&:nth-of-type(3) {
-			top: 650px;
+			top: 680px;
 		}
 	}
 }

@@ -1,68 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- my Discord pfp -->
-	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
-	<title>max</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="/style/main.css">
-	<link rel="stylesheet" href="/style/home.css">
-	<link rel="stylesheet" href="/style/layouts.css">
-	<link rel="stylesheet" href="/style/portal.css">
+		<!-- my Discord pfp -->
+		<link rel="shortcut icon"
+			href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp"
+			type="image/x-icon">
+		<title>max</title>
 
-	<script src="/script/responsive.js" defer></script>
+		<link rel="stylesheet" href="/style/main.css">
+		<link rel="stylesheet" href="/style/home.css">
+		<link rel="stylesheet" href="/style/layouts.css">
+		<link rel="stylesheet" href="/style/portal.css">
 
-</head>
-<body>
-	
-	<main>
-	
-		<div class="content-panels-no-right-panel">
-			<section class="side">
+		<script src="/script/responsive.js" defer></script>
 
-				<DYNAMIC-SIDE-BAR/>
-				
-				<hr>
+	</head>
 
-				<a href="/" class="home-button"></a>
+	<body>
 
-				<hr>
+		<main>
 
-			</section>
+			<div class="content-panels-no-right-panel">
+				<section class="side">
 
-			<section class="centre">
-				<h1 class="title">Portal Test Chamber Sign Generator</h1>
-				<p>Click on the different parts of the sign below to change them. This is recreated as best as I could get it by using pure html, instead of something like a canvas. The sign is rendered at 512x1024, which is the same size that the actual assets from the game use, so that's why it probably doesn't all fit on your screen at once. Zooming in and out may break it.</p>
+					<DYNAMIC-SIDE-BAR />
 
-				<!-- TODO: Use the editable html css thingy instead of inputs -->
-				<div class="sign">
-					<div class="content">
-						<hr>
-						<!-- using input mode because it takes away the up/down arrows -->
-						<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="0">
-						<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="6">
-						<span>
-	
-						<!-- TODO: Link this with the above inputs automatically -->
-						<input type="number" min="0" max="99">
-						/
-						<input type="number" min="0" max="99">
-						</span>
-						<hr>
-						<hr>						
+					<hr>
+
+					<a href="/" class="home-button"></a>
+
+					<hr>
+
+				</section>
+
+				<section class="centre">
+					<h1 class="title">Portal Test Chamber Sign Generator</h1>
+					<p>Click on the different parts of the sign below to change them. This is recreated as best as I
+						could get it by using pure html, instead of something like a canvas. The sign is rendered at
+						512x1024, which is the same size that the actual assets from the game use, so that's why it
+						probably doesn't all fit on your screen at once. Zooming in and out may break it.</p>
+
+					<!-- TODO: Use the editable html css thingy instead of inputs -->
+					<div class="sign">
+						<div class="content">
+							<hr>
+							<!-- using input mode because it takes away the up/down arrows -->
+							<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="0">
+							<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="6">
+							<!-- TODO: Link this with the above inputs automatically -->
+
+							<input id="progressText" type="text" value="6/6">
+							<hr>
+							<div class="progressBars">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+							</div>
+							<hr>
+							<div class="icons">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+							</div>
+						</div>
 					</div>
-				</div>
 
-				<p>Writing this was so fun. Its the first time that I've done any 'proper' drawing/positional stuff with css. It was mainly done with absolute positioning (what I mean by proper drawing) This kind of programming is my absolute favourite to do, but I usually do it in like graphics libraries such as raylib and whatnot. I could have done like 90% of this just with a background image, but doing it in css was super fun and also easy. I will definitely be coming back to do something like this again in the future.</p>
-			</section>
-		</div>
+					<p>Writing this was so fun. Its the first time that I've done any 'proper' drawing/positional stuff
+						with css. It was mainly done with absolute positioning (what I mean by proper drawing) This kind
+						of programming is my absolute favourite to do, but I usually do it in like graphics libraries
+						such as raylib and whatnot. I could have done like 90% of this just with a background image, but
+						doing it in css was super fun and also easy. I will definitely be coming back to do something
+						like this again in the future.</p>
+					<p>Also btw massive shout out to the guy at Valve that made this. All of the values that they used
+						for the positioning of stuff are so nice. No crazy numbers, so I assumed that this was maybe
+						done programmatically like how I've made it. </p>
+					<p>For if you are wondering, there are two different fonts here. UniversLTStd, and the condensed version of the same font. The condensed version is used for the chambers index (large numbers) then the non condensed version is on the little text above the tally marks. In the actual game those tallies aren't text btw; they're separate images for some reason. I'd have used a pipe ngl.</p>
+				</section>
+			</div>
 
-	</main>
+		</main>
 
-	<DYNAMIC-PHONE-NAV/>
+		<DYNAMIC-PHONE-NAV />
 
-</body>
+	</body>
+
 </html>
