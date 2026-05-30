@@ -8,6 +8,13 @@ document.querySelectorAll(".icons img").forEach(icon => {
 	});
 });
 
+// const digits = document.querySelectorAll("#chamberIndex");
+// digits.forEach(digit => digit.addEventListener("input", () => {
+
+// 	// Combine the two digits into one number
+// 	const chamberIndex = digits[0].value + digits[1].value;
+// }));
+
 const progressText = document.querySelector("#progressText");
 progressText.addEventListener("input", () => {
 
@@ -22,6 +29,7 @@ progressText.addEventListener("input", () => {
 	const currentChamber = Number(segments[0]);
 	const totalChambers = Number(segments[1]);
 
+	// If we're not looking at numbers then set the thing to be filled
 	if (!Number.isFinite(currentChamber) || !Number.isFinite(totalChambers)) {
 		setProgressBar(1, 1);
 		return;

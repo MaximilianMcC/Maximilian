@@ -10,7 +10,6 @@
 		<title>max</title>
 
 		<link rel="stylesheet" href="/style/main.css">
-		<link rel="stylesheet" href="/style/home.css">
 		<link rel="stylesheet" href="/style/layouts.css">
 		<link rel="stylesheet" href="/style/portal.css">
 
@@ -34,75 +33,74 @@
 
 					<hr>
 
-					<img src="https://combineoverwiki.net/images/thumb/3/3f/Cave_johnson_50s.png/451px-Cave_johnson_50s.png" alt="Cave Johnson">
+					<img class="painting" src="https://combineoverwiki.net/images/thumb/3/3f/Cave_johnson_50s.png/451px-Cave_johnson_50s.png" alt="Cave Johnson">
 					<div class="gap"></div>
-					<img src="https://combineoverwiki.net/images/thumb/0/05/Cave_johnson_70s.png/451px-Cave_johnson_70s.png" alt="Cave Johnson">
+					<img class="painting" src="https://combineoverwiki.net/images/thumb/0/05/Cave_johnson_70s.png/451px-Cave_johnson_70s.png" alt="Cave Johnson">
 					<div class="gap"></div>
-					<img src="https://combineoverwiki.net/images/thumb/a/ac/Cave_johnson_80s.png/451px-Cave_johnson_80s.png" alt="Cave Johnson">
+					<img class="painting" src="https://combineoverwiki.net/images/thumb/a/ac/Cave_johnson_80s.png/451px-Cave_johnson_80s.png" alt="Cave Johnson">
 
 					<hr>
-					
 
 				</section>
 
 				<section class="centre">
 					<h1 class="title">Portal Test Chamber Sign Generator</h1>
-					<p>Click on the different parts of the sign below to change them. This is recreated as best as I could get it by using pure html, instead of something like a canvas. The sign is rendered at 512x1024, which is the same size that the actual assets from the game use, so that's why it probably doesn't all fit on your screen at once. Zooming in and out may break it. I am not too sure how to fix this sorry</p>
+					<p>Click on the different parts of the sign below to change them. This is recreated as best as I could get it by using pure html, instead of something like a canvas. I am pretty sure I've got like 99% accuracy ngl. Very proud of myself.</p>
 
 					<!-- TODO: Use the editable html css thingy instead of inputs -->
 					<!-- TODO: Chuck this in an iframe or use css transform stuff to scale it -->
-					<div class="sign">
-						<div class="content">
-							<hr>
-							<!-- using input mode because it takes away the up/down arrows -->
-							<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="0">
-							<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="6">
-							<!-- TODO: Link this with the above inputs automatically -->
-
-							<input id="progressText" type="text" value="6/6">
-							<hr>
-
-							<div class="progress-bars">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
-								<img src="/image/portal/chamber-progress-bars.png" alt="|">
+					<div class="sign-wrapper">
+						<div class="sign-border">
+							<div class="sign">
+								<div class="content">
+									<hr>
+									<!-- using input mode because it takes away the up/down arrows -->
+									<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="0">
+									<input id="chamberIndex" type="text" inputmode="numeric" pattern="[0-9]" value="6">
+									<!-- TODO: Link this with the above inputs automatically -->
+									<input id="progressText" type="text" value="6/6">
+									<hr>
+									<div class="progress-bars">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+										<img src="/image/portal/chamber-progress-bars.png" alt="|">
+									</div>
+									<hr>
+									<div class="icons">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+									</div>
+									<img class="logo" src="/image/portal/aperture-logo.png" alt="Aperture Laboratories">
+								</div>
 							</div>
-
-							<hr>
-							<div class="icons">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-								<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-							</div>
-
-							<img class="logo" src="/image/portal/aperture-logo.png" alt="Aperture Laboratories">
 						</div>
 					</div>
 

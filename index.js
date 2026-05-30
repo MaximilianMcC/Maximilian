@@ -22,6 +22,7 @@ PicmixApi.initPicmixApi(app);
 app.use(Express.static(Path.join(__dirname, "assets")));
 app.use("/style", Express.static(Path.join(__dirname, "public", "style")));
 app.use("/script", Express.static(Path.join(__dirname, "public", "script")));
+app.use("/font", Express.static(Path.join(__dirname, "public", "font")));
 
 // Endpoints and whatnot
 app.get("/test", (request, response) => {

@@ -10,29 +10,86 @@
 }
 
 body {
-	// TODO: Make this the black ones
 	background-image: url("/image/backgrounds/portal-2-wall-texture.jpg");
 	background-size: percentage(1 / 5);
 	background-repeat: repeat;
+	background-color: #e7e2e2;
 }
 
-.sign {
+section.side {
+	background-image: url("/image/backgrounds/portal-black-tiles.png");
+	background-size: percentage(1);
+	background-repeat: repeat;
+	background-color: #e7e2e2;
+	border: 5px solid #616363;
+
+	text-align: center;
+}
+
+section.centre {
+	background-image: url("/image/backgrounds/portal-black-wall-darker.png");
+	background-size: percentage(1 / 2.5);
+	background-repeat: repeat;
+	background-color: #1c1c1c;
+	border: 5px solid #616363;
+	border-left: none;
+
+	text-align: justify;
+	color: #f4e9e9;
+}
+
+.painting {
+	box-shadow: 5px 5px 0.4em rgb(0, 0, 0, 0.5);
+}
+
+h1, p, a {
+	font-family: Helvetica, sans-serif;
+}
+
+.sign-wrapper {
 	position: relative;
+	width: 555px;
+	height: 1064px;
+	box-shadow: 10px 10px 0.4em rgb(0, 0, 0, 0.5);
+
+	transform-origin: top left;
+	transform: scale(0.8);
+}
+
+.sign-border {
+	position: absolute;
+	inset: 0;
+
+	background-image: url("/image/portal/sign-clean-large-border.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&.hidden {
+		background-image: none;
+	}
+}
+
+.sign {	
+	position: absolute;
+	top: 21px;
+	left: 21px;
+
 	width: 512px;
 	height: 1024px;
-	
+
 	//! temp
 	// background-image: url("/image/random/TEMP.png");
 	background-image: url("/image/portal/sign-clean-no-border.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: white;
 
-	padding-left: 13%;
 	.content {
-		width: 80%;
 		position: absolute;
+		height: 100%;
+		width: 80%;
+		left: 100px;
 	}
 
 	input {
