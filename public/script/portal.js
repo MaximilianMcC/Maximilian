@@ -1,3 +1,4 @@
+import { toPng } from "https://esm.sh/html-to-image";
 
 // Toggle the icons on/off when we click on them
 document.querySelectorAll(".icons img").forEach(icon => {
@@ -64,3 +65,16 @@ function clamp(value, min, max) {
 	if (value < min) return min;
 	return value;
 }
+
+document.querySelector("#download").addEventListener("click", async () => {
+
+	// Turn the sign into a canvas
+	const sign = document.querySelector(".sign-wrapper");
+	const downloadLink = await toPng(sign);
+
+	// Make a temporary link used to download it
+	const link = document.createElement("a");
+	link.download = "sign.png";
+	link.href = downloadLink;
+	link.click();
+});

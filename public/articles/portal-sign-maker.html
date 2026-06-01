@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="/style/portal.css">
 
 		<script src="/script/responsive.js" defer></script>
-		<script src="/script/portal.js" defer></script>
+		<script src="/script/portal.js" type="module" defer></script>
 
 	</head>
 
@@ -45,7 +45,9 @@
 
 				<section class="centre">
 					<h1 class="title">Portal Test Chamber Sign Generator</h1>
-					<p>Click on the different parts of the sign below to change them. This is recreated as best as I could get it by using pure html, instead of something like a canvas. I am pretty sure I've got like 99% accuracy ngl. Very proud of myself.</p>
+					<hr>
+					<p>This is recreated as best as I could get it by using pure html and css instead of something like a canvas. I am pretty sure I've got like 99% accuracy ngl. Very proud of myself. This is using textures stolen from Portal 2, but I assume that those were stolen from Portal 1 anyways so I reckon it'll all be the same.</p>
+					<p>Click on the different parts of the sign below to change them.</p>
 
 					<!-- TODO: Use the editable html css thingy instead of inputs -->
 					<!-- TODO: Chuck this in an iframe or use css transform stuff to scale it -->
@@ -87,16 +89,16 @@
 									</div>
 									<hr>
 									<div class="icons">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
-										<img src="/image/portal/120px-Chamber_icon_empty_on.png" alt="empty">
+										<img src="/image/portal/cube-dispensor.png">
+										<img src="/image/portal/cube-hazard.png">
+										<img src="/image/portal/pellet-hazard.png">
+										<img src="/image/portal/pellet-catcher.png">
+										<img src="/image/portal/drowning.png">
+										<img src="/image/portal/fling-1.png">
+										<img src="/image/portal/fling-2.png">
+										<img src="/image/portal/turrets.png">
+										<img src="/image/portal/dirty-water.png">
+										<img src="/image/portal/cake.png">
 									</div>
 									<img class="logo" src="/image/portal/aperture-logo.png" alt="Aperture Laboratories">
 								</div>
@@ -104,16 +106,18 @@
 						</div>
 					</div>
 
+					<button id="download">Download PNG</button>
+
 					<p>Writing this was so fun. Its the first time that I've done any 'proper' drawing/positional stuff
 						with css. It was mainly done with absolute positioning (what I mean by proper drawing) This kind
 						of programming is my absolute favourite to do, but I usually do it in like graphics libraries
 						such as raylib and whatnot. I could have done like 90% of this just with a background image, but
 						doing it in css was super fun and also easy. I will definitely be coming back to do something
 						like this again in the future.</p>
-					<p>Also btw massive shout out to the guy at Valve that made this. All of the values that they used
-						for the positioning of stuff are so nice. No crazy numbers, so I assumed that this was maybe
-						done programmatically like how I've made it. </p>
+				
 					<p>For if you are wondering, there are two different fonts here. UniversLTStd, and the condensed version of the same font. The condensed version is used for the chambers index (large numbers) then the non condensed version is on the little text above the tally marks. In the actual game those tallies aren't text btw; they're separate images for some reason. I'd have used a pipe ngl.</p>
+
+					<p>This page isn't done yet but I kinda wanted to be finished so I am publishing it now.</p>
 				</section>
 			</div>
 

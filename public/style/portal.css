@@ -33,12 +33,20 @@ section.centre {
   color: #f4e9e9;
 }
 
+hr {
+  border: 3px inset #5a2424;
+}
+
 .painting {
   box-shadow: 5px 5px 0.4em rgba(0, 0, 0, 0.5);
 }
 
 h1, p, a {
   font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: left;
 }
 
 .sign-wrapper {
@@ -86,8 +94,9 @@ h1, p, a {
 }
 .sign input#chamberIndex {
   position: absolute;
-  color: black;
   width: 150px;
+  height: 635px;
+  color: black;
   font-family: "portal sign";
   top: 0px;
   font-size: 535px;
@@ -165,4 +174,9 @@ h1, p, a {
   width: 30%;
   left: 1px;
   top: 968px;
+}
+
+button {
+  padding: 10px;
+  transform: translateY(-100px);
 }/*# sourceMappingURL=portal.css.map */
