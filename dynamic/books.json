@@ -2,14 +2,15 @@
 	{
 		"title": "The Little Prince",
 		"cover": "the-little-prince-cover.png",
+		"textColor": "black",
 
-		"released": "",
-		"beginReading": "",
-		"endReading": "",
+		"released": "1943-04-06T00:00:00.000Z",
+		"beginReading": "2024-09-29T00:00:00Z",
+		"endReading": "2024-09-29T00:00:00.000Z",
 		"currentlyReading": false,
 
-		"estimatedTimeReading": "3 hours",
-		"timeReading": "3 hours",
+		"estimatedTimeReading": "1 hour",
+		"timeReading": "1 hour",
 
 		"format": "pdf",
 		"formatInformation": null,
@@ -20,6 +21,7 @@
 	{
 		"title": "Murder on the Orient express",
 		"cover": "orient-express-cover.png",
+		"textColor": "white",
 
 		"released": "1934-01-01T00:00:00.000Z",
 		"beginReading": "2026-04-13T00:00:00.000Z",
@@ -37,6 +39,7 @@
 	{
 		"title": "The Thursday Murder Club",
 		"cover": "thursday-murder-club-cover.png",
+		"textColor": "black",
 
 		"released": "2020-09-03T00:00:00.000Z",
 		"beginReading": "2026-03-04T00:00:00.000Z",
@@ -54,6 +57,7 @@
 	{
 		"title": "The First Law of the Bush",
 		"cover": "first-law-of-the-bush-cover.png",
+		"textColor": "black",
 
 		"released": "2026-01-6T00:00:00.000Z",
 		"beginReading": "2026-02-15T00:00:00.000Z",
@@ -71,6 +75,7 @@
 	{
 		"title": "A Bear Called Paddington",
 		"cover": "paddington-jacket.png",
+		"textColor": "white",
 
 		"released": "1958-10-13T00:00:00.000Z",
 		"beginReading": "2026-01-30T00:00:00.000Z",
@@ -88,6 +93,7 @@
 	{
 		"title": "The Peak",
 		"cover": "the-peak-cover.png",
+		"textColor": "white",
 
 		"released": "2025-07-02T00:00:00.000Z",
 		"beginReading": "0000-00-00T00:00:00.000Z",
@@ -105,6 +111,7 @@
 	{
 		"title": "The Railway Viaduct",
 		"cover": "railway-viaduct-cover.png",
+		"textColor": "black",
 		
 		"released": "2006-01-01T00:00:00.000Z",
 		"beginReading": "2025-09-29T00:00:00.000Z",
@@ -122,6 +129,7 @@
 	{
 		"title": "New Zealand History in Bite-Sized Chunks",
 		"cover": "new-zealand-history-cover.png",
+		"textColor": "black",
 
 		"released": "2019-01-01T00:00:00.000Z",
 		"currentlyReading": true,
@@ -139,6 +147,7 @@
 	{
 		"title": "Project Hail Mary",
 		"cover": "project-hail-mary-cover.png",
+		"textColor": "white",
 
 		"released": "2021-04-05T00:00:00.000Z",
 		"currentlyReading": true,
@@ -152,5 +161,131 @@
 		"formatInformation": null,
 
 		"rating": null
+	},
+	{
+		"title": "Fractal Noise",
+		"cover": "fractal-noise-cover.png",
+		"textColor": "white",
+
+		"released": "2023-05-16T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "unknown",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 3
+	},
+	{
+		"title": "Deception Point",
+		"cover": "deception-point-cover.png",
+		"textColor": "white",
+
+		"released": "2001-11-01T00:00:00.000Z",
+		"beginReading": "2025-10-02T00:00:00.000Z",
+		"endReading": "2025-11-19T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 5
+	},
+	{
+		"title": "Argylle",
+		"cover": "argylle-cover.png",
+		"textColor": "white",
+
+		"released": "2024-01-04T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "2025-09-29T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 5
+	},
+	{
+		"title": "The Da Vinci Code",
+		"cover": "da-vinci-code-cover.png",
+		"textColor": "white",
+
+		"released": "2003-03-18T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "unknown",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 5
+	},
+	{
+		"title": "The Hobbit",
+		"cover": "the-hobbit-cover.png",
+		"textColor": "black",
+
+		"released": "1937-09-21T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "unknown",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "ebook",
+		"formatInformation": "kindle",
+
+		"rating": 5
+	},
+	{
+		"title": "The Excursion Train",
+		"cover": "excursion-train-cover.png",
+		"textColor": "white",
+
+		"released": "2005-06-01T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "2025-04-28T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "ebook",
+		"formatInformation": "kindle",
+
+		"rating": 4
+	},
+	{
+		"title": "The Railway Detective",
+		"cover": "railway-detective-cover.png",
+		"textColor": "white",
+
+		"released": "2004-01-01T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "2025-01-25T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "ebook",
+		"formatInformation": "kindle",
+
+		"rating": 5
 	}
 ]

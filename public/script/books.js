@@ -12,17 +12,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 	json.forEach(book => {
 		
 		// Format the dates nicely
-		const releaseYear = new Date(book["released"]).getFullYear();
+		let releaseYear = new Date(book["released"]).getFullYear();
+		if (!releaseYear) releaseYear = "unknown";
+
 		const readTime = `${new Date(book["beginReading"]).getMonth()} ${new Date(book["beginReading"]).getFullYear()}`;
 		
 		// Get the format the book is in
 		let format = `${book["format"]}`;
-		if (book["formatInformation"] != null) format += `(${book["formatInformation"]})`;
+		if (book["formatInformation"] != null) format += ` (${book["formatInformation"]})`;
 
 		bookshelf.innerHTML += `
 			<div class="book">
 				<img class="cover foreground" src="/image/books/${book["cover"]}" alt="${book["title"]}">
-				<div class="content">
+				<div class="content ${book["textColor"]}">
 					<h2>${book["title"]}</h2>
 					<p><strong>Released:</strong> ${releaseYear}, <strong>Read:</strong> ${readTime}</p>
 					<p><strong>Estimated Reading Time:</strong> ${book["estimatedTimeReading"]}</p>
