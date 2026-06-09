@@ -1,0 +1,67 @@
+main {
+	background-color: magenta;
+}
+
+.bookshelf {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: end;
+}
+
+.book {
+	position: relative;
+	width: 250px;
+	height: 400px;
+	margin-bottom: 20px;
+	overflow: hidden;
+
+	&:hover .foreground {
+		opacity: 0;
+	}
+
+	.cover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+
+		&.foreground {
+			z-index: 9999999;
+			transition: opacity 0.2s;
+		}
+
+		&.background {
+			filter: blur(6px);
+			// transform: scale(1.05);
+		}
+	}
+
+	h2 {
+		font-size: 2.3rem;
+		text-align: left;
+		font-family: 'Times New Roman', Times, serif;
+		color: #333;
+		font-weight: bolder;
+	}
+
+	p {
+		font-size: 1rem;
+		color: #333;
+	}
+
+	.content {
+		position: absolute;
+		z-index: 99999999999999;
+		padding: 5px;
+
+		width: 100%;
+		height: 100%;
+
+		transition: opacity 0.2s;
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

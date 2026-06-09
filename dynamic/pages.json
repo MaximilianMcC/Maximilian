@@ -84,6 +84,14 @@
 			"showInSideNavBar": false,
 			"showOnHomePage": false,
 			"lastUpdated": null
+		},
+		{
+			"displayName": "Books",
+			"imageBanner": "books.png",
+			"page": "books",
+			"showInSideNavBar": true,
+			"showOnHomePage": true,
+			"lastUpdated": null
 		}
 	]
 }

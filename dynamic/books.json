@@ -1,0 +1,156 @@
+[
+	{
+		"title": "The Little Prince",
+		"cover": "the-little-prince-cover.png",
+
+		"released": "",
+		"beginReading": "",
+		"endReading": "",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "3 hours",
+		"timeReading": "3 hours",
+
+		"format": "pdf",
+		"formatInformation": null,
+
+		"rating": 4.5,
+		"review": "got me back into reading"
+	},
+	{
+		"title": "Murder on the Orient express",
+		"cover": "orient-express-cover.png",
+
+		"released": "1934-01-01T00:00:00.000Z",
+		"beginReading": "2026-04-13T00:00:00.000Z",
+		"endReading": "2026-05-18T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "10 hours",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 5
+	},
+	{
+		"title": "The Thursday Murder Club",
+		"cover": "thursday-murder-club-cover.png",
+
+		"released": "2020-09-03T00:00:00.000Z",
+		"beginReading": "2026-03-04T00:00:00.000Z",
+		"endReading": "2026-03-24T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 5
+	},
+	{
+		"title": "The First Law of the Bush",
+		"cover": "first-law-of-the-bush-cover.png",
+
+		"released": "2026-01-6T00:00:00.000Z",
+		"beginReading": "2026-02-15T00:00:00.000Z",
+		"endReading": "2026-03-05T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": "big size",
+
+		"rating": 3
+	},
+	{
+		"title": "A Bear Called Paddington",
+		"cover": "paddington-jacket.png",
+
+		"released": "1958-10-13T00:00:00.000Z",
+		"beginReading": "2026-01-30T00:00:00.000Z",
+		"endReading": "2026-02-06T00:00:00.000Z",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "hardcover",
+		"formatInformation": "with jacket",
+
+		"rating": 3
+	},
+	{
+		"title": "The Peak",
+		"cover": "the-peak-cover.png",
+
+		"released": "2025-07-02T00:00:00.000Z",
+		"beginReading": "0000-00-00T00:00:00.000Z",
+		"endReading": "2026-01-18T00:00:00.000Z", 
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": "big size",
+
+		"rating": 4
+	},
+	{
+		"title": "The Railway Viaduct",
+		"cover": "railway-viaduct-cover.png",
+		
+		"released": "2006-01-01T00:00:00.000Z",
+		"beginReading": "2025-09-29T00:00:00.000Z",
+		"endReading": "2025-10-01T00:00:00.000Z", 
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "however long the train is to france",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": 4
+	},
+	{
+		"title": "New Zealand History in Bite-Sized Chunks",
+		"cover": "new-zealand-history-cover.png",
+
+		"released": "2019-01-01T00:00:00.000Z",
+		"currentlyReading": true,
+		"beginReading": "2026-06-08T00:00:00.000Z",
+		"endReading": null, 
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": null
+	},
+	{
+		"title": "Project Hail Mary",
+		"cover": "project-hail-mary-cover.png",
+
+		"released": "2021-04-05T00:00:00.000Z",
+		"currentlyReading": true,
+		"beginReading": "2026-04-24T00:00:00.000Z",
+		"endReading": null, 
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "paperback",
+		"formatInformation": null,
+
+		"rating": null
+	}
+]
