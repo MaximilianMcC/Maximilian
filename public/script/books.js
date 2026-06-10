@@ -15,23 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	let rowHtml = `<div class="row">`;
 
 	// Loop over every book and make its html
-	json.forEach(book => {
-		
-		// Check for if we need to begin or end a row
-		currentBookCount++;
-		if (currentBookCount > booksPerRow) {
-			
-			// Reset our progress
-			currentBookCount = 1;
-
-			// End the current row and
-			// add it to the bookshelf
-			rowHtml += `</div>`;
-			bookshelf.innerHTML += rowHtml;
-
-			// Create a new row
-			rowHtml = `<div class="row">`;
-		}
+	json.forEach((book, index) => {
 
 		// Format the dates nicely
 		let releaseYear = new Date(book["released"]).getFullYear();
@@ -63,5 +47,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 				<img class="cover background" src="/image/books/${book["cover"]}" alt="${book["title"]}">
 			</div>
 		`;
+
+		// Check for if we need to begin or end a row
+		const finalBook = index == json.length - 1;
+		currentBookCount++;
+		
+		if ((currentBookCount == booksPerRow) || finalBook) {
+			
+			// Reset our progress
+			currentBookCount = 0;
+
+			// End the current row and
+			// add it to the bookshelf
+			rowHtml += `</div>`;
+			bookshelf.innerHTML += rowHtml;
+
+			// Create a new row
+			rowHtml = `<div class="row">`;
+		}
 	});
 });
