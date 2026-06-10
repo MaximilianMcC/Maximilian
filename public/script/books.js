@@ -8,9 +8,31 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 	const bookshelf = document.querySelector(".bookshelf");
 
+	// Every three books are wrapped in a .row
+	//? this 3 comes from css
+	let booksPerRow = 3;
+	let currentBookCount = 0;
+	let rowHtml = `<div class="row">`;
+
 	// Loop over every book and make its html
 	json.forEach(book => {
 		
+		// Check for if we need to begin or end a row
+		currentBookCount++;
+		if (currentBookCount > booksPerRow) {
+			
+			// Reset our progress
+			currentBookCount = 1;
+
+			// End the current row and
+			// add it to the bookshelf
+			rowHtml += `</div>`;
+			bookshelf.innerHTML += rowHtml;
+
+			// Create a new row
+			rowHtml = `<div class="row">`;
+		}
+
 		// Format the dates nicely
 		let releaseYear = new Date(book["released"]).getFullYear();
 		if (!releaseYear) releaseYear = "unknown";
@@ -21,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 		let format = `${book["format"]}`;
 		if (book["formatInformation"] != null) format += ` (${book["formatInformation"]})`;
 
-		bookshelf.innerHTML += `
+		rowHtml += `
 			<div class="book">
 				<img class="cover foreground" src="/image/books/${book["cover"]}" alt="${book["title"]}">
 				<div class="content ${book["textColor"]}">

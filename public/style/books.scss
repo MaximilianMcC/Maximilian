@@ -3,17 +3,28 @@ main {
 }
 
 .bookshelf {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: end;
-	gap: 20px;
+	.row {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: end;
+
+		background-image: url("/image/backgrounds/bookshelf - Copy.png");
+		background-size: cover;
+		background-position: bottom;
+		background-repeat: repeat-x;
+	}
 }
 
 .book {
 	position: relative;
 	overflow: hidden;
 
-	box-shadow: 5px 15px 10px rgb(0, 0, 0, 0.5);
+	margin: 30px;
+	margin-bottom: 100px;
+	top: 50px;
+
+	// box-shadow: 5px 15px 10px rgb(0, 0, 0, 0.5);
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
 
 	&:hover .foreground {
 		opacity: 0;
