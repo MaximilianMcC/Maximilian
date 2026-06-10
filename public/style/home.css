@@ -20,6 +20,12 @@ h2 {
   font-size: 2em;
 }
 
+h3 {
+  color: red;
+  font-family: "cooper black", sans-serif;
+  font-size: 1.8em;
+}
+
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
