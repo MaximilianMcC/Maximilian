@@ -130,7 +130,8 @@ function initPicmixApi(app) {
 			const female = dom.querySelector("span.pFemale") != undefined;
 
 			if (male) apiResponse["gender"] = "Male";
-			if (female) apiResponse["gender"] = "Female";
+			else if (female) apiResponse["gender"] = "Female";
+			else apiResponse["gender"] = "Other";
 		}
 
 		// Get the username (using the gender)
