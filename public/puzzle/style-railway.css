@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.2em;
+	background-image: url("./platform.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.content {
+	margin: 0 auto;
+	width: 50%;
+	background-color: bisque;
+	padding: 15px;
+	border: rgb(141, 25, 25) 10px double;
+	outline: red outset;
+	display: flow-root;
+}
+
+.footer {
+	padding: 0;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+img.half-left {
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+
+img.half-right {
+	width: 50%;
+	float: right;
+	padding: 10px;
+}

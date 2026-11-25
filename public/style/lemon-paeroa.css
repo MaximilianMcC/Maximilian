@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Good Lemony Font Regular";
+  src: url("/font/good-lemony-font-regular.ttf");
+}
+.lmp-text {
+  font-family: "Good Lemony Font Regular", cursive;
+}
+
+h1, h2, h4 {
+  font-family: "Good Lemony Font Regular", cursive;
+  text-align: left;
+}
+
+article h3 {
+  font-family: "Good Lemony Font Regular", cursive;
+}/*# sourceMappingURL=lemon-paeroa.css.map */

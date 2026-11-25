@@ -1,0 +1,771 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "MultiPolygon",
+				"coordinates": [
+					[
+						[
+							[
+								174.762649,
+								-36.850833
+							],
+							[
+								174.762998,
+								-36.850928
+							],
+							[
+								174.763124,
+								-36.850642
+							],
+							[
+								174.762775,
+								-36.850548
+							],
+							[
+								174.762649,
+								-36.850833
+							]
+						]
+					],
+					[
+						[
+							[
+								174.76295,
+								-36.84844
+							],
+							[
+								174.763258,
+								-36.848533
+							],
+							[
+								174.763283,
+								-36.848479
+							],
+							[
+								174.762971,
+								-36.848393
+							],
+							[
+								174.76295,
+								-36.84844
+							]
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Te Waihorotiu Station",
+				"videos": [
+					{
+						"title": "I visited Te Waihorotiu early",
+						"url": "https://www.youtube.com/watch?v=M6rfvgAgUQ0",
+						"uploadDate": "21August2026"
+					}
+				],
+				"history": false
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "MultiPolygon",
+				"coordinates": [
+					[
+						[
+							[
+								174.758347,
+								-36.857006
+							],
+							[
+								174.758658,
+								-36.857143
+							],
+							[
+								174.758733,
+								-36.857038
+							],
+							[
+								174.758422,
+								-36.856899
+							],
+							[
+								174.758347,
+								-36.857006
+							]
+						]
+					],
+					[
+						[
+							[
+								174.758484,
+								-36.85833
+							],
+							[
+								174.758658,
+								-36.858716
+							],
+							[
+								174.759007,
+								-36.858609
+							],
+							[
+								174.758929,
+								-36.858439
+							],
+							[
+								174.75894,
+								-36.85836
+							],
+							[
+								174.758484,
+								-36.85833
+							]
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Karanga-a-hape Station",
+				"videos": [
+					{
+						"title": "I visited Karang-a-hape early",
+						"url": "https://www.youtube.com/watch?v=Z7haokxuH4Y",
+						"uploadDate": "14August2026"
+					}
+				],
+				"history": false
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.758919,
+							-36.867807
+						],
+						[
+							174.758648,
+							-36.86751
+						],
+						[
+							174.758154,
+							-36.867699
+						],
+						[
+							174.758197,
+							-36.867768
+						],
+						[
+							174.758919,
+							-36.867807
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Maungawhau Station",
+				"videos": [
+					{
+						"title": "I visited Maungawhau early",
+						"url": "https://www.youtube.com/watch?v=dzXdpJZbxpk",
+						"uploadDate": "8August2026"
+					}
+				],
+				"history": false
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.770901,
+							-36.844214
+						],
+						[
+							174.770925,
+							-36.844176
+						],
+						[
+							174.765063,
+							-36.842658
+						],
+						[
+							174.765049,
+							-36.842694
+						],
+						[
+							174.770901,
+							-36.844214
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "AHB Fence",
+				"videos": [
+					{
+						"title": "Who built this red fence in Auckland?",
+						"url": "https://www.youtube.com/watch?v=IvilTVx-S0A",
+						"uploadDate": "19August2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.753524,
+							-36.848232
+						],
+						[
+							174.753508,
+							-36.84826
+						],
+						[
+							174.753615,
+							-36.848651
+						],
+						[
+							174.753661,
+							-36.848715
+						],
+						[
+							174.754203,
+							-36.848711
+						],
+						[
+							174.755915,
+							-36.848429
+						],
+						[
+							174.755907,
+							-36.848269
+						],
+						[
+							174.753524,
+							-36.848232
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Victoria Park Markets",
+				"videos": [
+					{
+						"title": "Auckland used to burn all of its rubbish here",
+						"url": "https://www.youtube.com/watch?v=Abl063BP6ec",
+						"uploadDate": "26August2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.761563,
+							-36.846253
+						],
+						[
+							174.761332,
+							-36.846742
+						],
+						[
+							174.762,
+							-36.84694
+						],
+						[
+							174.76222,
+							-36.846435
+						],
+						[
+							174.761563,
+							-36.846253
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Hobson Street Farmers",
+				"videos": [
+					{
+						"title": "How Farmers Led to the Downfall of Auckland's Tram Network",
+						"url": "https://www.youtube.com/watch?v=VvvvCNLuxMQ",
+						"uploadDate": "2September2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.777319,
+							-36.860204
+						],
+						[
+							174.777308,
+							-36.860371
+						],
+						[
+							174.777372,
+							-36.860373
+						],
+						[
+							174.777375,
+							-36.861113
+						],
+						[
+							174.777471,
+							-36.861118
+						],
+						[
+							174.777512,
+							-36.861171
+						],
+						[
+							174.777603,
+							-36.861249
+						],
+						[
+							174.777753,
+							-36.861309
+						],
+						[
+							174.77785,
+							-36.861315
+						],
+						[
+							174.778016,
+							-36.861259
+						],
+						[
+							174.778094,
+							-36.861195
+						],
+						[
+							174.778145,
+							-36.861111
+						],
+						[
+							174.778238,
+							-36.861107
+						],
+						[
+							174.778223,
+							-36.860367
+						],
+						[
+							174.778298,
+							-36.860375
+						],
+						[
+							174.778301,
+							-36.860206
+						],
+						[
+							174.778021,
+							-36.860206
+						],
+						[
+							174.778021,
+							-36.860176
+						],
+						[
+							174.777598,
+							-36.860174
+						],
+						[
+							174.777598,
+							-36.860208
+						],
+						[
+							174.777319,
+							-36.860204
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Auckland Museum",
+				"videos": [
+					{
+						"title": "How old is the Auckland Museum?",
+						"url": "https://www.youtube.com/watch?v=zZK-N8bF-D0",
+						"uploadDate": "9September2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.785534,
+							-36.925031
+						],
+						[
+							174.785526,
+							-36.924916
+						],
+						[
+							174.78529,
+							-36.924935
+						],
+						[
+							174.785292,
+							-36.925021
+						],
+						[
+							174.78537,
+							-36.925016
+						],
+						[
+							174.78537,
+							-36.925042
+						],
+						[
+							174.785534,
+							-36.925031
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Ōnehunga Post Office",
+				"videos": [
+					{
+						"title": "This was Auckland's first post office",
+						"url": "https://www.youtube.com/watch?v=KUt-iIiLFFY",
+						"uploadDate": "10September2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.763052,
+							-36.850342
+						],
+						[
+							174.76357,
+							-36.850496
+						],
+						[
+							174.76369,
+							-36.850254
+						],
+						[
+							174.763366,
+							-36.850153
+						],
+						[
+							174.763358,
+							-36.850177
+						],
+						[
+							174.763325,
+							-36.85017
+						],
+						[
+							174.76332,
+							-36.850202
+						],
+						[
+							174.76314,
+							-36.850159
+						],
+						[
+							174.763052,
+							-36.850342
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Temperance & General Building",
+				"videos": [
+					{
+						"title": "This used to be Auckland's tallest building",
+						"url": "https://www.youtube.com/watch?v=NlP5mmCj7WQ",
+						"uploadDate": "23September2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "MultiPolygon",
+				"coordinates": [
+					[
+						[
+							[
+								174.769382,
+								-36.844259
+							],
+							[
+								174.769594,
+								-36.844315
+							],
+							[
+								174.769696,
+								-36.844096
+							],
+							[
+								174.76947,
+								-36.844038
+							],
+							[
+								174.769382,
+								-36.844259
+							]
+						]
+					],
+					[
+						[
+							[
+								174.769709,
+								-36.844343
+							],
+							[
+								174.769921,
+								-36.844396
+							],
+							[
+								174.770017,
+								-36.844182
+							],
+							[
+								174.769795,
+								-36.844122
+							],
+							[
+								174.769709,
+								-36.844343
+							]
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Northern Steam Ship Company",
+				"videos": [
+					{
+						"title": "This used to be Auckland's tallest building",
+						"url": "https://www.youtube.com/watch?v=NlP5mmCj7WQ",
+						"uploadDate": "23September2026"
+					}
+				],
+				"history": true
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "MultiPolygon",
+				"coordinates": [
+					[
+						[
+							[
+								174.758228,
+								-36.854099
+							],
+							[
+								174.758288,
+								-36.854139
+							],
+							[
+								174.760439,
+								-36.850907
+							],
+							[
+								174.763296,
+								-36.844475
+							],
+							[
+								174.763215,
+								-36.844459
+							],
+							[
+								174.76034,
+								-36.850883
+							],
+							[
+								174.758228,
+								-36.854099
+							]
+						]
+					],
+					[
+						[
+							[
+								174.763701,
+								-36.85883
+							],
+							[
+								174.763825,
+								-36.858901
+							],
+							[
+								174.763911,
+								-36.858824
+							],
+							[
+								174.763766,
+								-36.858753
+							],
+							[
+								174.763701,
+								-36.85883
+							]
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Hobson Road and Hobson's Grave"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.775234,
+							-36.787715
+						],
+						[
+							174.775548,
+							-36.788241
+						],
+						[
+							174.776479,
+							-36.787764
+						],
+						[
+							174.776224,
+							-36.787377
+						],
+						[
+							174.775234,
+							-36.787715
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Southern Cross Cable"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.766845,
+							-36.860289
+						],
+						[
+							174.76383,
+							-36.858478
+						],
+						[
+							174.763765,
+							-36.858562
+						],
+						[
+							174.766482,
+							-36.860214
+						],
+						[
+							174.766351,
+							-36.86036
+						],
+						[
+							174.7666,
+							-36.860549
+						],
+						[
+							174.766845,
+							-36.860289
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "Grafton Bridge"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[
+							174.764127,
+							-36.849619
+						],
+						[
+							174.764031,
+							-36.849799
+						],
+						[
+							174.764731,
+							-36.849994
+						],
+						[
+							174.764814,
+							-36.849805
+						],
+						[
+							174.764127,
+							-36.849619
+						]
+					]
+				]
+			},
+			"properties": {
+				"label": "The Strand Arcade"
+			}
+		}
+	]
+}

@@ -287,5 +287,41 @@
 		"formatInformation": "kindle",
 
 		"rating": 5
+	},
+	{
+		"title": "Severance - The Lexington Letter",
+		"cover": "lexington-letter-cover.png",
+		"textColor": "white",
+
+		"released": "2022-03-18T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "unknown",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "ebook",
+		"formatInformation": "Apple books",
+
+		"rating": 3
+	},
+	{
+		"title": "The You You Are",
+		"cover": "the-you-you-are-cover.png",
+		"textColor": "white",
+
+		"released": "2022-02-18T00:00:00.000Z",
+		"beginReading": "unknown",
+		"endReading": "unknown",
+		"currentlyReading": false,
+
+		"estimatedTimeReading": "unknown",
+		"timeReading": null,
+
+		"format": "ebook",
+		"formatInformation": "Apple books",
+
+		"rating": 2
 	}
 ]

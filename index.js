@@ -5,6 +5,7 @@ const FileSystem = require("fs");
 const Utils = require("./utils");
 const Navbar = require("./dynamic/navbar");
 const PicmixApi = require("./public/apis/picmix/picmix");
+const Puzzle = require("./public/puzzle/puzzle");
 
 // Setup express
 const app = Express();
@@ -17,6 +18,7 @@ app.use(Express.json());
 
 Utils.resizeImages(app);
 PicmixApi.initPicmixApi(app);
+Puzzle.initPuzzle(app);
 
 // Serve static stuff
 app.use(Express.static(Path.join(__dirname, "assets")));
@@ -24,6 +26,8 @@ app.use("/style", Express.static(Path.join(__dirname, "public", "style")));
 app.use("/script", Express.static(Path.join(__dirname, "public", "script")));
 app.use("/font", Express.static(Path.join(__dirname, "public", "font")));
 app.use("/apis/books/", Express.static(Path.join(__dirname, "dynamic", "books.json")));
+app.use("/geodata", Express.static(Path.join(__dirname, "assets", "geodata")));
+app.use("/puzzle/", Express.static(Path.join(__dirname, "public", "puzzle")));
 
 // Endpoints and whatnot
 app.get("/test", (request, response) => {
@@ -56,4 +60,5 @@ app.use((request, response) => {
 });
 
 // Run the express server
+console.log("Loading...");
 app.listen(port, () => console.log(`Server listening on port ${port}!\nVisit it at http://localhost:${port}`));

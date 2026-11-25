@@ -92,6 +92,14 @@
 			"showInSideNavBar": true,
 			"showOnHomePage": true,
 			"lastUpdated": null
+		},
+		{
+			"displayName": "YouTube",
+			"imageBanner": "youtube.png",
+			"page": "youtube",
+			"showInSideNavBar": true,
+			"showOnHomePage": true,
+			"lastUpdated": null
 		}
 	]
 }

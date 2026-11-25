@@ -1,5 +1,7 @@
-main {
-	background-color: magenta;
+body {
+	background-image: url("/image/backgrounds/sky.jpg");
+	background-repeat: repeat;
+	background-color: skyblue;
 }
 
 .bookshelf {
@@ -12,6 +14,14 @@ main {
 		background-size: cover;
 		background-position: bottom;
 		background-repeat: repeat-x;
+	}
+
+	.divider {
+		height: 100px;
+
+		background-image: url("/image/books/TEST.png");
+		background-size: cover;
+		background-position: bottom;
 	}
 }
 
@@ -74,4 +84,18 @@ main {
 		&.white { color: white; }
 		&.black { color: black; }
 	}
+}
+
+.side {
+	background-image: url("/image/backgrounds/shelf-thing.png");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+.centre {
+	background-image: url("/image/backgrounds/page.png");
+	background-repeat: repeat-y;
+	background-size: 100%;
+
+	padding: 0 !important;
 }

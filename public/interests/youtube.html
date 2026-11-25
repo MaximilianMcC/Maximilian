@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- my Discord pfp -->
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/320672010332274690/7f077b1dd076eff56075f45a48df0203.webp" type="image/x-icon">
+	<title>max</title>
+
+	<link rel="stylesheet" href="/style/main.css">
+	<link rel="stylesheet" href="/style/layouts.css">
+	<link rel="stylesheet" href="/style/youtube.css">
+
+	<script src="/script/responsive.js" defer></script>
+	<script src="/script/aboutMe.js" defer></script>
+	
+	<link href="https://cdn.jsdelivr.net/npm/maplibre-gl@5/dist/maplibre-gl.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5/dist/maplibre-gl.js" defer></script>
+	<script src="/script/youtubeMap.js" defer></script>
+
+</head>
+<body>
+	
+	<main>
+	
+		<!-- <div class="content-panels-no-right-panel"> -->
+		<div class="content-panels-default">
+			<section class="side">
+
+				<DYNAMIC-SIDE-BAR/>
+				
+				<hr>
+
+				<a href="/" class="home-button"></a>
+
+				<hr>
+
+				<p>Left hand side</p>
+
+			</section>
+
+			<section class="centre">
+				<h1 class="title">YouTube</h1>
+
+				<p>I've got a <a href="https://www.youtube.com/@MaximilianMcC" target="_blank">YouTube channel</a> where I post videos mainly about Auckland history and transport. Below is an interactive map showing all locations where I've made videos.</p>
+
+				<!--TODO: Don't hardcode css -->
+				<div id="map" style="width: 100%; height: 400px;"></div>
+
+				<p>If you've got any potential video ideas for me then either leave a comment on my <a href="#">latest video</a>, send me an e-mail, or ideally send me a message on Discord.</p>
+
+				<p>
+					In early 2026 the
+					<span class="tooltip">
+						City Rail Link
+						<span class="tooltip-text">
+							Underground trains in Auckland
+						</span>
+					</span>
+					opened. Before it opened,
+					<span class="tooltip">
+						AT
+						<span class="tooltip-text">
+							Auckland Transport, the people who run the trains
+						</span>
+					</span>
+					ran some "sneak peek" events. These were a single night where those interested, and those who worked on the CRL, could get a chance to go inside the stations before they opened to have a look around. I managed to get tickets for these, and I created videos about all three of the new stations. I did not expect them to do well at all, but I am very glad that they did because they gave me my initial audience.
+				</p>
+
+				<p>There is no skill in being a YouTuber, it's all 100% luck. If YouTube selects you to succeed then you will, and if they select you not to then you won't. Shout out YouTube for giving me a chance, and (somewhat) keeping me going.</p>
+
+				<hr>
+				<p>
+					If you told seven-year-old Max that one day he would have monetised YouTube channel which actually has real people who watch and like his content, he would not believe you. If you also told him that it's not Minecraft related and instead a history channel then he might be a little disappointed, but he'd still be impressed. If you told
+					<span class="tooltip">
+						<span id="age">20</span>-year-old
+						<span class="tooltip-text">
+							I am <span id="age">20</span> rn
+						</span>
+					</span>
+					Max that same thing, he would be just as impressed.
+				</p>
+
+			</section>
+
+			<section class="side">
+				<p>Right hand side</p>
+			</section>
+		</div>
+
+	</main>
+
+	<DYNAMIC-PHONE-NAV/>
+
+</body>
+</html>

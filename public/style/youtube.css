@@ -1,0 +1,14 @@
+body {
+  background-color: #ffffff;
+  background-image: url("/image/backgrounds/videos.png");
+  background-repeat: repeat;
+  background-size: 33.33%;
+}
+
+section.side {
+  background-color: #f1f1f1;
+}
+
+section.centre {
+  background-color: white;
+}/*# sourceMappingURL=youtube.css.map */
